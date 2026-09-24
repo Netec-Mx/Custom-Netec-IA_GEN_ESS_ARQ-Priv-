@@ -2,283 +2,209 @@
 
 ## Metadatos
 
-| Campo | Detalle |
+| Campo | Valor |
 |---|---|
 | Duración | 42 minutos |
-| Complejidad | Media |
-| Nivel Bloom | Analizar |
-| Plataforma | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Modalidad | Demostración guiada por el instructor |
+| Modalidad | Demostración guiada |
+| Complejidad | Intermedia |
+| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
+| Capítulo | 2 |
+| Resultado principal | Comprender cuándo los ejemplos ayudan a orientar formato, tono y consistencia |
 
 ## Descripción General
 
-En esta demostración observarás un flujo de trabajo completo en Microsoft 365 Copilot Chat. El instructor ejecutará el procedimiento mientras tú analizas las decisiones, registras evidencias y extraes un patrón que podrás reutilizar posteriormente.
-
-> ℹ️ **Nota:** Esta actividad es una demostración realizada por el instructor. El instructor ejecutará los pasos en pantalla mientras tú observas, tomas notas y analizas el procedimiento. No necesitas reproducir cada acción durante la demostración.
+El instructor resuelve la misma tarea tres veces: sin ejemplo, con un ejemplo y con varios ejemplos. El objetivo no es demostrar que una técnica siempre es superior, sino observar cuándo los ejemplos aportan claridad y cuándo resultan innecesarios.
 
 ## Objetivos de Aprendizaje
 
-Al completar esta actividad serás capaz de:
-
-- [ ] Reconocer y aplicar el procedimiento central de la actividad.
-- [ ] Distinguir información sustentada, supuestos y elementos que requieren verificación.
-- [ ] Aplicar criterios de privacidad, seguridad y revisión humana antes de utilizar una salida.
-- [ ] Conservar un patrón reutilizable para futuras tareas de productividad.
+- Diferenciar zero-shot, one-shot y few-shot.
+- Utilizar ejemplos como guía de forma y estilo.
+- Imponer formatos y restricciones explícitas.
+- Comparar resultados sin asumir que más ejemplos siempre producen una mejor respuesta.
 
 ## Prerrequisitos
 
-### Conocimientos previos
+### Conocimiento Requerido
 
-Antes de iniciar, debes poder:
-
-- Reconocer qué es una instrucción o prompt y distinguirla de la respuesta generada por Copilot.
-- Identificar que una respuesta generada por IA puede contener errores, omisiones o información no sustentada y que requiere revisión humana.
-- Aplicar la regla del curso de no compartir información confidencial, credenciales, datos personales de terceros ni información restringida.
-- Manejar funciones básicas de un navegador: abrir una pestaña, iniciar sesión, copiar y pegar texto y descargar o seleccionar un archivo cuando corresponda.
-- Comprender los contenidos previos requeridos para esta actividad: Conceptos del capítulo 1 y fundamentos de prompting: objetivo, contexto, expectativas, fuente, formato, restricciones y tono.
-- No se requieren conocimientos de programación, APIs, administración de Microsoft 365 ni construcción de agentes.
-
-### Acceso y recursos
-
-| Elemento | Requisito para esta actividad |
+| Concepto | Nivel |
 |---|---|
-| Cuenta de usuario | Cuenta corporativa habilitada para **Microsoft 365 Copilot Chat (Licenciamiento Básico)**. No se requiere licencia Microsoft 365 Copilot Premium. |
-| Acceso | Poder iniciar sesión en el portal de Microsoft 365/Copilot autorizado por la organización. |
-| Navegador | Microsoft Edge o Google Chrome en una versión vigente y con JavaScript y cookies habilitados para los servicios de Microsoft 365. |
-| Conectividad | Acceso estable a Internet y a los dominios de Microsoft 365 permitidos por la organización. |
-| Material de actividad | Hoja o documento para registrar versiones de prompts, resultados y comparaciones. |
-| Datos | Utiliza exclusivamente información ficticia, anonimizada, pública o expresamente autorizada para capacitación. |
-| Evidencias | Conserva los prompts, respuestas, observaciones y validaciones solicitadas en cada paso. |
+| Prompt estructurado | Básico |
+| Revisión de formato | Básico |
+| Copilot Chat | Básico |
 
-Durante la demostración no necesitas ejecutar los prompts al mismo tiempo que el instructor; debes observar, comparar resultados y registrar los hallazgos solicitados.
+### Acceso Requerido
 
-> **Antes de continuar:** si no puedes abrir Copilot Chat, iniciar una conversación nueva o utilizar el recurso indicado, informa al instructor antes de comenzar la actividad.
+- Microsoft 365 Copilot Chat (Licenciamiento Básico).
 
-## Entorno de Laboratorio
+## Entorno del Laboratorio
 
-### Hardware requerido
+### Hardware Mínimo
 
-| Componente | Requisito | Motivo |
-|---|---|---|
-| Equipo | PC o laptop con Windows 10/11, macOS o sistema compatible con un navegador moderno | La actividad se realiza desde la interfaz web; no requiere una estación de trabajo especializada. |
-| Procesador y memoria | Capacidad suficiente para ejecutar de forma fluida el navegador y una aplicación adicional para notas/documentos | No se ejecutan modelos de IA localmente. |
-| Pantalla | Resolución recomendada de **1280 × 768 o superior** | Permite visualizar simultáneamente la conversación y las instrucciones del laboratorio. |
-| Teclado y mouse/touchpad | Funcionales | Necesarios para redactar, editar y comparar prompts y respuestas. |
-| Conexión de red | Internet estable | Copilot Chat funciona como servicio en línea. |
-| Audio | No requerido | Ninguna tarea depende de entrada o salida de audio. |
+Equipo con navegador e Internet.
 
-> **Nota:** no se requiere GPU dedicada, máquina virtual, servidor, teléfono móvil ni infraestructura local adicional.
+### Software Requerido
 
-### Software requerido
+Microsoft 365 Copilot Chat y navegador web.
 
-| Software/servicio | Requisito | Uso durante la actividad |
-|---|---|---|
-| Microsoft 365 Copilot Chat | **Licenciamiento Básico** y sesión corporativa habilitada | Ejecutar o visualizar los prompts y respuestas de la actividad. |
-| Microsoft Edge o Google Chrome | Versión vigente | Acceder a Copilot Chat y trabajar con la interfaz web. |
-| Aplicación para evidencias | Bloc de notas, Word u otra aplicación autorizada por el instructor | Registrar prompts, respuestas, comparaciones, riesgos y conclusiones. |
-| Visor/aplicación de archivos | Solo cuando el ejercicio incluya un archivo de práctica | Abrir la fuente original y contrastarla con la respuesta de Copilot. |
+### Configuración Inicial
 
-No instales extensiones, complementos, herramientas de terceros ni software adicional para completar esta actividad. No se utilizan Power Automate, Copilot Studio, APIs ni código.
-
-### Configuración inicial
-
-1. Inicia el equipo y confirma que tienes conexión a Internet.
-2. Abre **Microsoft Edge** o **Google Chrome**.
-3. Inicia sesión únicamente con la **cuenta corporativa asignada o autorizada para el curso**.
-4. Accede a **Microsoft 365 Copilot Chat** desde el portal autorizado por tu organización.
-5. Confirma que la sesión corresponde a la cuenta correcta antes de introducir cualquier información.
-6. Inicia una **conversación nueva** para evitar que mensajes de actividades anteriores influyan en los resultados.
-7. Comprueba que puedes escribir un mensaje en el cuadro de conversación. No envíes todavía información real de negocio.
-8. Abre la aplicación que utilizarás para registrar evidencias y crea un documento nuevo con el nombre de la actividad.
-9. Si la actividad utiliza un archivo proporcionado por el instructor, guárdalo en una ubicación conocida y **ábrelo primero para comprobar que es el archivo correcto**. No cargues archivos personales ni corporativos distintos de los autorizados para la práctica.
-10. Prepara dos áreas de trabajo: una con estas instrucciones y otra con Copilot Chat. Puedes utilizar ventanas lado a lado o pestañas independientes.
-11. Antes de comenzar, verifica este control:
-   - [ ] Puedo acceder a Copilot Chat.
-   - [ ] Estoy utilizando la cuenta autorizada.
-   - [ ] Puedo iniciar una conversación nueva.
-   - [ ] Tengo abierto el documento para registrar evidencias.
-   - [ ] Tengo disponible el archivo de práctica, si esta actividad lo requiere.
-   - [ ] No utilizaré datos sensibles, credenciales ni información restringida.
-
-> ⚠️ **Importante:** si un prompt de ejemplo contiene nombres, cifras, clientes, empleados u otros datos, trátalos como datos ficticios de capacitación. No los sustituyas por información confidencial de tu organización.
-
-## Instrucciones Paso a Paso
+Utilice una conversación nueva o reinicie el contexto entre variantes cuando sea posible.
 
 ---
 
-### Paso 1: Comprender la tarea controlada
+## Paso 1: Zero-shot
 
-**Objetivo:** Observar y analizar este momento de la demostración.
+### Objetivo
 
-**Instrucciones:**
+Resolver la tarea sin proporcionar ejemplos.
 
-1. Lee la tarea que se utilizará en las tres pruebas.
-2. Anota el criterio de comparación: precisión, consistencia, formato y esfuerzo.
+### Instrucciones
 
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 4 minutos
-
----
-
-### Paso 2: Observar la prueba zero-shot
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Observa el prompt sin ejemplos.
-2. Registra fortalezas y debilidades de la salida.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 7 minutos
-
----
-
-### Paso 3: Observar la prueba one-shot
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Observa cómo se incorpora un único ejemplo.
-2. Identifica qué aspecto de la respuesta cambia gracias al ejemplo.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 7 minutos
-
----
-
-### Paso 4: Observar la prueba few-shot
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Observa cómo se incorporan varios ejemplos.
-2. Compara la consistencia y el patrón de salida con las pruebas anteriores.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 8 minutos
-
----
-
-### Paso 5: Aplicar formato y restricciones
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Observa cómo se solicita una tabla, longitud máxima, tono y campos obligatorios.
-2. Identifica qué restricciones realmente mejoran la salida y cuáles podrían limitarla demasiado.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 8 minutos
-
----
-
-### Paso 6: Comparar y decidir
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Completa una tabla comparativa entre zero-shot, one-shot y few-shot.
-2. Escribe cuándo usarías cada enfoque en tu trabajo y qué nivel de revisión mantendrías.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 8 minutos
-
-## Prompt de referencia
+1. Utilice estos datos ficticios:
 
 ```text
-Resuelve la tarea siguiendo exactamente el patrón de los ejemplos proporcionados.
-Si un dato no está disponible, indícalo expresamente en lugar de inferirlo.
-Entrega el resultado en el formato solicitado.
+Incidencia: retraso en entrega de reporte mensual.
+Impacto: el comité no contará con la versión final antes de su reunión.
+Estado: análisis completado; falta validar dos cifras.
+Acción siguiente: revisión con Finanzas.
 ```
 
-> Sustituye los campos de ejemplo únicamente con información ficticia, anonimizada o autorizada cuando reutilices este patrón.
+2. Envíe:
 
-## Resultado esperado
+```text
+Convierte la información en una actualización ejecutiva.
 
-Al finalizar la demostración tendrás notas suficientes para describir el procedimiento observado, identificar buenas prácticas, reconocer riesgos y explicar qué elementos requieren criterio o verificación humana.
+Formato:
+- Situación
+- Impacto
+- Estado
+- Siguiente acción
 
-## Verificación Final
+Máximo 80 palabras.
+No inventes responsables, fechas ni cifras.
+```
 
-- [ ] Puedo explicar el objetivo de la actividad y el flujo seguido.
-- [ ] Distinguí hechos sustentados, supuestos y elementos por verificar.
-- [ ] No utilicé datos sensibles, confidenciales o no autorizados.
-- [ ] Verifiqué los elementos relevantes antes de considerar utilizable la salida.
-- [ ] Conservé al menos un patrón, prompt o criterio reutilizable.
+3. Guarde la respuesta como **Versión A**.
 
-## Solución de problemas
+### Salida Esperada
 
-### Copilot responde de forma demasiado general
+Una actualización ejecutiva con las cuatro secciones solicitadas.
 
-**Síntomas:** La respuesta podría aplicarse a cualquier persona o situación y no refleja el contexto esperado.
+### Verificación
 
-**Causa probable:** El prompt no contiene suficiente objetivo, contexto, audiencia o formato de salida.
+- Respeta la estructura.
+- No agrega datos inexistentes.
+- Se mantiene dentro de una extensión breve.
 
-**Solución:**
-1. Agrega únicamente el contexto necesario para comprender la tarea.
-2. Especifica la audiencia y el formato esperado.
-3. Añade restricciones claras, por ejemplo: "No inventes datos" o "Indica No disponible si la fuente no contiene la respuesta".
-4. No agregues información sensible solo para hacer la respuesta más específica.
+---
 
-### Copilot presenta información que no puedes comprobar
+## Paso 2: One-shot
 
-**Síntomas:** Aparecen cifras, fechas, nombres, causas o conclusiones que no estaban en la información proporcionada.
+### Objetivo
 
-**Solución:**
-1. Detén el uso de esa parte de la respuesta.
-2. Contrasta el dato contra la fuente original o una fuente autorizada.
-3. Reformula el prompt para limitar la respuesta a la información disponible.
-4. Si no existe evidencia, conserva el elemento como "No verificado" o elimínalo del resultado final.
+Mostrar a Copilot un ejemplo del patrón esperado.
 
-### No aparece una función esperada en Copilot Chat
+### Instrucciones
 
-**Solución:**
-1. Confirma que utilizas la cuenta indicada para el curso.
-2. Actualiza la página y vuelve a comprobar la interfaz.
-3. Informa al instructor si la función continúa sin aparecer.
-4. No cambies a servicios o cuentas no autorizadas para completar el ejercicio.
+1. Añada un ejemplo ficticio:
 
-## Limpieza
+```text
+Ejemplo del formato esperado:
 
-1. Guarda únicamente los archivos y notas que el instructor indique conservar.
-2. Cierra documentos de práctica que ya no necesites.
-3. No conserves copias locales de información sensible o no autorizada.
-4. Si continuarás con la siguiente actividad en la misma sesión, mantén abierta la cuenta y los recursos que indique el instructor.
+Situación: El proveedor entregó parcialmente la documentación.
+Impacto: La validación no puede cerrarse.
+Estado: Se revisó la información disponible.
+Siguiente acción: Confirmar los documentos faltantes con el proveedor.
+```
 
-## Resumen
+2. Después del ejemplo, agregue los datos originales y pida:
 
-En esta actividad trabajaste con un patrón de uso controlado de Microsoft 365 Copilot Chat. El objetivo no es aceptar automáticamente una respuesta, sino formular una necesidad con claridad, revisar la salida, comprobar su evidencia y decidir conscientemente qué puede utilizarse.
+```text
+Ahora aplica exactamente esta estructura al siguiente caso.
+No copies el contenido del ejemplo; úsalo únicamente como patrón.
+```
 
-### Conexión con la siguiente actividad
+3. Guarde la respuesta como **Versión B**.
 
-Conserva tus notas y prompts. Las actividades posteriores reutilizan progresivamente los criterios de claridad, contexto, formato, evidencia, privacidad y revisión humana.
+### Salida Esperada
 
-### Recursos adicionales
+Una salida más cercana al patrón mostrado, sin copiar hechos del ejemplo.
 
-| Recurso | Enlace | Relevancia |
-|---|---|---|
-| Microsoft 365 Copilot | https://www.microsoft.com/microsoft-365/copilot | Información general del producto |
-| Microsoft Learn | https://learn.microsoft.com/ | Documentación y aprendizaje oficial |
-| IA responsable de Microsoft | https://www.microsoft.com/ai/responsible-ai | Principios de uso responsable |
+### Verificación
+
+- Mantiene las cuatro etiquetas.
+- No transfiere al nuevo caso el “proveedor” del ejemplo.
+- El texto se ajusta a los datos del nuevo escenario.
+
+---
+
+## Paso 3: Few-shot
+
+### Objetivo
+
+Utilizar varios ejemplos para reforzar un patrón de salida.
+
+### Instrucciones
+
+1. Proporcione dos ejemplos breves adicionales, cada uno con situaciones diferentes.
+2. Indique:
+
+```text
+Los ejemplos muestran únicamente el patrón de redacción.
+No reutilices hechos, nombres ni circunstancias de los ejemplos.
+
+Genera la actualización del caso original con:
+- una frase por sección;
+- lenguaje ejecutivo;
+- máximo 70 palabras;
+- sin recomendaciones que no estén sustentadas.
+```
+
+3. Guarde la respuesta como **Versión C**.
+
+### Salida Esperada
+
+Una salida consistente con el patrón y con menor variación de estilo.
+
+### Verificación
+
+- La salida respeta una frase por sección.
+- No copia hechos de los ejemplos.
+- Mantiene la información original.
+
+---
+
+## Paso 4: Comparar y decidir cuándo usar ejemplos
+
+### Objetivo
+
+Determinar si los ejemplos agregaron valor real.
+
+### Instrucciones
+
+1. Compare A, B y C mediante esta tabla:
+
+| Criterio | A | B | C |
+|---|---|---|---|
+| Formato correcto | | | |
+| Tono consistente | | | |
+| Información sustentada | | | |
+| Supuestos introducidos | | | |
+| Esfuerzo para construir el prompt | | | |
+
+2. Concluya:
+   - zero-shot es suficiente cuando la instrucción ya define claramente la salida;
+   - one-shot puede ayudar cuando se desea un patrón específico;
+   - few-shot puede ser útil cuando la consistencia entre varias salidas importa.
+
+### Salida Esperada
+
+Una comparación práctica de las tres técnicas.
+
+### Verificación
+
+- El participante distingue las tres técnicas.
+- Puede justificar cuál usaría según la tarea.
+- No concluye automáticamente que few-shot siempre sea necesario.
+
+---

@@ -1,285 +1,204 @@
-# Demostración guiada 1.2. Semáforo de riesgos: clasificar solicitudes seguras, condicionadas y no recomendadas; anonimizar datos y reescribir prompts para reducir exposición.
+# Demostración guiada 1.2. Semáforo de riesgos: clasificar solicitudes seguras, condicionadas y no recomendadas; anonimizar datos y reescribir prompts para reducir exposición
 
 ## Metadatos
 
-| Campo | Detalle |
+| Campo | Valor |
 |---|---|
 | Duración | 38 minutos |
-| Complejidad | Fácil |
-| Nivel Bloom | Aplicar |
-| Plataforma | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Modalidad | Demostración guiada por el instructor |
+| Modalidad | Demostración guiada |
+| Complejidad | Básica |
+| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
+| Capítulo | 1 |
+| Resultado principal | Clasificar solicitudes por riesgo y reescribirlas reduciendo exposición de información |
 
 ## Descripción General
 
-En esta demostración observarás un flujo de trabajo completo en Microsoft 365 Copilot Chat. El instructor ejecutará el procedimiento mientras tú analizas las decisiones, registras evidencias y extraes un patrón que podrás reutilizar posteriormente.
-
-> ℹ️ **Nota:** Esta actividad es una demostración realizada por el instructor. El instructor ejecutará los pasos en pantalla mientras tú observas, tomas notas y analizas el procedimiento. No necesitas reproducir cada acción durante la demostración.
+La demostración introduce un criterio práctico de decisión antes de enviar información a una herramienta generativa. El instructor utiliza un “semáforo” con tres niveles: verde, amarillo y rojo. Los participantes observan cómo una tarea puede conservar su objetivo de negocio aun cuando se eliminen identificadores, cifras sensibles o detalles innecesarios.
 
 ## Objetivos de Aprendizaje
 
-Al completar esta actividad serás capaz de:
-
-- [ ] Reconocer y aplicar el procedimiento central de la actividad.
-- [ ] Distinguir información sustentada, supuestos y elementos que requieren verificación.
-- [ ] Aplicar criterios de privacidad, seguridad y revisión humana antes de utilizar una salida.
-- [ ] Conservar un patrón reutilizable para futuras tareas de productividad.
+- Diferenciar solicitudes de bajo, medio y alto riesgo.
+- Identificar información que no es necesaria para resolver una tarea.
+- Anonimizar datos antes de utilizarlos en un prompt.
+- Reformular solicitudes para minimizar exposición.
+- Reconocer situaciones en las que conviene detenerse y consultar políticas internas.
 
 ## Prerrequisitos
 
-### Conocimientos previos
+### Conocimiento Requerido
 
-Antes de iniciar, debes poder:
-
-- Reconocer qué es una instrucción o prompt y distinguirla de la respuesta generada por Copilot.
-- Identificar que una respuesta generada por IA puede contener errores, omisiones o información no sustentada y que requiere revisión humana.
-- Aplicar la regla del curso de no compartir información confidencial, credenciales, datos personales de terceros ni información restringida.
-- Manejar funciones básicas de un navegador: abrir una pestaña, iniciar sesión, copiar y pegar texto y descargar o seleccionar un archivo cuando corresponda.
-- Comprender los contenidos previos requeridos para esta actividad: Conceptos de IA generativa, capacidades y límites de Copilot Chat, alucinaciones, privacidad y uso responsable.
-- No se requieren conocimientos de programación, APIs, administración de Microsoft 365 ni construcción de agentes.
-
-### Acceso y recursos
-
-| Elemento | Requisito para esta actividad |
+| Concepto | Nivel |
 |---|---|
-| Cuenta de usuario | Cuenta corporativa habilitada para **Microsoft 365 Copilot Chat (Licenciamiento Básico)**. No se requiere licencia Microsoft 365 Copilot Premium. |
-| Acceso | Poder iniciar sesión en el portal de Microsoft 365/Copilot autorizado por la organización. |
-| Navegador | Microsoft Edge o Google Chrome en una versión vigente y con JavaScript y cookies habilitados para los servicios de Microsoft 365. |
-| Conectividad | Acceso estable a Internet y a los dominios de Microsoft 365 permitidos por la organización. |
-| Material de actividad | Hoja o documento para registrar oportunidades, riesgos, observaciones y evidencias. |
-| Datos | Utiliza exclusivamente información ficticia, anonimizada, pública o expresamente autorizada para capacitación. |
-| Evidencias | Conserva los prompts, respuestas, observaciones y validaciones solicitadas en cada paso. |
+| Uso básico de Copilot Chat | Básico |
+| Identificación básica de información sensible | Básico |
+| Revisión humana | Básico |
 
-Durante la demostración no necesitas ejecutar los prompts al mismo tiempo que el instructor; debes observar, comparar resultados y registrar los hallazgos solicitados.
+### Acceso Requerido
 
-> **Antes de continuar:** si no puedes abrir Copilot Chat, iniciar una conversación nueva o utilizar el recurso indicado, informa al instructor antes de comenzar la actividad.
+- Cuenta corporativa con Microsoft 365 Copilot Chat (Licenciamiento Básico).
+- Navegador e Internet.
 
-## Entorno de Laboratorio
+## Entorno del Laboratorio
 
-### Hardware requerido
+### Hardware Mínimo
 
-| Componente | Requisito | Motivo |
-|---|---|---|
-| Equipo | PC o laptop con Windows 10/11, macOS o sistema compatible con un navegador moderno | La actividad se realiza desde la interfaz web; no requiere una estación de trabajo especializada. |
-| Procesador y memoria | Capacidad suficiente para ejecutar de forma fluida el navegador y una aplicación adicional para notas/documentos | No se ejecutan modelos de IA localmente. |
-| Pantalla | Resolución recomendada de **1280 × 768 o superior** | Permite visualizar simultáneamente la conversación y las instrucciones del laboratorio. |
-| Teclado y mouse/touchpad | Funcionales | Necesarios para redactar, editar y comparar prompts y respuestas. |
-| Conexión de red | Internet estable | Copilot Chat funciona como servicio en línea. |
-| Audio | No requerido | Ninguna tarea depende de entrada o salida de audio. |
+Equipo con navegador e Internet. El temario no establece requisitos adicionales.
 
-> **Nota:** no se requiere GPU dedicada, máquina virtual, servidor, teléfono móvil ni infraestructura local adicional.
+### Software Requerido
 
-### Software requerido
+| Software / servicio | Requisito |
+|---|---|
+| Microsoft 365 Copilot Chat | Licenciamiento Básico |
+| Navegador web | Acceso corporativo |
 
-| Software/servicio | Requisito | Uso durante la actividad |
-|---|---|---|
-| Microsoft 365 Copilot Chat | **Licenciamiento Básico** y sesión corporativa habilitada | Ejecutar o visualizar los prompts y respuestas de la actividad. |
-| Microsoft Edge o Google Chrome | Versión vigente | Acceder a Copilot Chat y trabajar con la interfaz web. |
-| Aplicación para evidencias | Bloc de notas, Word u otra aplicación autorizada por el instructor | Registrar prompts, respuestas, comparaciones, riesgos y conclusiones. |
-| Visor/aplicación de archivos | Solo cuando el ejercicio incluya un archivo de práctica | Abrir la fuente original y contrastarla con la respuesta de Copilot. |
+### Configuración Inicial
 
-No instales extensiones, complementos, herramientas de terceros ni software adicional para completar esta actividad. No se utilizan Power Automate, Copilot Studio, APIs ni código.
+Prepare tres etiquetas visibles: **Verde**, **Amarillo** y **Rojo**.
 
-### Configuración inicial
+Definición didáctica para la actividad:
 
-1. Inicia el equipo y confirma que tienes conexión a Internet.
-2. Abre **Microsoft Edge** o **Google Chrome**.
-3. Inicia sesión únicamente con la **cuenta corporativa asignada o autorizada para el curso**.
-4. Accede a **Microsoft 365 Copilot Chat** desde el portal autorizado por tu organización.
-5. Confirma que la sesión corresponde a la cuenta correcta antes de introducir cualquier información.
-6. Inicia una **conversación nueva** para evitar que mensajes de actividades anteriores influyan en los resultados.
-7. Comprueba que puedes escribir un mensaje en el cuadro de conversación. No envíes todavía información real de negocio.
-8. Abre la aplicación que utilizarás para registrar evidencias y crea un documento nuevo con el nombre de la actividad.
-9. Si la actividad utiliza un archivo proporcionado por el instructor, guárdalo en una ubicación conocida y **ábrelo primero para comprobar que es el archivo correcto**. No cargues archivos personales ni corporativos distintos de los autorizados para la práctica.
-10. Prepara dos áreas de trabajo: una con estas instrucciones y otra con Copilot Chat. Puedes utilizar ventanas lado a lado o pestañas independientes.
-11. Antes de comenzar, verifica este control:
-   - [ ] Puedo acceder a Copilot Chat.
-   - [ ] Estoy utilizando la cuenta autorizada.
-   - [ ] Puedo iniciar una conversación nueva.
-   - [ ] Tengo abierto el documento para registrar evidencias.
-   - [ ] Tengo disponible el archivo de práctica, si esta actividad lo requiere.
-   - [ ] No utilizaré datos sensibles, credenciales ni información restringida.
-
-> ⚠️ **Importante:** si un prompt de ejemplo contiene nombres, cifras, clientes, empleados u otros datos, trátalos como datos ficticios de capacitación. No los sustituyas por información confidencial de tu organización.
-
-## Instrucciones Paso a Paso
+- **Verde:** información de bajo riesgo o ya preparada para uso interno autorizado.
+- **Amarillo:** la tarea puede realizarse, pero primero deben eliminarse o generalizarse datos innecesarios y verificarse políticas.
+- **Rojo:** contiene datos cuya exposición no está justificada o requiere autorización/política específica antes de utilizarse.
 
 ---
 
-### Paso 1: Preparar el semáforo de riesgos
+## Paso 1: Clasificar solicitudes
 
-**Objetivo:** Observar y analizar este momento de la demostración.
+### Objetivo
 
-**Instrucciones:**
+Aplicar el semáforo a solicitudes realistas de distintas áreas de negocio.
 
-1. Crea tres categorías en tus notas: Verde, Amarillo y Rojo.
-2. Asocia Verde con solicitudes de bajo riesgo, Amarillo con solicitudes condicionadas y Rojo con solicitudes que no deben ejecutarse con los datos planteados.
+### Instrucciones
 
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
+1. Presente una solicitud por vez.
+2. Pida a los participantes clasificarla antes de explicar la respuesta.
 
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 5 minutos
-
----
-
-### Paso 2: Clasificar solicitudes de ejemplo
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Observa los casos presentados por el instructor.
-2. Para cada caso decide primero tu clasificación y después compárala con la explicación del instructor.
-3. Anota el dato o condición que determina el nivel de riesgo.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 8 minutos
-
----
-
-### Paso 3: Detectar información innecesaria
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Identifica qué datos personales, confidenciales o identificadores no son necesarios para lograr el objetivo.
-2. Anota qué campos podrían eliminarse, generalizarse o sustituirse por datos ficticios.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 6 minutos
-
----
-
-### Paso 4: Observar la anonimización
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Compara el texto original con la versión anonimizada.
-2. Identifica qué información se conserva para mantener el contexto útil.
-3. Confirma que la versión modificada ya no exponga información innecesaria.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 7 minutos
-
----
-
-### Paso 5: Observar la reescritura del prompt
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Analiza cómo el instructor modifica el prompt para pedir el mismo resultado con menos exposición.
-2. Identifica restricciones añadidas para evitar inferencias o contenido no autorizado.
-3. Anota un patrón de redacción que puedas reutilizar.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 7 minutos
-
----
-
-### Paso 6: Cerrar con una decisión de uso
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Selecciona un ejemplo Verde, uno Amarillo y uno Rojo.
-2. Explica en una frase qué harías antes de usar Copilot en cada caso.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 5 minutos
-
-## Prompt de referencia
+**Caso A**
 
 ```text
-Revisa esta solicitud antes de responder. Indica qué información es innecesariamente sensible, cómo podría anonimizarse y propone una versión del prompt que reduzca la exposición manteniendo el objetivo.
+Crea cinco opciones de asunto para un correo interno que invite al personal a una sesión de capacitación sobre servicio al cliente.
 ```
 
-> Sustituye los campos de ejemplo únicamente con información ficticia, anonimizada o autorizada cuando reutilices este patrón.
+**Caso B**
 
-## Resultado esperado
+```text
+Ayúdame a mejorar la redacción de este seguimiento de cobranza.
+Cliente: Empresa Delta.
+Saldo vencido: 248,700.
+Contacto: Laura Hernández.
+Teléfono: 55-0000-0000.
+Correo: laura@example.com.
+```
 
-Al finalizar la demostración tendrás notas suficientes para describir el procedimiento observado, identificar buenas prácticas, reconocer riesgos y explicar qué elementos requieren criterio o verificación humana.
+**Caso C**
 
-## Verificación Final
+```text
+Analiza esta lista de empleados con nombre, domicilio, número de identificación, salario, evaluación de desempeño y observaciones médicas. Indica quién debería ser despedido.
+```
 
-- [ ] Puedo explicar el objetivo de la actividad y el flujo seguido.
-- [ ] Distinguí hechos sustentados, supuestos y elementos por verificar.
-- [ ] No utilicé datos sensibles, confidenciales o no autorizados.
-- [ ] Verifiqué los elementos relevantes antes de considerar utilizable la salida.
-- [ ] Conservé al menos un patrón, prompt o criterio reutilizable.
+3. Clasifique didácticamente:
+   - Caso A: verde.
+   - Caso B: amarillo; la tarea puede reformularse sin datos identificables ni cifras exactas si no son necesarias.
+   - Caso C: rojo para esta práctica; contiene datos personales/sensibles y además delega una decisión laboral de alto impacto.
 
-## Solución de problemas
+4. Explique que el semáforo es un recurso didáctico y no sustituye las políticas de la organización.
 
-### Copilot responde de forma demasiado general
+### Salida Esperada
 
-**Síntomas:** La respuesta podría aplicarse a cualquier persona o situación y no refleja el contexto esperado.
+Los participantes distinguen que el riesgo depende tanto de la información suministrada como de la decisión que se pretende delegar.
 
-**Causa probable:** El prompt no contiene suficiente objetivo, contexto, audiencia o formato de salida.
+### Verificación
 
-**Solución:**
-1. Agrega únicamente el contexto necesario para comprender la tarea.
-2. Especifica la audiencia y el formato esperado.
-3. Añade restricciones claras, por ejemplo: "No inventes datos" o "Indica No disponible si la fuente no contiene la respuesta".
-4. No agregues información sensible solo para hacer la respuesta más específica.
+- Se clasificaron los tres casos.
+- Se justificó la clasificación.
+- Se identificaron datos innecesarios en los casos B y C.
+- Se reconoció que ciertas decisiones no deben delegarse automáticamente.
 
-### Copilot presenta información que no puedes comprobar
+---
 
-**Síntomas:** Aparecen cifras, fechas, nombres, causas o conclusiones que no estaban en la información proporcionada.
+## Paso 2: Anonimizar una solicitud condicionada
 
-**Solución:**
-1. Detén el uso de esa parte de la respuesta.
-2. Contrasta el dato contra la fuente original o una fuente autorizada.
-3. Reformula el prompt para limitar la respuesta a la información disponible.
-4. Si no existe evidencia, conserva el elemento como "No verificado" o elimínalo del resultado final.
+### Objetivo
 
-### No aparece una función esperada en Copilot Chat
+Conservar el valor de la tarea reduciendo la cantidad de información expuesta.
 
-**Solución:**
-1. Confirma que utilizas la cuenta indicada para el curso.
-2. Actualiza la página y vuelve a comprobar la interfaz.
-3. Informa al instructor si la función continúa sin aparecer.
-4. No cambies a servicios o cuentas no autorizadas para completar el ejercicio.
+### Instrucciones
 
-## Limpieza
+1. Compare la versión original del caso B con esta versión anonimizada:
 
-1. Guarda únicamente los archivos y notas que el instructor indique conservar.
-2. Cierra documentos de práctica que ya no necesites.
-3. No conserves copias locales de información sensible o no autorizada.
-4. Si continuarás con la siguiente actividad en la misma sesión, mantén abierta la cuenta y los recursos que indique el instructor.
+```text
+Ayúdame a mejorar la redacción de un correo de seguimiento de cobranza.
 
-## Resumen
+Contexto:
+- Es un cliente empresarial.
+- Existe un saldo vencido.
+- Ya se envió un primer recordatorio.
+- Quiero mantener un tono profesional y colaborativo.
 
-En esta actividad trabajaste con un patrón de uso controlado de Microsoft 365 Copilot Chat. El objetivo no es aceptar automáticamente una respuesta, sino formular una necesidad con claridad, revisar la salida, comprobar su evidencia y decidir conscientemente qué puede utilizarse.
+Genera:
+- asunto;
+- cuerpo del mensaje;
+- cierre;
+- una versión de máximo 130 palabras.
 
-### Conexión con la siguiente actividad
+No inventes fechas, compromisos, importes ni consecuencias.
+Utiliza los marcadores [CLIENTE], [SALDO] y [FECHA] donde sea necesario.
+```
 
-Conserva tus notas y prompts. Las actividades posteriores reutilizan progresivamente los criterios de claridad, contexto, formato, evidencia, privacidad y revisión humana.
+2. Envíe el prompt.
+3. Muestre que el objetivo puede lograrse sin nombre, teléfono, correo ni importe real.
+4. Explique que los marcadores se reemplazan fuera de la conversación, cuando corresponda.
 
-### Recursos adicionales
+### Salida Esperada
 
-| Recurso | Enlace | Relevancia |
-|---|---|---|
-| Microsoft 365 Copilot | https://www.microsoft.com/microsoft-365/copilot | Información general del producto |
-| Microsoft Learn | https://learn.microsoft.com/ | Documentación y aprendizaje oficial |
-| IA responsable de Microsoft | https://www.microsoft.com/ai/responsible-ai | Principios de uso responsable |
+Un borrador reutilizable que no dependa de datos identificables.
+
+### Verificación
+
+- No aparecen datos reales de personas.
+- El texto conserva la intención del seguimiento.
+- Los valores sensibles se sustituyen por marcadores.
+- La respuesta no inventa amenazas, fechas ni compromisos.
+
+---
+
+## Paso 3: Reescribir una solicitud de alto riesgo
+
+### Objetivo
+
+Transformar una petición improcedente en una actividad de apoyo que conserve revisión humana.
+
+### Instrucciones
+
+1. No utilice datos reales.
+2. Sustituya la petición del caso C por una solicitud de apoyo no decisoria:
+
+```text
+Ayúdame a crear una lista de criterios neutrales para que un responsable de Recursos Humanos revise de forma consistente un proceso de desempeño.
+
+Los criterios deben centrarse en:
+- cumplimiento de objetivos previamente definidos;
+- evidencia documentada;
+- consistencia en el periodo evaluado;
+- acciones de mejora;
+- información que debe validar una persona responsable.
+
+No evalúes a ningún empleado y no recomiendes decisiones laborales.
+```
+
+3. Revise la respuesta.
+4. Identifique qué elementos siguen requiriendo política, contexto organizacional y criterio humano.
+
+### Salida Esperada
+
+Una lista de criterios de revisión, no una decisión sobre personas.
+
+### Verificación
+
+- La herramienta no selecciona ni clasifica empleados.
+- La salida se limita a criterios generales.
+- Se conserva una etapa explícita de revisión humana.
+- El participante puede explicar por qué la segunda formulación reduce el riesgo.
+
+---

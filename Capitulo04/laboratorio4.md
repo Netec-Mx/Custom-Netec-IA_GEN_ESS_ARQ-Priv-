@@ -2,286 +2,326 @@
 
 ## Metadatos
 
-| Campo | Detalle |
+| Campo | Valor |
 |---|---|
 | Duración | 71 minutos |
-| Complejidad | Alta |
-| Nivel Bloom | Crear |
-| Plataforma | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Modalidad | Laboratorio práctico individual |
+| Modalidad | Laboratorio integrador |
+| Complejidad | Intermedia |
+| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
+| Capítulo | 4 |
+| Resultado principal | Flujo completo y reusable: necesidad → prompt → resultado → validación → control → biblioteca |
 
 ## Descripción General
 
-En este laboratorio trabajarás directamente en Microsoft 365 Copilot Chat para resolver una situación cercana a tu trabajo. Utilizarás únicamente información ficticia, anonimizada o autorizada y documentarás tanto el resultado como los controles de verificación aplicados.
+El laboratorio integra los hábitos trabajados durante el curso. Cada participante selecciona una tarea de su rol, define el resultado deseado, prepara información autorizada, construye y refina un prompt, valida la respuesta, aplica controles de privacidad y guarda el patrón final como recurso reutilizable.
 
 ## Objetivos de Aprendizaje
 
-Al completar esta actividad serás capaz de:
-
-- [ ] Aplicar un procedimiento completo de trabajo con Copilot Chat a una situación de negocio.
-- [ ] Distinguir información sustentada, supuestos y elementos que requieren verificación.
-- [ ] Aplicar criterios de privacidad, seguridad y revisión humana antes de utilizar una salida.
-- [ ] Conservar un patrón reutilizable para futuras tareas de productividad.
+- Resolver una tarea completa con Copilot Chat.
+- Diseñar y refinar un prompt.
+- Trabajar con una fuente o información proporcionada.
+- Validar afirmaciones.
+- Aplicar controles de privacidad.
+- Documentar un prompt reutilizable.
 
 ## Prerrequisitos
 
-### Conocimientos previos
+### Conocimiento Requerido
 
-Antes de iniciar, debes poder:
-
-- Reconocer qué es una instrucción o prompt y distinguirla de la respuesta generada por Copilot.
-- Identificar que una respuesta generada por IA puede contener errores, omisiones o información no sustentada y que requiere revisión humana.
-- Aplicar la regla del curso de no compartir información confidencial, credenciales, datos personales de terceros ni información restringida.
-- Manejar funciones básicas de un navegador: abrir una pestaña, iniciar sesión, copiar y pegar texto y descargar o seleccionar un archivo cuando corresponda.
-- Comprender los contenidos previos requeridos para esta actividad: Uso productivo de Copilot Chat, verificación de respuestas, evaluación de fuentes, privacidad, prompt injection y criterio humano.
-- No se requieren conocimientos de programación, APIs, administración de Microsoft 365 ni construcción de agentes.
-
-### Acceso y recursos
-
-| Elemento | Requisito para esta actividad |
+| Concepto | Nivel |
 |---|---|
-| Cuenta de usuario | Cuenta corporativa habilitada para **Microsoft 365 Copilot Chat (Licenciamiento Básico)**. No se requiere licencia Microsoft 365 Copilot Premium. |
-| Acceso | Poder iniciar sesión en el portal de Microsoft 365/Copilot autorizado por la organización. |
-| Navegador | Microsoft Edge o Google Chrome en una versión vigente y con JavaScript y cookies habilitados para los servicios de Microsoft 365. |
-| Conectividad | Acceso estable a Internet y a los dominios de Microsoft 365 permitidos por la organización. |
-| Material de actividad | Hoja o documento para registrar hallazgos, controles, versión final del prompt y aprendizajes. |
-| Datos | Utiliza exclusivamente información ficticia, anonimizada, pública o expresamente autorizada para capacitación. |
-| Evidencias | Conserva los prompts, respuestas, observaciones y validaciones solicitadas en cada paso. |
+| Prompting estructurado | Intermedio |
+| Validación de respuestas | Intermedio |
+| Manejo responsable de información | Básico–intermedio |
+| Trabajo con archivos o texto fuente | Básico–intermedio |
 
-Debes disponer de acceso individual a Copilot Chat para ejecutar los prompts y completar las evidencias del laboratorio.
+### Acceso Requerido
 
-> **Antes de continuar:** si no puedes abrir Copilot Chat, iniciar una conversación nueva o utilizar el recurso indicado, informa al instructor antes de comenzar la actividad.
+- Microsoft 365 Copilot Chat (Licenciamiento Básico).
+- Navegador e Internet.
+- Archivo de práctica del instructor o contenido ficticio.
+- Documento de notas para biblioteca personal.
 
-## Entorno de Laboratorio
+## Entorno del Laboratorio
 
-### Hardware requerido
+### Hardware Mínimo
 
-| Componente | Requisito | Motivo |
-|---|---|---|
-| Equipo | PC o laptop con Windows 10/11, macOS o sistema compatible con un navegador moderno | La actividad se realiza desde la interfaz web; no requiere una estación de trabajo especializada. |
-| Procesador y memoria | Capacidad suficiente para ejecutar de forma fluida el navegador y una aplicación adicional para notas/documentos | No se ejecutan modelos de IA localmente. |
-| Pantalla | Resolución recomendada de **1280 × 768 o superior** | Permite visualizar simultáneamente la conversación y las instrucciones del laboratorio. |
-| Teclado y mouse/touchpad | Funcionales | Necesarios para redactar, editar y comparar prompts y respuestas. |
-| Conexión de red | Internet estable | Copilot Chat funciona como servicio en línea. |
-| Audio | No requerido | Ninguna tarea depende de entrada o salida de audio. |
+Equipo con navegador e Internet.
 
-> **Nota:** no se requiere GPU dedicada, máquina virtual, servidor, teléfono móvil ni infraestructura local adicional.
+### Software Requerido
 
-### Software requerido
+Microsoft 365 Copilot Chat.
 
-| Software/servicio | Requisito | Uso durante la actividad |
-|---|---|---|
-| Microsoft 365 Copilot Chat | **Licenciamiento Básico** y sesión corporativa habilitada | Ejecutar o visualizar los prompts y respuestas de la actividad. |
-| Microsoft Edge o Google Chrome | Versión vigente | Acceder a Copilot Chat y trabajar con la interfaz web. |
-| Aplicación para evidencias | Bloc de notas, Word u otra aplicación autorizada por el instructor | Registrar prompts, respuestas, comparaciones, riesgos y conclusiones. |
-| Visor/aplicación de archivos | Solo cuando el ejercicio incluya un archivo de práctica | Abrir la fuente original y contrastarla con la respuesta de Copilot. |
+### Configuración Inicial
 
-No instales extensiones, complementos, herramientas de terceros ni software adicional para completar esta actividad. No se utilizan Power Automate, Copilot Studio, APIs ni código.
+Seleccione un escenario por rol:
 
-### Configuración inicial
+| Perfil | Ejemplo de reto |
+|---|---|
+| Administración | Convertir información de seguimiento en reporte ejecutivo |
+| Comercial | Preparar una reunión y adaptar un mensaje para cliente |
+| Finanzas | Transformar observaciones de un reporte en hallazgos y preguntas de validación |
+| Recursos Humanos | Convertir una política proporcionada en comunicación y preguntas frecuentes |
+| Operaciones | Analizar incidencias y preparar una lista de seguimiento |
+| Servicio | Resumir retroalimentación y preparar temas para revisión |
 
-1. Inicia el equipo y confirma que tienes conexión a Internet.
-2. Abre **Microsoft Edge** o **Google Chrome**.
-3. Inicia sesión únicamente con la **cuenta corporativa asignada o autorizada para el curso**.
-4. Accede a **Microsoft 365 Copilot Chat** desde el portal autorizado por tu organización.
-5. Confirma que la sesión corresponde a la cuenta correcta antes de introducir cualquier información.
-6. Inicia una **conversación nueva** para evitar que mensajes de actividades anteriores influyan en los resultados.
-7. Comprueba que puedes escribir un mensaje en el cuadro de conversación. No envíes todavía información real de negocio.
-8. Abre la aplicación que utilizarás para registrar evidencias y crea un documento nuevo con el nombre de la actividad.
-9. Si la actividad utiliza un archivo proporcionado por el instructor, guárdalo en una ubicación conocida y **ábrelo primero para comprobar que es el archivo correcto**. No cargues archivos personales ni corporativos distintos de los autorizados para la práctica.
-10. Prepara dos áreas de trabajo: una con estas instrucciones y otra con Copilot Chat. Puedes utilizar ventanas lado a lado o pestañas independientes.
-11. Antes de comenzar, verifica este control:
-   - [ ] Puedo acceder a Copilot Chat.
-   - [ ] Estoy utilizando la cuenta autorizada.
-   - [ ] Puedo iniciar una conversación nueva.
-   - [ ] Tengo abierto el documento para registrar evidencias.
-   - [ ] Tengo disponible el archivo de práctica, si esta actividad lo requiere.
-   - [ ] No utilizaré datos sensibles, credenciales ni información restringida.
-
-> ⚠️ **Importante:** si un prompt de ejemplo contiene nombres, cifras, clientes, empleados u otros datos, trátalos como datos ficticios de capacitación. No los sustituyas por información confidencial de tu organización.
-
-## Instrucciones Paso a Paso
+No utilice datos reales sensibles durante el laboratorio.
 
 ---
 
-### Paso 1: Seleccionar y delimitar el reto
+## Paso 1: Definir el reto y el criterio de éxito
 
-**Objetivo:** Completar esta etapa del laboratorio y conservar evidencia de tu trabajo.
+### Objetivo
 
-**Instrucciones:**
+Establecer qué se quiere lograr antes de interactuar con Copilot.
 
-1. Elige una tarea real de tu rol que sea de bajo o medio riesgo.
-2. Representa cualquier dato sensible con información ficticia o anonimizada.
-3. Define objetivo, audiencia, fuente disponible y resultado esperado.
+### Instrucciones
 
-**Resultado esperado:** Tendrás un resultado documentado que podrás utilizar en el siguiente paso y validar al finalizar el laboratorio.
-
-**Verificación:** Confirma que completaste todos los puntos del paso y que puedes explicar por qué el resultado es válido.
-
-> ⏱ **Tiempo estimado:** 10 minutos
-
----
-
-### Paso 2: Diseñar el prompt inicial
-
-**Objetivo:** Completar esta etapa del laboratorio y conservar evidencia de tu trabajo.
-
-**Instrucciones:**
-
-1. Construye el prompt con objetivo, contexto, expectativas, fuente, formato y restricciones.
-2. Incluye una instrucción para no inventar información y señalar ausencias.
-
-**Resultado esperado:** Tendrás un resultado documentado que podrás utilizar en el siguiente paso y validar al finalizar el laboratorio.
-
-**Verificación:** Confirma que completaste todos los puntos del paso y que puedes explicar por qué el resultado es válido.
-
-> ⏱ **Tiempo estimado:** 12 minutos
-
----
-
-### Paso 3: Ejecutar y evaluar críticamente
-
-**Objetivo:** Completar esta etapa del laboratorio y conservar evidencia de tu trabajo.
-
-**Instrucciones:**
-
-1. Ejecuta el prompt.
-2. Clasifica el contenido en sustentado, inferido y por verificar.
-3. Identifica al menos una oportunidad de mejora.
-
-**Resultado esperado:** Tendrás un resultado documentado que podrás utilizar en el siguiente paso y validar al finalizar el laboratorio.
-
-**Verificación:** Confirma que completaste todos los puntos del paso y que puedes explicar por qué el resultado es válido.
-
-> ⏱ **Tiempo estimado:** 12 minutos
-
----
-
-### Paso 4: Refinar y volver a probar
-
-**Objetivo:** Completar esta etapa del laboratorio y conservar evidencia de tu trabajo.
-
-**Instrucciones:**
-
-1. Ajusta el prompt para corregir las debilidades detectadas.
-2. Si aplica, incorpora ejemplo, tono, formato o restricción adicional.
-3. Compara ambas versiones.
-
-**Resultado esperado:** Tendrás un resultado documentado que podrás utilizar en el siguiente paso y validar al finalizar el laboratorio.
-
-**Verificación:** Confirma que completaste todos los puntos del paso y que puedes explicar por qué el resultado es válido.
-
-> ⏱ **Tiempo estimado:** 12 minutos
-
----
-
-### Paso 5: Validar fuentes, privacidad y uso final
-
-**Objetivo:** Completar esta etapa del laboratorio y conservar evidencia de tu trabajo.
-
-**Instrucciones:**
-
-1. Comprueba los hechos relevantes contra la fuente original.
-2. Confirma que no se expusieron datos restringidos.
-3. Decide qué partes son utilizables, cuáles debes editar y cuáles debes descartar.
-
-**Resultado esperado:** Tendrás un resultado documentado que podrás utilizar en el siguiente paso y validar al finalizar el laboratorio.
-
-**Verificación:** Confirma que completaste todos los puntos del paso y que puedes explicar por qué el resultado es válido.
-
-> ⏱ **Tiempo estimado:** 12 minutos
-
----
-
-### Paso 6: Guardar el patrón en tu biblioteca personal
-
-**Objetivo:** Completar esta etapa del laboratorio y conservar evidencia de tu trabajo.
-
-**Instrucciones:**
-
-1. Documenta nombre del prompt, propósito, entradas, variables, restricciones, formato de salida y lista de verificación.
-2. Agrega una nota que indique cuándo NO debes reutilizar el patrón.
-3. Guarda la versión final en el formato indicado por el instructor.
-
-**Resultado esperado:** Tendrás un resultado documentado que podrás utilizar en el siguiente paso y validar al finalizar el laboratorio.
-
-**Verificación:** Confirma que completaste todos los puntos del paso y que puedes explicar por qué el resultado es válido.
-
-> ⏱ **Tiempo estimado:** 13 minutos
-
-## Prompt de referencia
+Complete:
 
 ```text
-Analiza esta propuesta de forma crítica sin tomar la decisión por mí.
-Identifica supuestos, puntos ciegos, contraargumentos, evidencia faltante y riesgos.
-Convierte cada observación en una pregunta o acción de validación.
+Mi rol:
+Tarea:
+Audiencia:
+Resultado final:
+Fuente que utilizaré:
+Qué no debe hacer Copilot:
+Qué revisaré antes de utilizar la salida:
 ```
 
-> Sustituye los campos de ejemplo únicamente con información ficticia, anonimizada o autorizada cuando reutilices este patrón.
+### Salida Esperada
 
-## Resultado esperado
+Una definición concreta del reto.
 
-Al finalizar el laboratorio tendrás un resultado útil y verificable, acompañado de los prompts utilizados, las decisiones de refinamiento y una evidencia clara de los controles de privacidad y validación aplicados.
+### Verificación
 
-## Verificación Final
+- Existe una audiencia.
+- Existe una fuente o conjunto de datos autorizado.
+- Se definen límites.
 
-- [ ] Puedo explicar el objetivo de la actividad y el flujo seguido.
-- [ ] Distinguí hechos sustentados, supuestos y elementos por verificar.
-- [ ] No utilicé datos sensibles, confidenciales o no autorizados.
-- [ ] Verifiqué los elementos relevantes antes de considerar utilizable la salida.
-- [ ] Conservé al menos un patrón, prompt o criterio reutilizable.
+---
 
-## Solución de problemas
+## Paso 2: Revisar privacidad antes de enviar información
 
-### Copilot responde de forma demasiado general
+### Objetivo
 
-**Síntomas:** La respuesta podría aplicarse a cualquier persona o situación y no refleja el contexto esperado.
+Reducir exposición innecesaria.
 
-**Causa probable:** El prompt no contiene suficiente objetivo, contexto, audiencia o formato de salida.
+### Instrucciones
 
-**Solución:**
-1. Agrega únicamente el contexto necesario para comprender la tarea.
-2. Especifica la audiencia y el formato esperado.
-3. Añade restricciones claras, por ejemplo: "No inventes datos" o "Indica No disponible si la fuente no contiene la respuesta".
-4. No agregues información sensible solo para hacer la respuesta más específica.
+1. Revise el contenido.
+2. Pregúntese:
+   - ¿necesito realmente nombres?
+   - ¿necesito importes exactos?
+   - ¿puedo usar datos ficticios o marcadores?
+   - ¿la organización permite utilizar esta información?
+3. Sustituya datos cuando sea posible:
 
-### Copilot presenta información que no puedes comprobar
+```text
+[CLIENTE]
+[PROYECTO]
+[PERSONA]
+[FECHA]
+[IMPORTE]
+```
 
-**Síntomas:** Aparecen cifras, fechas, nombres, causas o conclusiones que no estaban en la información proporcionada.
+4. Si la tarea no puede realizarse sin información cuya utilización debe autorizarse, detenga el laboratorio y utilice el material ficticio del instructor.
 
-**Solución:**
-1. Detén el uso de esa parte de la respuesta.
-2. Contrasta el dato contra la fuente original o una fuente autorizada.
-3. Reformula el prompt para limitar la respuesta a la información disponible.
-4. Si no existe evidencia, conserva el elemento como "No verificado" o elimínalo del resultado final.
+### Salida Esperada
 
-### No aparece una función esperada en Copilot Chat
+Una fuente preparada para práctica con el mínimo de información necesaria.
 
-**Solución:**
-1. Confirma que utilizas la cuenta indicada para el curso.
-2. Actualiza la página y vuelve a comprobar la interfaz.
-3. Informa al instructor si la función continúa sin aparecer.
-4. No cambies a servicios o cuentas no autorizadas para completar el ejercicio.
+### Verificación
 
-## Limpieza
+- Se eliminaron datos innecesarios.
+- No se utilizaron secretos, credenciales o información sensible real.
 
-1. Guarda únicamente los archivos y notas que el instructor indique conservar.
-2. Cierra documentos de práctica que ya no necesites.
-3. No conserves copias locales de información sensible o no autorizada.
-4. Si continuarás con la siguiente actividad en la misma sesión, mantén abierta la cuenta y los recursos que indique el instructor.
+---
 
-## Resumen
+## Paso 3: Construir el prompt versión 1
 
-En esta actividad trabajaste con un patrón de uso controlado de Microsoft 365 Copilot Chat. El objetivo no es aceptar automáticamente una respuesta, sino formular una necesidad con claridad, revisar la salida, comprobar su evidencia y decidir conscientemente qué puede utilizarse.
+### Objetivo
 
-### Conexión con la siguiente actividad
+Crear una primera versión estructurada.
 
-Conserva tus notas y prompts. Las actividades posteriores reutilizan progresivamente los criterios de claridad, contexto, formato, evidencia, privacidad y revisión humana.
+### Instrucciones
 
-### Recursos adicionales
+Use:
 
-| Recurso | Enlace | Relevancia |
-|---|---|---|
-| Microsoft 365 Copilot | https://www.microsoft.com/microsoft-365/copilot | Información general del producto |
-| Microsoft Learn | https://learn.microsoft.com/ | Documentación y aprendizaje oficial |
-| IA responsable de Microsoft | https://www.microsoft.com/ai/responsible-ai | Principios de uso responsable |
+```text
+Objetivo:
+[resultado]
+
+Contexto:
+[rol, audiencia y propósito]
+
+Fuente:
+[texto o archivo autorizado]
+
+Genera:
+[formato]
+
+Restricciones:
+- utiliza únicamente la fuente;
+- no inventes datos;
+- identifica información faltante;
+- [otras restricciones de la tarea].
+```
+
+2. Ejecute.
+3. Registre dos aciertos y dos problemas.
+
+### Salida Esperada
+
+Una primera respuesta evaluable.
+
+### Verificación
+
+- El prompt incluye fuente y formato.
+- La respuesta puede compararse con criterios definidos.
+
+---
+
+## Paso 4: Refinar la respuesta
+
+### Objetivo
+
+Corregir problemas sin perder trazabilidad.
+
+### Instrucciones
+
+Utilice mensajes de seguimiento según corresponda:
+
+```text
+Reduce la respuesta y conserva únicamente los elementos sustentados.
+```
+
+```text
+Adapta el tono para [audiencia] sin cambiar hechos.
+```
+
+```text
+Convierte el resultado en una tabla con las columnas [...]
+```
+
+```text
+Señala qué información falta para completar la tarea sin hacer suposiciones.
+```
+
+### Salida Esperada
+
+Una versión mejor alineada con el propósito.
+
+### Verificación
+
+- Cada refinamiento responde a un problema identificado.
+- No se introdujeron nuevos hechos.
+
+---
+
+## Paso 5: Validar fuentes y contenido
+
+### Objetivo
+
+Comprobar la respuesta de forma sistemática.
+
+### Instrucciones
+
+Envíe:
+
+```text
+Audita tu respuesta contra la fuente.
+
+Crea una tabla:
+Afirmación importante | Evidencia | Sustentada / Inferida / No sustentada
+
+Reglas:
+- Si no existe evidencia suficiente, marca “No sustentada”.
+- No intentes completar vacíos.
+- No uses conocimiento externo.
+```
+
+2. Compruebe manualmente al menos cinco afirmaciones o todas si hay menos de cinco.
+3. Elimine o corrija cualquier elemento no sustentado.
+
+### Salida Esperada
+
+Una tabla de validación y una versión corregida.
+
+### Verificación
+
+- Se realizó comprobación manual.
+- No quedan afirmaciones no sustentadas en la versión final.
+
+---
+
+## Paso 6: Realizar una revisión crítica
+
+### Objetivo
+
+Buscar puntos ciegos antes de cerrar la tarea.
+
+### Instrucciones
+
+Envíe:
+
+```text
+Revisa el resultado final como un crítico constructivo.
+
+Identifica:
+- un supuesto que todavía pueda estar presente;
+- una pregunta que debería hacer antes de utilizarlo;
+- una posible interpretación ambigua;
+- una comprobación final que deba realizar una persona.
+
+No cambies los hechos ni tomes la decisión por mí.
+```
+
+### Salida Esperada
+
+Una lista breve de controles adicionales.
+
+### Verificación
+
+- La herramienta no decide por el participante.
+- Se obtiene al menos una comprobación útil.
+
+---
+
+## Paso 7: Guardar el patrón en la biblioteca personal
+
+### Objetivo
+
+Convertir el aprendizaje en un recurso reusable.
+
+### Instrucciones
+
+Documente:
+
+```text
+Nombre del patrón:
+Cuándo utilizarlo:
+Qué fuente requiere:
+Prompt final:
+Variables que debo reemplazar:
+Qué debo verificar:
+Información que nunca debo incluir:
+Ejemplo de salida aceptable:
+```
+
+2. Elimine del patrón cualquier dato específico usado durante el ejercicio.
+3. Sustituya por marcadores.
+4. Guarde el patrón en su documento personal autorizado.
+
+### Salida Esperada
+
+Un prompt reusable y documentado.
+
+### Verificación
+
+- No contiene datos de la práctica que no deban conservarse.
+- Incluye variables reemplazables.
+- Incluye controles de privacidad y verificación.
+- Puede reutilizarse en una tarea futura.
+
+---

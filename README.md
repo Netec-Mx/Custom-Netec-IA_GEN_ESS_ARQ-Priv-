@@ -1,47 +1,85 @@
+<img src="images/neteclogo (2).png" alt="logo" width="300"/>
+
 # IA Generativa para Usuarios Finales con Microsoft 365 Copilot Chat
 
-Curso práctico para usuarios finales no técnicos orientado al uso productivo, seguro y responsable de la IA generativa mediante Microsoft 365 Copilot Chat. El curso evita programación, APIs, construcción de agentes y arquitecturas. El aprendizaje se centra en comprender capacidades y límites de GenAI, formular mejores prompts, trabajar con información y archivos, validar respuestas y aplicar Copilot Chat a tareas cotidianas de diferentes perfiles de negocio.
+## Plataforma de laboratorios
 
-## Estructura
+Te damos la bienvenida a la **plataforma de laboratorios** del curso **IA Generativa para Usuarios Finales con Microsoft 365 Copilot Chat**.
 
-- `CapituloXX/README.md`: guía de laboratorio por capítulo.
+En este repositorio encontrarás demostraciones guiadas y laboratorios prácticos orientados al uso productivo, seguro y responsable de **Microsoft 365 Copilot Chat (Licenciamiento Básico)**.
+
+Las actividades están organizadas por capítulo y permiten practicar prompting, transformación de contenido, trabajo con archivos, validación de respuestas, seguridad, revisión crítica y resolución de situaciones reales de negocio.
 
 ## Lista de laboratorios
 
-### Capítulo 1
+Cada una de estas actividades está diseñada para ofrecer una experiencia práctica y progresiva. Haz clic en los enlaces para comenzar.
 
-- [Laboratorio 1. Mi mapa de oportunidades y riesgos: identificar tareas de mi rol que puedo apoyar con Copilot Chat y definir controles de uso](Capitulo01/README.md#laboratorio-1-mi-mapa-de-oportunidades-y-riesgos-identificar-tareas-de-mi-rol-que-puedo-apoyar-con-copilot-chat-y-definir-controles-de-uso)
-  - Descripción: Identificar tareas de mi rol que puedo apoyar con Copilot Chat y definir controles de uso.
-  - Duración estimada: 80 min
-- [Demo: Demostración guiada: recorrer Copilot Chat, resolver una necesidad de negocio y comparar una interacción segura frente a una riesgosa](Capitulo01/README.md#demo-demostración-guiada-recorrer-copilot-chat-resolver-una-necesidad-de-negocio-y-comparar-una-interacción-segura-frente-a-una-riesgosa)
-  - Duración estimada: 20 min
+### [Demostración 1.1. Primera conversación controlada](Capitulo01/demostracion1-1.md)
 
-### Capítulo 2
+- **Descripción**: Recorrido inicial por Microsoft 365 Copilot Chat para formular una necesidad de negocio, probar una respuesta e identificar qué partes pueden utilizarse y cuáles requieren verificación.
+- ⏱️ **Duración estimada**: 32 min.
 
-- [Laboratorio 2. Clínica de prompts en Copilot Chat: mejorar solicitudes reales mediante iteración, estructura, zero-shot y few-shot](Capitulo02/README.md#laboratorio-2-clínica-de-prompts-en-copilot-chat-mejorar-solicitudes-reales-mediante-iteración-estructura-zero-shot-y-few-shot)
-  - Descripción: Mejorar solicitudes reales mediante iteración, estructura, zero-shot y few-shot.
-  - Duración estimada: 75 min
-- [Demo: Demostración guiada: resolver el mismo objetivo con un prompt vago, un prompt estructurado y un prompt con ejemplos](Capitulo02/README.md#demo-demostración-guiada-resolver-el-mismo-objetivo-con-un-prompt-vago-un-prompt-estructurado-y-un-prompt-con-ejemplos)
-  - Duración estimada: 20 min
+### [Demostración 1.2. Semáforo de riesgos](Capitulo01/demostracion1-2.md)
 
-### Capítulo 3
+- **Descripción**: Clasificación de solicitudes seguras, condicionadas y no recomendadas; anonimización de información y reformulación de prompts para reducir exposición de datos.
+- ⏱️ **Duración estimada**: 38 min.
 
-- [Laboratorio 3. Trabajo con información en Copilot Chat: resumir, extraer, transformar y verificar un archivo proporcionado por el instructor](Capitulo03/README.md#laboratorio-3-trabajo-con-información-en-copilot-chat-resumir-extraer-transformar-y-verificar-un-archivo-proporcionado-por-el-instructor)
-  - Descripción: Resumir, extraer, transformar y verificar un archivo proporcionado por el instructor.
-  - Duración estimada: 85 min
-- [Demo: Demostración guiada: agregar un archivo, resumirlo, extraer información, transformar la salida y verificarla contra la fuente](Capitulo03/README.md#demo-demostración-guiada-agregar-un-archivo-resumirlo-extraer-información-transformar-la-salida-y-verificarla-contra-la-fuente)
-  - Duración estimada: 20 min
+### [Laboratorio 1. Mi mapa de oportunidades y uso seguro de Microsoft 365 Copilot Chat](Capitulo01/laboratorio1.md)
 
-### Capítulo 4
+- **Descripción**: Identificación de tareas reales del entorno laboral en las que Copilot puede aportar valor, experimentación con instrucciones básicas y evaluación de información permitida, riesgos y elementos que deben verificarse antes de utilizar una respuesta.
+- ⏱️ **Duración estimada**: 77 min.
 
-- [Laboratorio 4. Reto integrador por rol: resolver una tarea real en Copilot Chat, refinar el prompt, validar la respuesta y documentar el patrón final](Capitulo04/README.md#laboratorio-4-reto-integrador-por-rol-resolver-una-tarea-real-en-copilot-chat-refinar-el-prompt-validar-la-respuesta-y-documentar-el-patrón-final)
-  - Descripción: Resolver una tarea real en Copilot Chat, refinar el prompt, validar la respuesta y documentar el patrón final.
-  - Duración estimada: 95 min
-- [Demo: Demostración guiada: auditar una respuesta de Copilot Chat, revisar sus fuentes, identificar riesgos y mejorar el prompt](Capitulo04/README.md#demo-demostración-guiada-auditar-una-respuesta-de-copilot-chat-revisar-sus-fuentes-identificar-riesgos-y-mejorar-el-prompt)
-  - Duración estimada: 20 min
+### [Demostración 2.1. Anatomía del prompt](Capitulo02/demostracion2-1.md)
 
-## Flujo de colaboración
+- **Descripción**: Transformación de solicitudes vagas en prompts estructurados mediante objetivo, contexto, expectativas, fuente, formato, restricciones y tono, comparando cómo cambia la calidad de la respuesta.
+- ⏱️ **Duración estimada**: 35 min.
 
-- Trabajar en `changes_course`.
-- Crear Pull Request hacia `main`.
-- Merge por `Squash and merge`.
+### [Demostración 2.2. Experimento controlado: zero-shot, one-shot y few-shot](Capitulo02/demostracion2-2.md)
+
+- **Descripción**: Resolución de una misma tarea utilizando zero-shot, one-shot y few-shot para observar cómo los ejemplos, formatos y restricciones influyen en la consistencia y utilidad de los resultados.
+- ⏱️ **Duración estimada**: 42 min.
+
+### [Laboratorio 2. Clínica de prompts](Capitulo02/laboratorio2.md)
+
+- **Descripción**: Construcción, prueba y refinamiento de un conjunto de prompts reutilizables para situaciones reales de trabajo, incorporando criterios de calidad, restricciones y mecanismos de verificación.
+- ⏱️ **Duración estimada**: 76 min.
+
+### [Demostración 3.1. Cadena de transformación](Capitulo03/demostracion3-1.md)
+
+- **Descripción**: Transformación de un mismo texto fuente en resumen ejecutivo, correo, tabla y lista de acciones, verificando que cada nueva salida conserve los hechos originales y no agregue información no sustentada.
+- ⏱️ **Duración estimada**: 35 min.
+
+### [Demostración 3.2. Reto de evidencia con archivos](Capitulo03/demostracion3-2.md)
+
+- **Descripción**: Trabajo con un archivo proporcionado en Copilot Chat para extraer información, formular preguntas, solicitar evidencia en la fuente y detectar respuestas que excedan la información disponible.
+- ⏱️ **Duración estimada**: 45 min.
+
+### [Laboratorio 3. Caso de productividad con información](Capitulo03/laboratorio3.md)
+
+- **Descripción**: Resolución de una necesidad de negocio utilizando un archivo, transformación de la salida para diferentes audiencias y validación del resultado contra la fuente original.
+- ⏱️ **Duración estimada**: 73 min.
+
+### [Demostración 4.1. Simulación de conversaciones profesionales](Capitulo04/demostracion4-1.md)
+
+- **Descripción**: Uso de Copilot como interlocutor para ensayar conversaciones con clientes, gerentes, colaboradores o proveedores, practicar respuestas a preguntas y objeciones y obtener retroalimentación antes de una interacción real.
+- ⏱️ **Duración estimada**: 40 min.
+
+### [Demostración 4.2. Challenge my thinking](Capitulo04/demostracion4-2.md)
+
+- **Descripción**: Revisión crítica de una propuesta para descubrir supuestos, puntos ciegos, contraargumentos, información faltante y oportunidades de mejora sin delegar la decisión final a la herramienta.
+- ⏱️ **Duración estimada**: 40 min.
+
+### [Laboratorio 4. Reto integrador por rol](Capitulo04/laboratorio4.md)
+
+- **Descripción**: Resolución de una tarea real de principio a fin: definición de la necesidad, construcción y refinamiento del prompt, validación de fuentes y contenido, aplicación de controles de privacidad y creación de un patrón reutilizable en una biblioteca personal.
+- ⏱️ **Duración estimada**: 71 min.
+
+---
+
+## 📬 **Contacto y más información**
+
+Si tienes alguna pregunta o necesitas más detalles, no dudes en [contactarnos](mailto:soporte@netec.com). También puedes encontrar más recursos en nuestra [página](https://netec.com).
+
+---
+
+¡Gracias por visitar nuestra plataforma! No olvides revisar todas las demostraciones y laboratorios y comenzar tu viaje de aprendizaje hoy mismo.

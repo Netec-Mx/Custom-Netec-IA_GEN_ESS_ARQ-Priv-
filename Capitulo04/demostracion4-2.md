@@ -2,283 +2,187 @@
 
 ## Metadatos
 
-| Campo | Detalle |
+| Campo | Valor |
 |---|---|
 | Duración | 40 minutos |
-| Complejidad | Media |
-| Nivel Bloom | Evaluar |
-| Plataforma | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Modalidad | Demostración guiada por el instructor |
+| Modalidad | Demostración guiada |
+| Complejidad | Intermedia |
+| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
+| Capítulo | 4 |
+| Resultado principal | Utilizar IA para ampliar el análisis sin delegar la decisión |
 
 ## Descripción General
 
-En esta demostración observarás un flujo de trabajo completo en Microsoft 365 Copilot Chat. El instructor ejecutará el procedimiento mientras tú analizas las decisiones, registras evidencias y extraes un patrón que podrás reutilizar posteriormente.
-
-> ℹ️ **Nota:** Esta actividad es una demostración realizada por el instructor. El instructor ejecutará los pasos en pantalla mientras tú observas, tomas notas y analizas el procedimiento. No necesitas reproducir cada acción durante la demostración.
+El instructor presenta una propuesta ficticia y pide a Copilot que la cuestione de manera estructurada. La salida se utiliza para descubrir supuestos, riesgos, información faltante y contraargumentos. La herramienta no decide si la propuesta debe aprobarse.
 
 ## Objetivos de Aprendizaje
 
-Al completar esta actividad serás capaz de:
-
-- [ ] Reconocer y aplicar el procedimiento central de la actividad.
-- [ ] Distinguir información sustentada, supuestos y elementos que requieren verificación.
-- [ ] Aplicar criterios de privacidad, seguridad y revisión humana antes de utilizar una salida.
-- [ ] Conservar un patrón reutilizable para futuras tareas de productividad.
+- Solicitar crítica estructurada.
+- Identificar supuestos y puntos ciegos.
+- Generar contraargumentos.
+- Separar hechos de hipótesis.
+- Mantener la decisión final bajo revisión humana.
 
 ## Prerrequisitos
 
-### Conocimientos previos
+Uso de Copilot Chat y principios de validación.
 
-Antes de iniciar, debes poder:
+### Acceso Requerido
 
-- Reconocer qué es una instrucción o prompt y distinguirla de la respuesta generada por Copilot.
-- Identificar que una respuesta generada por IA puede contener errores, omisiones o información no sustentada y que requiere revisión humana.
-- Aplicar la regla del curso de no compartir información confidencial, credenciales, datos personales de terceros ni información restringida.
-- Manejar funciones básicas de un navegador: abrir una pestaña, iniciar sesión, copiar y pegar texto y descargar o seleccionar un archivo cuando corresponda.
-- Comprender los contenidos previos requeridos para esta actividad: Uso productivo de Copilot Chat, verificación de respuestas, evaluación de fuentes, privacidad, prompt injection y criterio humano.
-- No se requieren conocimientos de programación, APIs, administración de Microsoft 365 ni construcción de agentes.
+Microsoft 365 Copilot Chat.
 
-### Acceso y recursos
+## Entorno del Laboratorio
 
-| Elemento | Requisito para esta actividad |
-|---|---|
-| Cuenta de usuario | Cuenta corporativa habilitada para **Microsoft 365 Copilot Chat (Licenciamiento Básico)**. No se requiere licencia Microsoft 365 Copilot Premium. |
-| Acceso | Poder iniciar sesión en el portal de Microsoft 365/Copilot autorizado por la organización. |
-| Navegador | Microsoft Edge o Google Chrome en una versión vigente y con JavaScript y cookies habilitados para los servicios de Microsoft 365. |
-| Conectividad | Acceso estable a Internet y a los dominios de Microsoft 365 permitidos por la organización. |
-| Material de actividad | Hoja o documento para registrar hallazgos, controles, versión final del prompt y aprendizajes. |
-| Datos | Utiliza exclusivamente información ficticia, anonimizada, pública o expresamente autorizada para capacitación. |
-| Evidencias | Conserva los prompts, respuestas, observaciones y validaciones solicitadas en cada paso. |
+### Hardware Mínimo
 
-Durante la demostración no necesitas ejecutar los prompts al mismo tiempo que el instructor; debes observar, comparar resultados y registrar los hallazgos solicitados.
+Equipo con navegador e Internet.
 
-> **Antes de continuar:** si no puedes abrir Copilot Chat, iniciar una conversación nueva o utilizar el recurso indicado, informa al instructor antes de comenzar la actividad.
+### Software Requerido
 
-## Entorno de Laboratorio
+Microsoft 365 Copilot Chat.
 
-### Hardware requerido
+### Configuración Inicial
 
-| Componente | Requisito | Motivo |
-|---|---|---|
-| Equipo | PC o laptop con Windows 10/11, macOS o sistema compatible con un navegador moderno | La actividad se realiza desde la interfaz web; no requiere una estación de trabajo especializada. |
-| Procesador y memoria | Capacidad suficiente para ejecutar de forma fluida el navegador y una aplicación adicional para notas/documentos | No se ejecutan modelos de IA localmente. |
-| Pantalla | Resolución recomendada de **1280 × 768 o superior** | Permite visualizar simultáneamente la conversación y las instrucciones del laboratorio. |
-| Teclado y mouse/touchpad | Funcionales | Necesarios para redactar, editar y comparar prompts y respuestas. |
-| Conexión de red | Internet estable | Copilot Chat funciona como servicio en línea. |
-| Audio | No requerido | Ninguna tarea depende de entrada o salida de audio. |
-
-> **Nota:** no se requiere GPU dedicada, máquina virtual, servidor, teléfono móvil ni infraestructura local adicional.
-
-### Software requerido
-
-| Software/servicio | Requisito | Uso durante la actividad |
-|---|---|---|
-| Microsoft 365 Copilot Chat | **Licenciamiento Básico** y sesión corporativa habilitada | Ejecutar o visualizar los prompts y respuestas de la actividad. |
-| Microsoft Edge o Google Chrome | Versión vigente | Acceder a Copilot Chat y trabajar con la interfaz web. |
-| Aplicación para evidencias | Bloc de notas, Word u otra aplicación autorizada por el instructor | Registrar prompts, respuestas, comparaciones, riesgos y conclusiones. |
-| Visor/aplicación de archivos | Solo cuando el ejercicio incluya un archivo de práctica | Abrir la fuente original y contrastarla con la respuesta de Copilot. |
-
-No instales extensiones, complementos, herramientas de terceros ni software adicional para completar esta actividad. No se utilizan Power Automate, Copilot Studio, APIs ni código.
-
-### Configuración inicial
-
-1. Inicia el equipo y confirma que tienes conexión a Internet.
-2. Abre **Microsoft Edge** o **Google Chrome**.
-3. Inicia sesión únicamente con la **cuenta corporativa asignada o autorizada para el curso**.
-4. Accede a **Microsoft 365 Copilot Chat** desde el portal autorizado por tu organización.
-5. Confirma que la sesión corresponde a la cuenta correcta antes de introducir cualquier información.
-6. Inicia una **conversación nueva** para evitar que mensajes de actividades anteriores influyan en los resultados.
-7. Comprueba que puedes escribir un mensaje en el cuadro de conversación. No envíes todavía información real de negocio.
-8. Abre la aplicación que utilizarás para registrar evidencias y crea un documento nuevo con el nombre de la actividad.
-9. Si la actividad utiliza un archivo proporcionado por el instructor, guárdalo en una ubicación conocida y **ábrelo primero para comprobar que es el archivo correcto**. No cargues archivos personales ni corporativos distintos de los autorizados para la práctica.
-10. Prepara dos áreas de trabajo: una con estas instrucciones y otra con Copilot Chat. Puedes utilizar ventanas lado a lado o pestañas independientes.
-11. Antes de comenzar, verifica este control:
-   - [ ] Puedo acceder a Copilot Chat.
-   - [ ] Estoy utilizando la cuenta autorizada.
-   - [ ] Puedo iniciar una conversación nueva.
-   - [ ] Tengo abierto el documento para registrar evidencias.
-   - [ ] Tengo disponible el archivo de práctica, si esta actividad lo requiere.
-   - [ ] No utilizaré datos sensibles, credenciales ni información restringida.
-
-> ⚠️ **Importante:** si un prompt de ejemplo contiene nombres, cifras, clientes, empleados u otros datos, trátalos como datos ficticios de capacitación. No los sustituyas por información confidencial de tu organización.
-
-## Instrucciones Paso a Paso
-
----
-
-### Paso 1: Definir la propuesta y las reglas de crítica
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Lee la propuesta ficticia presentada por el instructor.
-2. Identifica objetivo, supuestos conocidos y decisiones que todavía no están tomadas.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 5 minutos
-
----
-
-### Paso 2: Observar el primer desafío
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Analiza cómo Copilot identifica supuestos y preguntas no resueltas.
-2. Marca cuáles están sustentados y cuáles son interpretaciones.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 7 minutos
-
----
-
-### Paso 3: Solicitar contraargumentos
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Observa cómo se piden perspectivas contrarias sin pedir una decisión final.
-2. Anota al menos dos contraargumentos que obligan a reconsiderar la propuesta.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 7 minutos
-
----
-
-### Paso 4: Buscar puntos ciegos
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Observa cómo se exploran riesgos, dependencias, actores afectados y evidencia faltante.
-2. Distingue entre riesgos plausibles y afirmaciones que necesitan datos adicionales.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 7 minutos
-
----
-
-### Paso 5: Convertir la crítica en mejoras
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Observa cómo el instructor transforma observaciones en preguntas, pruebas o acciones de validación.
-2. Evita convertir automáticamente las sugerencias de Copilot en decisiones.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 7 minutos
-
----
-
-### Paso 6: Cerrar con criterio humano
-
-**Objetivo:** Observar y analizar este momento de la demostración.
-
-**Instrucciones:**
-
-1. Resume qué cambió en la propuesta gracias a la revisión.
-2. Escribe dos preguntas que usarías para desafiar tu propio pensamiento en futuras tareas.
-
-**Resultado esperado:** Tendrás notas concretas que te permitan explicar qué hizo el instructor, qué resultado obtuvo y qué debe verificarse.
-
-**Verificación:** Confirma que registraste al menos una observación concreta antes de continuar.
-
-> ⏱ **Tiempo estimado:** 7 minutos
-
-## Prompt de referencia
+Utilice esta propuesta ficticia:
 
 ```text
-Analiza esta propuesta de forma crítica sin tomar la decisión por mí.
-Identifica supuestos, puntos ciegos, contraargumentos, evidencia faltante y riesgos.
-Convierte cada observación en una pregunta o acción de validación.
+Propuesta:
+Reducir la reunión operativa semanal de 60 a 30 minutos.
+Antes de la reunión, cada responsable enviará una actualización breve.
+La reunión se utilizará únicamente para bloqueos y decisiones pendientes.
+
+Objetivo:
+Reducir tiempo de reunión y hacer el seguimiento más enfocado.
+
+Información disponible:
+No se ha probado todavía el nuevo formato.
+No existe una medición formal del tiempo actual dedicado a seguimiento fuera de la reunión.
 ```
 
-> Sustituye los campos de ejemplo únicamente con información ficticia, anonimizada o autorizada cuando reutilices este patrón.
+---
 
-## Resultado esperado
+## Paso 1: Identificar supuestos
 
-Al finalizar la demostración tendrás notas suficientes para describir el procedimiento observado, identificar buenas prácticas, reconocer riesgos y explicar qué elementos requieren criterio o verificación humana.
+### Objetivo
 
-## Verificación Final
+Hacer visibles las premisas implícitas.
 
-- [ ] Puedo explicar el objetivo de la actividad y el flujo seguido.
-- [ ] Distinguí hechos sustentados, supuestos y elementos por verificar.
-- [ ] No utilicé datos sensibles, confidenciales o no autorizados.
-- [ ] Verifiqué los elementos relevantes antes de considerar utilizable la salida.
-- [ ] Conservé al menos un patrón, prompt o criterio reutilizable.
+### Instrucciones
 
-## Solución de problemas
+Envíe:
 
-### Copilot responde de forma demasiado general
+```text
+Analiza la propuesta sin aprobarla ni rechazarla.
 
-**Síntomas:** La respuesta podría aplicarse a cualquier persona o situación y no refleja el contexto esperado.
+Identifica:
+- supuestos;
+- información faltante;
+- riesgos;
+- grupos que podrían verse afectados.
 
-**Causa probable:** El prompt no contiene suficiente objetivo, contexto, audiencia o formato de salida.
+Diferencia claramente lo que proviene del texto de lo que es una hipótesis para investigar.
+```
 
-**Solución:**
-1. Agrega únicamente el contexto necesario para comprender la tarea.
-2. Especifica la audiencia y el formato esperado.
-3. Añade restricciones claras, por ejemplo: "No inventes datos" o "Indica No disponible si la fuente no contiene la respuesta".
-4. No agregues información sensible solo para hacer la respuesta más específica.
+### Salida Esperada
 
-### Copilot presenta información que no puedes comprobar
+Lista de supuestos e información faltante, identificada como hipótesis cuando corresponda.
 
-**Síntomas:** Aparecen cifras, fechas, nombres, causas o conclusiones que no estaban en la información proporcionada.
+### Verificación
 
-**Solución:**
-1. Detén el uso de esa parte de la respuesta.
-2. Contrasta el dato contra la fuente original o una fuente autorizada.
-3. Reformula el prompt para limitar la respuesta a la información disponible.
-4. Si no existe evidencia, conserva el elemento como "No verificado" o elimínalo del resultado final.
+- No presenta hipótesis como hechos.
+- No emite una decisión final.
 
-### No aparece una función esperada en Copilot Chat
+---
 
-**Solución:**
-1. Confirma que utilizas la cuenta indicada para el curso.
-2. Actualiza la página y vuelve a comprobar la interfaz.
-3. Informa al instructor si la función continúa sin aparecer.
-4. No cambies a servicios o cuentas no autorizadas para completar el ejercicio.
+## Paso 2: Generar contraargumentos
 
-## Limpieza
+### Objetivo
 
-1. Guarda únicamente los archivos y notas que el instructor indique conservar.
-2. Cierra documentos de práctica que ya no necesites.
-3. No conserves copias locales de información sensible o no autorizada.
-4. Si continuarás con la siguiente actividad en la misma sesión, mantén abierta la cuenta y los recursos que indique el instructor.
+Explorar objeciones razonables.
 
-## Resumen
+### Instrucciones
 
-En esta actividad trabajaste con un patrón de uso controlado de Microsoft 365 Copilot Chat. El objetivo no es aceptar automáticamente una respuesta, sino formular una necesidad con claridad, revisar la salida, comprobar su evidencia y decidir conscientemente qué puede utilizarse.
+Envíe:
 
-### Conexión con la siguiente actividad
+```text
+Construye cuatro contraargumentos razonables que podría plantear alguien que no esté de acuerdo con la propuesta.
 
-Conserva tus notas y prompts. Las actividades posteriores reutilizan progresivamente los criterios de claridad, contexto, formato, evidencia, privacidad y revisión humana.
+Para cada uno indica:
+- preocupación;
+- evidencia que sería necesaria para evaluarla;
+- pregunta que deberíamos responder antes de decidir.
+```
 
-### Recursos adicionales
+### Salida Esperada
 
-| Recurso | Enlace | Relevancia |
-|---|---|---|
-| Microsoft 365 Copilot | https://www.microsoft.com/microsoft-365/copilot | Información general del producto |
-| Microsoft Learn | https://learn.microsoft.com/ | Documentación y aprendizaje oficial |
-| IA responsable de Microsoft | https://www.microsoft.com/ai/responsible-ai | Principios de uso responsable |
+Cuatro objeciones estructuradas y preguntas de validación.
+
+### Verificación
+
+- Las objeciones son relevantes.
+- No se inventa evidencia.
+
+---
+
+## Paso 3: Mejorar la propuesta
+
+### Objetivo
+
+Convertir la crítica en mejoras verificables.
+
+### Instrucciones
+
+Envíe:
+
+```text
+Con base en los supuestos y objeciones, propone mejoras al diseño de la prueba.
+
+No decidas si debemos implementar la propuesta definitivamente.
+Enfócate en:
+- qué medir;
+- cuánto tiempo probar;
+- qué feedback recopilar;
+- qué condiciones indicarían que debemos ajustar.
+```
+
+### Salida Esperada
+
+Un esquema de prueba o piloto, expresado como propuesta para revisión.
+
+### Verificación
+
+- La salida no confunde sugerencias con decisiones.
+- Se proponen métricas o criterios que pueden discutirse.
+
+---
+
+## Paso 4: Separar análisis de decisión
+
+### Objetivo
+
+Cerrar la actividad reforzando la responsabilidad humana.
+
+### Instrucciones
+
+Envíe:
+
+```text
+Resume:
+1. hechos disponibles;
+2. supuestos;
+3. preguntas abiertas;
+4. alternativas para revisar.
+
+No recomiendes una decisión final.
+```
+
+### Salida Esperada
+
+Un paquete de análisis listo para discusión humana.
+
+### Verificación
+
+- No existe una decisión delegada a Copilot.
+- Hechos y supuestos están separados.
+
+---
