@@ -5,36 +5,27 @@
 | Campo | Valor |
 |---|---|
 | Duración | 45 minutos |
-| Modalidad | Demostración guiada |
-| Complejidad | Intermedia |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 3 |
-| Resultado principal | Consultar un archivo y exigir evidencia rastreable |
+| Tipo | Demostración guiada |
+| Nivel | Intermedio |
 
 ## Descripción General
 
-El instructor agrega a Copilot Chat un archivo de práctica proporcionado para el curso y utiliza preguntas progresivas: extracción, resumen, soporte en fuente y prueba de límites. La demostración enseña a detectar cuándo una respuesta excede el contenido disponible.
+Trabajarás con un archivo proporcionado y aprenderás a pedir evidencia.
 
 ## Objetivos de Aprendizaje
 
-- Agregar un archivo a la conversación.
-- Formular preguntas concretas sobre su contenido.
-- Solicitar evidencia o soporte.
-- Detectar preguntas que la fuente no puede responder.
-- Evitar aceptar respuestas plausibles pero no sustentadas.
+- cargar un archivo;
+- extraer información;
+- pedir soporte;
+- detectar respuestas no sustentadas.
 
 ## Prerrequisitos
 
-### Conocimiento Requerido
-
-- Uso básico de archivos.
-- Prompting estructurado.
-- Verificación de respuestas.
+Uso básico de archivos y prompting.
 
 ### Acceso Requerido
 
-- Archivo de práctica proporcionado por el instructor.
-- Microsoft 365 Copilot Chat.
+Archivo de práctica y Microsoft 365 Copilot Chat.
 
 ## Entorno del Laboratorio
 
@@ -48,144 +39,188 @@ Microsoft 365 Copilot Chat.
 
 ### Configuración Inicial
 
-1. Descargue o localice el archivo de práctica del instructor.
-2. No utilice documentos confidenciales personales.
-3. Abra una conversación nueva.
-4. Agregue el archivo mediante la opción disponible en Copilot Chat.
+Adjunta el archivo proporcionado.
 
 ---
 
-## Paso 1: Confirmar el alcance del archivo
+## Paso 1: Delimitar la fuente
 
 ### Objetivo
 
-Comprobar que la herramienta puede trabajar con el archivo y delimitar la fuente.
+Entender qué contiene el archivo.
 
 ### Instrucciones
 
-1. Adjunte el archivo.
-2. Envíe:
+Envía:
 
 ```text
-Trabaja únicamente con el archivo que acabo de agregar.
+Trabaja únicamente con el archivo.
 
-Primero indícame:
-- qué tipo de información contiene;
-- cuáles son sus secciones principales;
-- qué preguntas sí podrías responder a partir de este archivo;
-- qué tipo de preguntas no podrías responder sin información adicional.
-
-No respondas con conocimiento externo.
+Indícame:
+- qué información contiene;
+- sus secciones principales;
+- qué preguntas puedes responder;
+- qué preguntas no puedes responder.
 ```
 
 ### Salida Esperada
 
-Una descripción general del documento y límites razonables de consulta.
+Descripción del alcance.
 
 ### Verificación
 
-- La descripción coincide con el archivo.
 - No aparecen secciones inexistentes.
-- La herramienta reconoce límites.
 
 ---
 
-## Paso 2: Extraer información puntual
+## Paso 2: Extraer datos
 
 ### Objetivo
 
-Pedir datos específicos sin interpretación excesiva.
+Obtener hechos puntuales.
 
 ### Instrucciones
 
-Formule entre tres y cinco preguntas basadas en el archivo, por ejemplo:
+Prueba:
 
 ```text
-Extrae las tres decisiones principales documentadas en el archivo.
-Para cada una indica la sección o fragmento que la sustenta.
-```
-
-```text
-¿Qué fechas aparecen explícitamente y a qué evento corresponde cada una?
-No infieras fechas que no estén escritas.
-```
-
-```text
-¿Qué pendientes están expresados de forma explícita?
-Separa “pendiente” de “sugerencia”.
+Extrae las tres decisiones principales.
+Indica qué parte de la fuente las sustenta.
 ```
 
 ### Salida Esperada
 
-Respuestas puntuales acompañadas de soporte identificable en el contenido.
+Hechos acompañados de evidencia.
 
 ### Verificación
 
-- Los datos aparecen realmente en el archivo.
-- No se confunden sugerencias con hechos.
+- Los datos aparecen en el archivo.
 
 ---
 
-## Paso 3: Hacer una pregunta que exceda la fuente
+## Paso 3: Probar los límites
 
 ### Objetivo
 
-Observar si la herramienta reconoce una falta de evidencia.
+Detectar falta de evidencia.
 
 ### Instrucciones
 
-1. Formule una pregunta cuya respuesta no esté en el archivo:
+Pregunta algo que no esté en el archivo y después envía:
 
 ```text
-Con base únicamente en este archivo, dime cuál será el resultado financiero exacto del próximo trimestre.
-```
-
-2. Si la herramienta intenta responder, pida:
-
-```text
-Indica exactamente qué fragmentos del archivo sustentan esa conclusión.
-Si el archivo no contiene evidencia suficiente, responde “No sustentado por la fuente”.
+Indica qué fragmento sustenta esa conclusión.
+Si no existe evidencia suficiente, responde:
+“No sustentado por la fuente”.
 ```
 
 ### Salida Esperada
 
-La herramienta debe reconocer que el archivo no permite calcular o afirmar el resultado financiero exacto.
+Reconocimiento del límite.
 
 ### Verificación
 
-- El participante identifica una respuesta no sustentada si aparece.
-- La segunda instrucción obliga a delimitar la evidencia.
+- Puedes identificar una respuesta no sustentada.
 
 ---
 
-## Paso 4: Crear una regla de consulta basada en evidencia
+## Paso 4: Guardar un patrón reusable
 
 ### Objetivo
 
-Establecer un patrón reutilizable.
+Crear una regla de trabajo.
 
 ### Instrucciones
 
-Guarde este bloque:
+Guarda:
 
 ```text
 Utiliza únicamente el archivo proporcionado.
-
-Para cada afirmación importante:
-1. indica la evidencia que la respalda;
+Para cada afirmación:
+1. indica evidencia;
 2. diferencia hechos de inferencias;
-3. si la fuente no contiene información suficiente, dilo explícitamente;
+3. reconoce falta de información;
 4. no completes vacíos con conocimiento externo.
 ```
 
 ### Salida Esperada
 
-Un prompt reusable para trabajar con archivos de forma más controlada.
+Prompt reusable.
 
 ### Verificación
 
-- El patrón exige soporte.
-- El patrón contempla falta de evidencia.
-- Puede reutilizarse con otros archivos autorizados.
+- El patrón obliga a pedir evidencia.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] La salida se basa únicamente en la fuente o archivo utilizado.
+- [ ] Puedes localizar evidencia para las afirmaciones importantes.
+- [ ] Diferenciaste hechos de inferencias.
+- [ ] Eliminaste o corregiste cualquier afirmación no sustentada.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: No puedes agregar el archivo
+
+**Síntoma:** No puedes agregar el archivo.
+
+**Causa probable:** La opción puede depender de la cuenta, formato o configuración.
+
+**Solución:** Verifica tu cuenta y utiliza el archivo de práctica compatible proporcionado para la actividad.
+### Problema 2: Copilot responde con información externa
+
+**Síntoma:** Copilot responde con información externa.
+
+**Causa probable:** La fuente no se delimitó.
+
+**Solución:** Comienza el prompt con: “Trabaja únicamente con el archivo proporcionado”.
+### Problema 3: La evidencia indicada no coincide con la fuente
+
+**Síntoma:** La evidencia indicada no coincide con la fuente.
+
+**Causa probable:** La autoevaluación de Copilot también puede contener errores.
+
+**Solución:** Comprueba manualmente el fragmento y marca la afirmación como no verificada si no encuentras soporte.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Fuente | Trabajaste con información delimitada. |
+| Transformación | Generaste una salida a partir de esa fuente. |
+| Evidencia | Pediste soporte para las afirmaciones. |
+| Auditoría | Validaste el resultado contra la información original. |
+
+### Conceptos Clave Reforzados
+
+- La fuente original sigue siendo el criterio principal de validación.
+- Transformar un contenido no autoriza a modificar sus hechos.
+- Reconocer que falta información es mejor que completar vacíos sin evidencia.
+- Adjuntar un archivo no elimina la necesidad de revisar las respuestas.
+
+### Recursos Adicionales
+
+- [Agregar contenido a prompts de Microsoft Copilot Chat](https://support.microsoft.com/es-es/microsoft-365-copilot/add-content-to-microsoft-365-copilot-chat-prompts)
+- [Formatos de archivo compatibles con Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/file-formats-supported-by-microsoft-365-copilot)

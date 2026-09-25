@@ -5,27 +5,23 @@
 | Campo | Valor |
 |---|---|
 | Duración | 40 minutos |
-| Modalidad | Demostración guiada |
-| Complejidad | Intermedia |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 4 |
-| Resultado principal | Utilizar IA para ampliar el análisis sin delegar la decisión |
+| Tipo | Demostración guiada |
+| Nivel | Intermedio |
 
 ## Descripción General
 
-El instructor presenta una propuesta ficticia y pide a Copilot que la cuestione de manera estructurada. La salida se utiliza para descubrir supuestos, riesgos, información faltante y contraargumentos. La herramienta no decide si la propuesta debe aprobarse.
+Usarás Copilot para cuestionar una propuesta y descubrir supuestos, riesgos y puntos ciegos.
 
 ## Objetivos de Aprendizaje
 
-- Solicitar crítica estructurada.
-- Identificar supuestos y puntos ciegos.
-- Generar contraargumentos.
-- Separar hechos de hipótesis.
-- Mantener la decisión final bajo revisión humana.
+- identificar supuestos;
+- generar contraargumentos;
+- detectar información faltante;
+- mejorar una propuesta sin delegar la decisión.
 
 ## Prerrequisitos
 
-Uso de Copilot Chat y principios de validación.
+Uso básico de Copilot Chat.
 
 ### Acceso Requerido
 
@@ -43,20 +39,12 @@ Microsoft 365 Copilot Chat.
 
 ### Configuración Inicial
 
-Utilice esta propuesta ficticia:
+Usa esta propuesta:
 
 ```text
-Propuesta:
-Reducir la reunión operativa semanal de 60 a 30 minutos.
-Antes de la reunión, cada responsable enviará una actualización breve.
-La reunión se utilizará únicamente para bloqueos y decisiones pendientes.
-
-Objetivo:
-Reducir tiempo de reunión y hacer el seguimiento más enfocado.
-
-Información disponible:
-No se ha probado todavía el nuevo formato.
-No existe una medición formal del tiempo actual dedicado a seguimiento fuera de la reunión.
+Reducir la reunión semanal de 60 a 30 minutos.
+Cada responsable enviará antes una actualización breve.
+La reunión se usará solo para bloqueos y decisiones.
 ```
 
 ---
@@ -69,7 +57,7 @@ Hacer visibles las premisas implícitas.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
 Analiza la propuesta sin aprobarla ni rechazarla.
@@ -78,19 +66,18 @@ Identifica:
 - supuestos;
 - información faltante;
 - riesgos;
-- grupos que podrían verse afectados.
+- grupos afectados.
 
-Diferencia claramente lo que proviene del texto de lo que es una hipótesis para investigar.
+Diferencia hechos de hipótesis.
 ```
 
 ### Salida Esperada
 
-Lista de supuestos e información faltante, identificada como hipótesis cuando corresponda.
+Lista de supuestos y faltantes.
 
 ### Verificación
 
 - No presenta hipótesis como hechos.
-- No emite una decisión final.
 
 ---
 
@@ -98,29 +85,28 @@ Lista de supuestos e información faltante, identificada como hipótesis cuando 
 
 ### Objetivo
 
-Explorar objeciones razonables.
+Explorar objeciones.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
-Construye cuatro contraargumentos razonables que podría plantear alguien que no esté de acuerdo con la propuesta.
+Genera cuatro contraargumentos razonables.
 
 Para cada uno indica:
 - preocupación;
-- evidencia que sería necesaria para evaluarla;
-- pregunta que deberíamos responder antes de decidir.
+- evidencia necesaria;
+- pregunta que debemos responder.
 ```
 
 ### Salida Esperada
 
-Cuatro objeciones estructuradas y preguntas de validación.
+Cuatro objeciones estructuradas.
 
 ### Verificación
 
-- Las objeciones son relevantes.
-- No se inventa evidencia.
+- No inventa evidencia.
 
 ---
 
@@ -128,61 +114,132 @@ Cuatro objeciones estructuradas y preguntas de validación.
 
 ### Objetivo
 
-Convertir la crítica en mejoras verificables.
+Convertir la crítica en mejoras.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
-Con base en los supuestos y objeciones, propone mejoras al diseño de la prueba.
+Propón mejoras para una prueba piloto.
 
-No decidas si debemos implementar la propuesta definitivamente.
 Enfócate en:
 - qué medir;
 - cuánto tiempo probar;
 - qué feedback recopilar;
 - qué condiciones indicarían que debemos ajustar.
+
+No tomes una decisión final.
 ```
 
 ### Salida Esperada
 
-Un esquema de prueba o piloto, expresado como propuesta para revisión.
+Un esquema de prueba.
 
 ### Verificación
 
-- La salida no confunde sugerencias con decisiones.
-- Se proponen métricas o criterios que pueden discutirse.
+- La herramienta no decide por ti.
 
 ---
 
-## Paso 4: Separar análisis de decisión
+## Paso 4: Separar hechos y decisiones
 
 ### Objetivo
 
-Cerrar la actividad reforzando la responsabilidad humana.
+Cerrar con claridad.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
 Resume:
-1. hechos disponibles;
+1. hechos;
 2. supuestos;
 3. preguntas abiertas;
-4. alternativas para revisar.
+4. alternativas.
 
 No recomiendes una decisión final.
 ```
 
 ### Salida Esperada
 
-Un paquete de análisis listo para discusión humana.
+Análisis listo para discusión humana.
 
 ### Verificación
 
-- No existe una decisión delegada a Copilot.
 - Hechos y supuestos están separados.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] Definiste claramente el escenario o problema.
+- [ ] Separaste hechos, supuestos y preguntas abiertas.
+- [ ] La herramienta no tomó una decisión final por ti.
+- [ ] Aplicaste una revisión crítica antes de cerrar la actividad.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: Copilot toma una decisión final
+
+**Síntoma:** Copilot toma una decisión final.
+
+**Causa probable:** El prompt permite una conclusión global.
+
+**Solución:** Indica explícitamente que debe analizar, cuestionar o proponer opciones sin decidir.
+### Problema 2: Las objeciones o preguntas son genéricas
+
+**Síntoma:** Las objeciones o preguntas son genéricas.
+
+**Causa probable:** Falta contexto suficiente.
+
+**Solución:** Añade propósito, restricciones y antecedentes del escenario.
+### Problema 3: Las hipótesis aparecen como hechos
+
+**Síntoma:** Las hipótesis aparecen como hechos.
+
+**Causa probable:** No se solicitó distinguir niveles de certeza.
+
+**Solución:** Pide separar hechos, supuestos, inferencias y preguntas abiertas.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Escenario | Definiste una situación concreta. |
+| Análisis | Exploraste preguntas, objeciones o supuestos. |
+| Revisión | Evaluaste límites y puntos ciegos. |
+| Criterio humano | Mantviste la decisión final bajo responsabilidad humana. |
+
+### Conceptos Clave Reforzados
+
+- Copilot puede ayudar a ampliar perspectivas sin sustituir la decisión humana.
+- Los contraargumentos son insumos para investigar, no evidencia.
+- Separar hechos de supuestos mejora la calidad del análisis.
+- La revisión crítica debe complementar, no reemplazar, el juicio profesional.
+
+### Recursos Adicionales
+
+- [Crear contenido con Microsoft Copilot Chat](https://support.microsoft.com/en-us/microsoft-365-copilot/create-content-using-microsoft-365-copilot-chat)
+- [Preguntas frecuentes sobre Microsoft Copilot Chat](https://support.microsoft.com/en-us/microsoft-365-copilot/frequently-asked-questions-about-microsoft-365-copilot-chat)

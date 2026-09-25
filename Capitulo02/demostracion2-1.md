@@ -5,37 +5,27 @@
 | Campo | Valor |
 |---|---|
 | Duración | 35 minutos |
-| Modalidad | Demostración guiada |
-| Complejidad | Básica–intermedia |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 2. Prompting efectivo |
-| Resultado principal | Construir prompts con objetivo, contexto, expectativas, fuente, formato y restricciones |
+| Tipo | Demostración guiada |
+| Nivel | Básico–intermedio |
 
 ## Descripción General
 
-La demostración muestra cómo una misma necesidad produce resultados distintos cuando se formula de manera vaga o estructurada. El instructor construye el prompt en capas y compara cambios en relevancia, precisión, tono y formato.
+Aprenderás a convertir una solicitud vaga en un prompt estructurado y a observar cómo cambia la calidad de la respuesta.
 
 ## Objetivos de Aprendizaje
 
-- Reconocer los componentes de un prompt estructurado.
-- Mejorar solicitudes vagas de forma incremental.
-- Separar objetivo, contexto, fuente, formato y restricciones.
-- Observar el efecto de cada elemento sobre la respuesta.
+- reconocer los componentes de un buen prompt;
+- reducir ambigüedad;
+- controlar formato y tono;
+- limitar supuestos.
 
 ## Prerrequisitos
 
-### Conocimiento Requerido
-
-| Concepto | Nivel |
-|---|---|
-| Uso básico de Copilot Chat | Básico |
-| Revisión de respuestas | Básico |
-| Capítulo 1 completado | Recomendado |
+Uso básico de Copilot Chat.
 
 ### Acceso Requerido
 
-- Microsoft 365 Copilot Chat (Licenciamiento Básico).
-- Navegador e Internet.
+Microsoft 365 Copilot Chat.
 
 ## Entorno del Laboratorio
 
@@ -45,14 +35,11 @@ Equipo con navegador e Internet.
 
 ### Software Requerido
 
-| Software / servicio | Requisito |
-|---|---|
-| Microsoft 365 Copilot Chat | Licenciamiento Básico |
-| Navegador | Requerido |
+Microsoft 365 Copilot Chat.
 
 ### Configuración Inicial
 
-Abra una conversación nueva para evitar que el contexto previo influya en el ejercicio.
+Abre una conversación nueva.
 
 ---
 
@@ -60,127 +47,176 @@ Abra una conversación nueva para evitar que el contexto previo influya en el ej
 
 ### Objetivo
 
-Observar cómo una instrucción insuficiente produce una salida genérica.
+Observar una respuesta genérica.
 
 ### Instrucciones
 
-1. Envíe:
+Envía:
 
 ```text
 Haz un correo sobre el cambio de proceso.
 ```
 
-2. Revise la respuesta.
-3. Identifique qué tuvo que asumir Copilot:
-   - qué proceso cambió;
-   - quién recibe el correo;
-   - qué debe hacer el lector;
-   - cuándo aplica;
-   - tono;
-   - extensión.
+Anota qué tuvo que asumir Copilot.
 
 ### Salida Esperada
 
-Un correo genérico con supuestos no definidos por el usuario.
+Un correo genérico.
 
 ### Verificación
 
-- Se identificaron al menos cuatro supuestos.
-- El grupo puede explicar por qué la respuesta no está lista para usarse.
+- Detectaste al menos cuatro supuestos.
 
 ---
 
-## Paso 2: Construir el prompt por capas
+## Paso 2: Estructurar el prompt
 
 ### Objetivo
 
-Añadir información de forma incremental y observar el impacto.
+Añadir los elementos que faltan.
 
 ### Instrucciones
 
-1. Agregue el **objetivo**:
+Envía:
 
 ```text
 Redacta un correo para comunicar un cambio de proceso.
-El objetivo es que el personal conozca el nuevo procedimiento y sepa qué debe hacer.
-```
 
-2. Agregue **contexto**:
+Objetivo:
+Que el personal conozca el nuevo procedimiento.
 
-```text
-Audiencia: personal administrativo.
-Cambio: a partir de la próxima semana las solicitudes internas deberán registrarse mediante un formulario antes de enviarse a revisión.
-```
+Audiencia:
+Personal administrativo.
 
-3. Agregue **expectativas y formato**:
+Cambio:
+A partir de la próxima semana las solicitudes internas deberán registrarse mediante un formulario antes de enviarse a revisión.
 
-```text
 Incluye:
 - asunto;
-- explicación breve del cambio;
-- tres acciones que debe realizar el personal;
-- cierre con invitación a consultar dudas.
+- explicación breve;
+- tres acciones;
+- cierre.
 
 Máximo 170 palabras.
+
+No inventes enlaces, responsables ni fechas.
+Tono profesional y claro.
 ```
-
-4. Agregue **restricciones**:
-
-```text
-No inventes enlaces, nombres de sistemas, responsables ni fechas distintas de las proporcionadas.
-Tono profesional, claro y cercano.
-```
-
-5. Envíe el prompt completo.
 
 ### Salida Esperada
 
-Un correo más relevante y estructurado, alineado con la audiencia y sin información inventada.
+Un correo más preciso y útil.
 
 ### Verificación
 
-- Existe asunto.
-- Se describen tres acciones.
-- El tono es apropiado.
-- No aparecen nombres de plataformas o responsables inexistentes.
+- Tiene asunto.
+- Tiene tres acciones.
+- No inventa datos.
 
 ---
 
-## Paso 3: Comparar calidad, precisión y formato
+## Paso 3: Comparar resultados
 
 ### Objetivo
 
-Convertir la comparación en criterios observables.
+Identificar mejoras concretas.
 
 ### Instrucciones
 
-1. Pida:
+Envía:
 
 ```text
-Compara tu primera respuesta con la respuesta obtenida con el prompt estructurado.
+Compara la primera respuesta con la segunda.
 
 Evalúa:
 - claridad;
 - relevancia;
 - precisión;
 - adecuación a la audiencia;
-- cumplimiento de formato;
-- cantidad de supuestos.
+- formato;
+- supuestos.
 
-No asignes una calificación global. Explica diferencias concretas.
+No asignes una calificación global.
 ```
-
-2. Revise la comparación.
-3. Confirme manualmente si las diferencias son reales.
 
 ### Salida Esperada
 
-Una comparación que muestre que la estructura reduce ambigüedad y mejora el control de la salida.
+Una comparación basada en criterios.
 
 ### Verificación
 
-- La comparación usa criterios concretos.
-- Se detectan menos supuestos en la segunda versión.
-- El participante puede identificar qué componente produjo cada mejora.
+- Puedes identificar qué componente mejoró cada aspecto.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] Tu prompt define con claridad el objetivo.
+- [ ] Incluiste contexto, formato y restricciones cuando fueron necesarios.
+- [ ] Comparaste resultados usando criterios concretos.
+- [ ] El prompt final puede reutilizarse sin depender excesivamente del historial de la conversación.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: La respuesta no sigue el formato solicitado
+
+**Síntoma:** La respuesta no sigue el formato solicitado.
+
+**Causa probable:** El formato se expresó de manera ambigua.
+
+**Solución:** Enumera explícitamente las secciones, columnas o elementos que debe contener.
+### Problema 2: La respuesta cambia demasiado entre intentos
+
+**Síntoma:** La respuesta cambia demasiado entre intentos.
+
+**Causa probable:** El prompt deja abiertas demasiadas decisiones.
+
+**Solución:** Añade restricciones, prioridades y criterios de salida.
+### Problema 3: Los ejemplos contaminan la respuesta
+
+**Síntoma:** Los ejemplos contaminan la respuesta.
+
+**Causa probable:** No quedó claro que son solo un patrón.
+
+**Solución:** Indica que Copilot debe imitar la estructura o el tono, pero no copiar hechos de los ejemplos.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Solicitud | Partiste de una necesidad de trabajo. |
+| Estructura | Añadiste objetivo, contexto, expectativas y fuente. |
+| Experimentación | Probaste variantes y refinamientos. |
+| Reutilización | Construiste un prompt más consistente. |
+
+### Conceptos Clave Reforzados
+
+- Un prompt útil puede combinar objetivo, contexto, expectativas y fuente.
+- Formato y restricciones ayudan a reducir ambigüedad.
+- Los ejemplos orientan, pero no siempre son necesarios.
+- Un prompt reutilizable debe poder entenderse fuera de la conversación original.
+
+### Recursos Adicionales
+
+- [Introducción a la escritura de prompts en Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot)
+- [Cómo escribir mejores prompts en Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/write-a-great-prompt-in-microsoft-365-copilot)

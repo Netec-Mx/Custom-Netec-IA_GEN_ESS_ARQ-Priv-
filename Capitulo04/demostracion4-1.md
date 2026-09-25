@@ -1,32 +1,27 @@
-# Demostración guiada 4.1. Simulación de conversaciones profesionales: utilizar Copilot como interlocutor para ensayar una conversación con un cliente, gerente, colaborador o proveedor; responder preguntas y objeciones, solicitar retroalimentación y mejorar la preparación antes de la interacción real
+# Demostración guiada 4.1. Simulación de conversaciones profesionales: utilizar Copilot como interlocutor para ensayar una conversación con un cliente, gerente, colaborador o proveedor; responder preguntas y objeciones, solicitar retroalimentación y mejorar la preparación antes de la interacción real.
 
 ## Metadatos
 
 | Campo | Valor |
 |---|---|
 | Duración | 40 minutos |
-| Modalidad | Demostración guiada |
-| Complejidad | Intermedia |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 4 |
-| Resultado principal | Ensayar una conversación y obtener retroalimentación estructurada |
+| Tipo | Demostración guiada |
+| Nivel | Intermedio |
 
 ## Descripción General
 
-El instructor utiliza Copilot como interlocutor para ensayar una conversación profesional. La herramienta representa un rol ficticio, plantea preguntas y objeciones, y al final entrega retroalimentación. El ejercicio se limita a preparación y práctica; la decisión y la interacción real permanecen bajo responsabilidad humana.
+Usarás Copilot como interlocutor para ensayar una conversación profesional.
 
 ## Objetivos de Aprendizaje
 
-- Definir un escenario de simulación.
-- Practicar respuestas a preguntas y objeciones.
-- Solicitar retroalimentación específica.
-- Refinar el mensaje antes de una conversación real.
+- preparar una conversación;
+- responder objeciones;
+- pedir retroalimentación;
+- mejorar tu preparación.
 
 ## Prerrequisitos
 
-- Capítulos 1 a 4.
-- Uso responsable de prompts.
-- No utilizar datos reales sensibles.
+Capítulos anteriores.
 
 ### Acceso Requerido
 
@@ -44,115 +39,107 @@ Microsoft 365 Copilot Chat.
 
 ### Configuración Inicial
 
-Abra una conversación nueva y utilice personajes ficticios.
+Usa un escenario ficticio.
 
 ---
 
-## Paso 1: Definir la simulación
+## Paso 1: Iniciar la simulación
 
 ### Objetivo
 
-Establecer propósito, rol y límites.
+Definir rol y contexto.
 
 ### Instrucciones
 
-Use este escenario:
+Envía:
 
 ```text
 Voy a ensayar una conversación con un gerente.
 
-Contexto ficticio:
+Contexto:
 Debo explicar por qué una actividad se retrasó y presentar un plan de recuperación.
-El retraso se debió a que dos validaciones requirieron información adicional.
-No existe una nueva fecha confirmada.
 
 Actúa como el gerente.
 Haz una pregunta a la vez.
-Incluye preguntas de aclaración y objeciones razonables.
-No inventes hechos del proyecto.
-No me des la respuesta correcta durante la simulación.
+Incluye objeciones razonables.
+No inventes hechos.
 ```
 
 ### Salida Esperada
 
-Copilot adopta el rol y comienza con una pregunta.
+Copilot inicia con una pregunta.
 
 ### Verificación
 
-- La herramienta hace una pregunta a la vez.
+- Respeta el rol.
 - No inventa antecedentes.
 
 ---
 
-## Paso 2: Responder y manejar objeciones
+## Paso 2: Responder objeciones
 
 ### Objetivo
 
-Practicar respuestas concisas y sustentadas.
+Practicar respuestas claras.
 
 ### Instrucciones
 
-1. Responda como lo haría en la conversación real.
-2. Si la herramienta introduce un hecho nuevo, corrija:
+Responde una pregunta a la vez.
+
+Si Copilot inventa algo:
 
 ```text
-Ese dato no forma parte del escenario. Mantén las objeciones dentro de la información proporcionada.
+Ese dato no forma parte del escenario.
+Mantén la conversación dentro de la información proporcionada.
 ```
-
-3. Continúe por varias rondas.
-4. Evite inventar una fecha para “cerrar” la conversación.
 
 ### Salida Esperada
 
-Un intercambio de preguntas y respuestas donde el participante practica claridad y límites.
+Una conversación controlada.
 
 ### Verificación
 
-- Las respuestas no inventan compromisos.
-- El participante reconoce qué información todavía no posee.
+- No inventaste compromisos.
 
 ---
 
-## Paso 3: Solicitar retroalimentación
+## Paso 3: Pedir retroalimentación
 
 ### Objetivo
 
-Obtener observaciones útiles después de la simulación.
+Identificar mejoras.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
 Termina la simulación.
 
-Evalúa mis respuestas únicamente con estos criterios:
+Evalúa:
 - claridad;
 - brevedad;
 - uso de hechos;
 - manejo de incertidumbre;
 - respuesta a objeciones.
 
-Para cada criterio:
-1. indica qué funcionó;
-2. señala una mejora concreta;
-3. propone una pregunta de práctica adicional.
-
-No califiques mi desempeño con una nota global.
+Para cada criterio indica:
+1. qué funcionó;
+2. qué mejorar;
+3. una pregunta adicional.
 ```
 
 ### Salida Esperada
 
-Retroalimentación concreta por criterio.
+Retroalimentación específica.
 
 ### Verificación
 
-- La retroalimentación se basa en lo ocurrido en la simulación.
-- Las mejoras son específicas.
+- Las observaciones se basan en la conversación.
 
 ---
 
-## Paso 4: Repetir una respuesta clave
+## Paso 4: Mejorar una respuesta
 
 ### Objetivo
 
@@ -160,22 +147,91 @@ Aplicar la retroalimentación.
 
 ### Instrucciones
 
-1. Elija la respuesta que más necesita mejorar.
-2. Reescríbala.
-3. Pida:
+Reescribe una respuesta y pide:
 
 ```text
 Compara mi respuesta original con la nueva.
-Indica únicamente qué mejoró y qué sigue siendo ambiguo.
+Indica qué mejoró y qué sigue siendo ambiguo.
 ```
 
 ### Salida Esperada
 
-Una respuesta más clara y preparada para ser utilizada como referencia personal.
+Una respuesta mejor preparada.
 
 ### Verificación
 
-- La nueva respuesta corrige al menos una debilidad identificada.
-- No depende de información inventada.
+- Corrige al menos una debilidad.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] Definiste claramente el escenario o problema.
+- [ ] Separaste hechos, supuestos y preguntas abiertas.
+- [ ] La herramienta no tomó una decisión final por ti.
+- [ ] Aplicaste una revisión crítica antes de cerrar la actividad.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: Copilot toma una decisión final
+
+**Síntoma:** Copilot toma una decisión final.
+
+**Causa probable:** El prompt permite una conclusión global.
+
+**Solución:** Indica explícitamente que debe analizar, cuestionar o proponer opciones sin decidir.
+### Problema 2: Las objeciones o preguntas son genéricas
+
+**Síntoma:** Las objeciones o preguntas son genéricas.
+
+**Causa probable:** Falta contexto suficiente.
+
+**Solución:** Añade propósito, restricciones y antecedentes del escenario.
+### Problema 3: Las hipótesis aparecen como hechos
+
+**Síntoma:** Las hipótesis aparecen como hechos.
+
+**Causa probable:** No se solicitó distinguir niveles de certeza.
+
+**Solución:** Pide separar hechos, supuestos, inferencias y preguntas abiertas.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Escenario | Definiste una situación concreta. |
+| Análisis | Exploraste preguntas, objeciones o supuestos. |
+| Revisión | Evaluaste límites y puntos ciegos. |
+| Criterio humano | Mantviste la decisión final bajo responsabilidad humana. |
+
+### Conceptos Clave Reforzados
+
+- Copilot puede ayudar a ampliar perspectivas sin sustituir la decisión humana.
+- Los contraargumentos son insumos para investigar, no evidencia.
+- Separar hechos de supuestos mejora la calidad del análisis.
+- La revisión crítica debe complementar, no reemplazar, el juicio profesional.
+
+### Recursos Adicionales
+
+- [Crear contenido con Microsoft Copilot Chat](https://support.microsoft.com/en-us/microsoft-365-copilot/create-content-using-microsoft-365-copilot-chat)
+- [Preguntas frecuentes sobre Microsoft Copilot Chat](https://support.microsoft.com/en-us/microsoft-365-copilot/frequently-asked-questions-about-microsoft-365-copilot-chat)

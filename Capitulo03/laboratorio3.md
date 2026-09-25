@@ -5,33 +5,27 @@
 | Campo | Valor |
 |---|---|
 | Duración | 73 minutos |
-| Modalidad | Laboratorio |
-| Complejidad | Intermedia |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 3 |
-| Resultado principal | Producto de negocio derivado de un archivo, adaptado a varias audiencias y validado |
+| Tipo | Laboratorio |
+| Nivel | Intermedio |
 
 ## Descripción General
 
-El participante utiliza un archivo proporcionado por el instructor para resolver una necesidad completa: comprender la fuente, extraer hechos, producir una salida, adaptarla para otra audiencia y validar cada versión contra el documento original.
+Resolverás una necesidad de negocio usando un archivo, adaptarás la salida a distintas audiencias y validarás todo contra la fuente.
 
 ## Objetivos de Aprendizaje
 
-- Trabajar con archivos autorizados.
-- Formular preguntas sobre evidencia.
-- Transformar información para varias audiencias.
-- Evitar agregar hechos.
-- Validar la salida final antes de utilizarla.
+- trabajar con un archivo;
+- extraer hechos;
+- adaptar salidas;
+- validar resultados.
 
 ## Prerrequisitos
 
-- Capítulos 1 a 3.
-- Archivo de práctica del instructor.
-- Microsoft 365 Copilot Chat.
+Capítulos 1 a 3.
 
 ### Acceso Requerido
 
-Cuenta corporativa, navegador e Internet.
+Archivo de práctica y Copilot Chat.
 
 ## Entorno del Laboratorio
 
@@ -45,81 +39,69 @@ Microsoft 365 Copilot Chat.
 
 ### Configuración Inicial
 
-1. Abra una conversación nueva.
-2. Adjunte el archivo de práctica.
-3. Prepare una tabla de control:
+Crea esta tabla:
 
-| Afirmación | Evidencia en archivo | Tipo | Mantener / corregir |
+| Afirmación | Evidencia | Tipo | Mantener / corregir |
 |---|---|---|---|
 
 ---
 
-## Paso 1: Delimitar la necesidad
+## Paso 1: Definir la necesidad
 
 ### Objetivo
 
-Definir qué resultado de negocio se necesita y para quién.
+Establecer qué resultado necesitas.
 
 ### Instrucciones
 
-1. Seleccione uno de estos escenarios:
-   - resumen ejecutivo para una jefatura;
-   - comunicación breve para un equipo;
-   - tabla de hallazgos y acciones;
-   - preparación de preguntas para una reunión.
-2. Complete:
+Completa:
 
 ```text
 Necesidad:
 Audiencia:
-Decisión o acción que facilitará:
-Formato esperado:
+Resultado:
+Formato:
 Información que no debe inventarse:
 ```
 
 ### Salida Esperada
 
-Una definición clara del entregable.
+Definición clara del entregable.
 
 ### Verificación
 
-- Existe audiencia.
-- Existe formato.
-- Se definen límites.
+- Existe audiencia y formato.
 
 ---
 
-## Paso 2: Interrogar el archivo antes de redactar
+## Paso 2: Analizar la fuente
 
 ### Objetivo
 
-Comprender la fuente antes de pedir una transformación final.
+Comprender antes de redactar.
 
 ### Instrucciones
 
-1. Envíe:
+Envía:
 
 ```text
-Antes de redactar el entregable, analiza únicamente el archivo.
+Analiza únicamente el archivo.
 
 Identifica:
-- cinco hechos relevantes para mi necesidad;
-- información faltante que podría afectar la interpretación;
-- términos o datos que debería validar manualmente.
+- cinco hechos;
+- información faltante;
+- datos que debo validar manualmente.
 
-Para cada hecho, indica dónde se encuentra en la fuente.
+Indica dónde aparece cada hecho.
 ```
-
-2. Revise manualmente al menos tres evidencias.
 
 ### Salida Esperada
 
-Lista de hechos y faltantes respaldados por el archivo.
+Lista de hechos y faltantes.
 
 ### Verificación
 
-- Tres evidencias fueron comprobadas manualmente.
-- Los faltantes no se presentan como hechos.
+- Comprobaste manualmente al menos tres evidencias.
 
 ---
 
@@ -127,54 +109,48 @@ Lista de hechos y faltantes respaldados por el archivo.
 
 ### Objetivo
 
-Generar el producto solicitado utilizando únicamente información sustentada.
+Generar un producto de negocio.
 
 ### Instrucciones
 
 Ejemplo:
 
 ```text
-Con los hechos verificados, genera un resumen ejecutivo para una jefatura.
+Genera un resumen ejecutivo.
 
 Incluye:
 - situación actual;
 - tres hallazgos;
 - dos pendientes;
-- información que requiere confirmación.
+- información por confirmar.
 
 Máximo 180 palabras.
-No utilices información externa.
 ```
 
 ### Salida Esperada
 
-Un entregable coherente con el objetivo y basado en el archivo.
+Un entregable sustentado.
 
 ### Verificación
 
-- Cada dato importante puede rastrearse.
-- No se ocultan faltantes relevantes.
+- Cada dato puede rastrearse.
 
 ---
 
-## Paso 4: Adaptar a una segunda audiencia
+## Paso 4: Adaptar a otra audiencia
 
 ### Objetivo
 
-Modificar forma y nivel de detalle sin alterar hechos.
+Cambiar forma sin alterar hechos.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
-Transforma el resultado anterior para un equipo operativo.
+Transforma el resultado para un equipo operativo.
 
-Conserva exactamente los mismos hechos.
-Cambia únicamente:
-- tono;
-- nivel de detalle;
-- estructura.
+Conserva los mismos hechos.
 
 Formato:
 - Qué sabemos.
@@ -184,45 +160,109 @@ Formato:
 
 ### Salida Esperada
 
-Una segunda versión dirigida a otra audiencia con la misma base factual.
+Segunda versión para otra audiencia.
 
 ### Verificación
 
 - Cambia el estilo, no los hechos.
-- No aparecen nuevas fechas, cifras o responsables.
 
 ---
 
-## Paso 5: Validar contra la fuente
+## Paso 5: Auditar
 
 ### Objetivo
 
-Auditar la salida antes de usarla.
+Validar antes de usar.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
-Audita las dos versiones contra el archivo.
+Audita las dos versiones.
 
-Crea una tabla:
-Afirmación | Evidencia | Sustentada / Inferida / No sustentada | Acción recomendada
-
-Si una afirmación no está sustentada, no intentes justificarla: márcala para eliminar.
+Tabla:
+Afirmación | Evidencia | Sustentada / Inferida / No sustentada | Acción
 ```
-
-2. Revise la tabla.
-3. Corrija las versiones finales.
 
 ### Salida Esperada
 
-Dos entregables revisados y una tabla de auditoría.
+Tabla de auditoría y versiones corregidas.
 
 ### Verificación
 
-- Las afirmaciones no sustentadas fueron eliminadas.
-- Las inferencias necesarias están claramente marcadas.
-- Las versiones finales pueden reutilizarse con revisión humana.
+- Eliminaste afirmaciones no sustentadas.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] La salida se basa únicamente en la fuente o archivo utilizado.
+- [ ] Puedes localizar evidencia para las afirmaciones importantes.
+- [ ] Diferenciaste hechos de inferencias.
+- [ ] Eliminaste o corregiste cualquier afirmación no sustentada.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: No puedes agregar el archivo
+
+**Síntoma:** No puedes agregar el archivo.
+
+**Causa probable:** La opción puede depender de la cuenta, formato o configuración.
+
+**Solución:** Verifica tu cuenta y utiliza el archivo de práctica compatible proporcionado para la actividad.
+### Problema 2: Copilot responde con información externa
+
+**Síntoma:** Copilot responde con información externa.
+
+**Causa probable:** La fuente no se delimitó.
+
+**Solución:** Comienza el prompt con: “Trabaja únicamente con el archivo proporcionado”.
+### Problema 3: La evidencia indicada no coincide con la fuente
+
+**Síntoma:** La evidencia indicada no coincide con la fuente.
+
+**Causa probable:** La autoevaluación de Copilot también puede contener errores.
+
+**Solución:** Comprueba manualmente el fragmento y marca la afirmación como no verificada si no encuentras soporte.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Fuente | Trabajaste con información delimitada. |
+| Transformación | Generaste una salida a partir de esa fuente. |
+| Evidencia | Pediste soporte para las afirmaciones. |
+| Auditoría | Validaste el resultado contra la información original. |
+
+### Conceptos Clave Reforzados
+
+- La fuente original sigue siendo el criterio principal de validación.
+- Transformar un contenido no autoriza a modificar sus hechos.
+- Reconocer que falta información es mejor que completar vacíos sin evidencia.
+- Adjuntar un archivo no elimina la necesidad de revisar las respuestas.
+
+### Recursos Adicionales
+
+- [Agregar contenido a prompts de Microsoft Copilot Chat](https://support.microsoft.com/es-es/microsoft-365-copilot/add-content-to-microsoft-365-copilot-chat-prompts)
+- [Formatos de archivo compatibles con Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/file-formats-supported-by-microsoft-365-copilot)

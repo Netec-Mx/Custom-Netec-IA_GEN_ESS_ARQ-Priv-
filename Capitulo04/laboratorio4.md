@@ -5,42 +5,28 @@
 | Campo | Valor |
 |---|---|
 | Duración | 71 minutos |
-| Modalidad | Laboratorio integrador |
-| Complejidad | Intermedia |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 4 |
-| Resultado principal | Flujo completo y reusable: necesidad → prompt → resultado → validación → control → biblioteca |
+| Tipo | Laboratorio integrador |
+| Nivel | Intermedio |
 
 ## Descripción General
 
-El laboratorio integra los hábitos trabajados durante el curso. Cada participante selecciona una tarea de su rol, define el resultado deseado, prepara información autorizada, construye y refina un prompt, valida la respuesta, aplica controles de privacidad y guarda el patrón final como recurso reutilizable.
+Resolverás una tarea de principio a fin aplicando prompting, validación, privacidad y revisión crítica.
 
 ## Objetivos de Aprendizaje
 
-- Resolver una tarea completa con Copilot Chat.
-- Diseñar y refinar un prompt.
-- Trabajar con una fuente o información proporcionada.
-- Validar afirmaciones.
-- Aplicar controles de privacidad.
-- Documentar un prompt reutilizable.
+- definir una necesidad;
+- construir y refinar un prompt;
+- validar contenido;
+- aplicar controles de privacidad;
+- guardar un patrón reusable.
 
 ## Prerrequisitos
 
-### Conocimiento Requerido
-
-| Concepto | Nivel |
-|---|---|
-| Prompting estructurado | Intermedio |
-| Validación de respuestas | Intermedio |
-| Manejo responsable de información | Básico–intermedio |
-| Trabajo con archivos o texto fuente | Básico–intermedio |
+Capítulos 1 a 4.
 
 ### Acceso Requerido
 
-- Microsoft 365 Copilot Chat (Licenciamiento Básico).
-- Navegador e Internet.
-- Archivo de práctica del instructor o contenido ficticio.
-- Documento de notas para biblioteca personal.
+Microsoft 365 Copilot Chat y material de práctica.
 
 ## Entorno del Laboratorio
 
@@ -54,68 +40,66 @@ Microsoft 365 Copilot Chat.
 
 ### Configuración Inicial
 
-Seleccione un escenario por rol:
+Selecciona un reto:
 
-| Perfil | Ejemplo de reto |
+| Perfil | Ejemplo |
 |---|---|
-| Administración | Convertir información de seguimiento en reporte ejecutivo |
-| Comercial | Preparar una reunión y adaptar un mensaje para cliente |
-| Finanzas | Transformar observaciones de un reporte en hallazgos y preguntas de validación |
-| Recursos Humanos | Convertir una política proporcionada en comunicación y preguntas frecuentes |
-| Operaciones | Analizar incidencias y preparar una lista de seguimiento |
-| Servicio | Resumir retroalimentación y preparar temas para revisión |
-
-No utilice datos reales sensibles durante el laboratorio.
+| Administración | Reporte ejecutivo |
+| Comercial | Preparación de reunión |
+| Finanzas | Hallazgos y preguntas |
+| RR. HH. | Comunicación de política |
+| Operaciones | Seguimiento de incidencias |
+| Servicio | Resumen de retroalimentación |
 
 ---
 
-## Paso 1: Definir el reto y el criterio de éxito
+## Paso 1: Definir el reto
 
 ### Objetivo
 
-Establecer qué se quiere lograr antes de interactuar con Copilot.
+Establecer qué necesitas resolver.
 
 ### Instrucciones
 
-Complete:
+Completa:
 
 ```text
 Mi rol:
 Tarea:
 Audiencia:
 Resultado final:
-Fuente que utilizaré:
+Fuente:
 Qué no debe hacer Copilot:
-Qué revisaré antes de utilizar la salida:
+Qué revisaré:
 ```
 
 ### Salida Esperada
 
-Una definición concreta del reto.
+Definición concreta.
 
 ### Verificación
 
-- Existe una audiencia.
-- Existe una fuente o conjunto de datos autorizado.
-- Se definen límites.
+- Existe audiencia.
+- Existe fuente.
 
 ---
 
-## Paso 2: Revisar privacidad antes de enviar información
+## Paso 2: Revisar privacidad
 
 ### Objetivo
 
-Reducir exposición innecesaria.
+Reducir exposición.
 
 ### Instrucciones
 
-1. Revise el contenido.
-2. Pregúntese:
-   - ¿necesito realmente nombres?
-   - ¿necesito importes exactos?
-   - ¿puedo usar datos ficticios o marcadores?
-   - ¿la organización permite utilizar esta información?
-3. Sustituya datos cuando sea posible:
+Antes de enviar información, pregúntate:
+
+- ¿Necesito nombres?
+- ¿Necesito importes exactos?
+- ¿Puedo usar marcadores?
+- ¿Está permitido usar esta información?
+
+Sustituye por:
 
 ```text
 [CLIENTE]
@@ -125,28 +109,25 @@ Reducir exposición innecesaria.
 [IMPORTE]
 ```
 
-4. Si la tarea no puede realizarse sin información cuya utilización debe autorizarse, detenga el laboratorio y utilice el material ficticio del instructor.
-
 ### Salida Esperada
 
-Una fuente preparada para práctica con el mínimo de información necesaria.
+Información preparada con mínimo riesgo.
 
 ### Verificación
 
-- Se eliminaron datos innecesarios.
-- No se utilizaron secretos, credenciales o información sensible real.
+- No usaste datos sensibles innecesarios.
 
 ---
 
-## Paso 3: Construir el prompt versión 1
+## Paso 3: Crear el prompt
 
 ### Objetivo
 
-Crear una primera versión estructurada.
+Construir una primera versión completa.
 
 ### Instrucciones
 
-Use:
+Usa:
 
 ```text
 Objetivo:
@@ -156,44 +137,39 @@ Contexto:
 [rol, audiencia y propósito]
 
 Fuente:
-[texto o archivo autorizado]
+[texto o archivo]
 
 Genera:
 [formato]
 
 Restricciones:
-- utiliza únicamente la fuente;
+- usa únicamente la fuente;
 - no inventes datos;
-- identifica información faltante;
-- [otras restricciones de la tarea].
+- identifica información faltante.
 ```
-
-2. Ejecute.
-3. Registre dos aciertos y dos problemas.
 
 ### Salida Esperada
 
-Una primera respuesta evaluable.
+Primera respuesta evaluable.
 
 ### Verificación
 
-- El prompt incluye fuente y formato.
-- La respuesta puede compararse con criterios definidos.
+- El prompt define fuente y límites.
 
 ---
 
-## Paso 4: Refinar la respuesta
+## Paso 4: Refinar
 
 ### Objetivo
 
-Corregir problemas sin perder trazabilidad.
+Corregir problemas.
 
 ### Instrucciones
 
-Utilice mensajes de seguimiento según corresponda:
+Prueba según necesites:
 
 ```text
-Reduce la respuesta y conserva únicamente los elementos sustentados.
+Reduce la respuesta y conserva solo elementos sustentados.
 ```
 
 ```text
@@ -201,94 +177,79 @@ Adapta el tono para [audiencia] sin cambiar hechos.
 ```
 
 ```text
-Convierte el resultado en una tabla con las columnas [...]
-```
-
-```text
-Señala qué información falta para completar la tarea sin hacer suposiciones.
+Señala qué información falta.
 ```
 
 ### Salida Esperada
 
-Una versión mejor alineada con el propósito.
+Versión mejorada.
 
 ### Verificación
 
-- Cada refinamiento responde a un problema identificado.
-- No se introdujeron nuevos hechos.
+- Cada refinamiento corrige un problema real.
 
 ---
 
-## Paso 5: Validar fuentes y contenido
+## Paso 5: Validar
 
 ### Objetivo
 
-Comprobar la respuesta de forma sistemática.
+Auditar la respuesta.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
 Audita tu respuesta contra la fuente.
 
-Crea una tabla:
-Afirmación importante | Evidencia | Sustentada / Inferida / No sustentada
-
-Reglas:
-- Si no existe evidencia suficiente, marca “No sustentada”.
-- No intentes completar vacíos.
-- No uses conocimiento externo.
+Tabla:
+Afirmación | Evidencia | Sustentada / Inferida / No sustentada
 ```
-
-2. Compruebe manualmente al menos cinco afirmaciones o todas si hay menos de cinco.
-3. Elimine o corrija cualquier elemento no sustentado.
 
 ### Salida Esperada
 
-Una tabla de validación y una versión corregida.
+Tabla de validación.
 
 ### Verificación
 
-- Se realizó comprobación manual.
-- No quedan afirmaciones no sustentadas en la versión final.
+- No quedan afirmaciones no sustentadas.
 
 ---
 
-## Paso 6: Realizar una revisión crítica
+## Paso 6: Revisar críticamente
 
 ### Objetivo
 
-Buscar puntos ciegos antes de cerrar la tarea.
+Buscar puntos ciegos.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
-Revisa el resultado final como un crítico constructivo.
+Revisa el resultado como crítico constructivo.
 
 Identifica:
-- un supuesto que todavía pueda estar presente;
-- una pregunta que debería hacer antes de utilizarlo;
-- una posible interpretación ambigua;
-- una comprobación final que deba realizar una persona.
+- un supuesto;
+- una pregunta pendiente;
+- una ambigüedad;
+- una comprobación final humana.
 
-No cambies los hechos ni tomes la decisión por mí.
+No tomes la decisión por mí.
 ```
 
 ### Salida Esperada
 
-Una lista breve de controles adicionales.
+Controles adicionales.
 
 ### Verificación
 
-- La herramienta no decide por el participante.
-- Se obtiene al menos una comprobación útil.
+- La decisión sigue siendo tuya.
 
 ---
 
-## Paso 7: Guardar el patrón en la biblioteca personal
+## Paso 7: Guardar el patrón
 
 ### Objetivo
 
@@ -296,32 +257,97 @@ Convertir el aprendizaje en un recurso reusable.
 
 ### Instrucciones
 
-Documente:
+Documenta:
 
 ```text
-Nombre del patrón:
-Cuándo utilizarlo:
-Qué fuente requiere:
+Nombre:
+Cuándo usarlo:
+Fuente requerida:
 Prompt final:
-Variables que debo reemplazar:
-Qué debo verificar:
+Variables:
+Qué verificar:
 Información que nunca debo incluir:
-Ejemplo de salida aceptable:
 ```
-
-2. Elimine del patrón cualquier dato específico usado durante el ejercicio.
-3. Sustituya por marcadores.
-4. Guarde el patrón en su documento personal autorizado.
 
 ### Salida Esperada
 
-Un prompt reusable y documentado.
+Un patrón reutilizable.
 
 ### Verificación
 
-- No contiene datos de la práctica que no deban conservarse.
-- Incluye variables reemplazables.
-- Incluye controles de privacidad y verificación.
-- Puede reutilizarse en una tarea futura.
+- No contiene datos específicos innecesarios.
+- Incluye controles de privacidad y revisión.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] Definiste claramente el escenario o problema.
+- [ ] Separaste hechos, supuestos y preguntas abiertas.
+- [ ] La herramienta no tomó una decisión final por ti.
+- [ ] Aplicaste una revisión crítica antes de cerrar la actividad.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: Copilot toma una decisión final
+
+**Síntoma:** Copilot toma una decisión final.
+
+**Causa probable:** El prompt permite una conclusión global.
+
+**Solución:** Indica explícitamente que debe analizar, cuestionar o proponer opciones sin decidir.
+### Problema 2: Las objeciones o preguntas son genéricas
+
+**Síntoma:** Las objeciones o preguntas son genéricas.
+
+**Causa probable:** Falta contexto suficiente.
+
+**Solución:** Añade propósito, restricciones y antecedentes del escenario.
+### Problema 3: Las hipótesis aparecen como hechos
+
+**Síntoma:** Las hipótesis aparecen como hechos.
+
+**Causa probable:** No se solicitó distinguir niveles de certeza.
+
+**Solución:** Pide separar hechos, supuestos, inferencias y preguntas abiertas.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Escenario | Definiste una situación concreta. |
+| Análisis | Exploraste preguntas, objeciones o supuestos. |
+| Revisión | Evaluaste límites y puntos ciegos. |
+| Criterio humano | Mantviste la decisión final bajo responsabilidad humana. |
+
+### Conceptos Clave Reforzados
+
+- Copilot puede ayudar a ampliar perspectivas sin sustituir la decisión humana.
+- Los contraargumentos son insumos para investigar, no evidencia.
+- Separar hechos de supuestos mejora la calidad del análisis.
+- La revisión crítica debe complementar, no reemplazar, el juicio profesional.
+
+### Recursos Adicionales
+
+- [Crear contenido con Microsoft Copilot Chat](https://support.microsoft.com/en-us/microsoft-365-copilot/create-content-using-microsoft-365-copilot-chat)
+- [Preguntas frecuentes sobre Microsoft Copilot Chat](https://support.microsoft.com/en-us/microsoft-365-copilot/frequently-asked-questions-about-microsoft-365-copilot-chat)

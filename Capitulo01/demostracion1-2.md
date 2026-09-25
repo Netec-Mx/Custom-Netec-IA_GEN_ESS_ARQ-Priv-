@@ -1,131 +1,109 @@
-# Demostración guiada 1.2. Semáforo de riesgos: clasificar solicitudes seguras, condicionadas y no recomendadas; anonimizar datos y reescribir prompts para reducir exposición
+# Demostración guiada 1.2. Semáforo de riesgos: clasificar solicitudes seguras, condicionadas y no recomendadas; anonimizar datos y reescribir prompts para reducir exposición.
 
 ## Metadatos
 
 | Campo | Valor |
 |---|---|
 | Duración | 38 minutos |
-| Modalidad | Demostración guiada |
-| Complejidad | Básica |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 1 |
-| Resultado principal | Clasificar solicitudes por riesgo y reescribirlas reduciendo exposición de información |
+| Tipo de actividad | Demostración guiada |
+| Tecnología | Microsoft 365 Copilot Chat |
+| Nivel | Básico |
 
 ## Descripción General
 
-La demostración introduce un criterio práctico de decisión antes de enviar información a una herramienta generativa. El instructor utiliza un “semáforo” con tres niveles: verde, amarillo y rojo. Los participantes observan cómo una tarea puede conservar su objetivo de negocio aun cuando se eliminen identificadores, cifras sensibles o detalles innecesarios.
+En esta actividad aprenderás a clasificar solicitudes según su nivel de riesgo y a reducir la exposición de información mediante anonimización y reformulación de prompts.
 
 ## Objetivos de Aprendizaje
 
-- Diferenciar solicitudes de bajo, medio y alto riesgo.
-- Identificar información que no es necesaria para resolver una tarea.
-- Anonimizar datos antes de utilizarlos en un prompt.
-- Reformular solicitudes para minimizar exposición.
-- Reconocer situaciones en las que conviene detenerse y consultar políticas internas.
+- distinguir solicitudes de bajo, medio y alto riesgo;
+- identificar datos innecesarios;
+- anonimizar información;
+- reconocer cuándo detenerte y consultar políticas internas.
 
 ## Prerrequisitos
 
 ### Conocimiento Requerido
 
-| Concepto | Nivel |
-|---|---|
-| Uso básico de Copilot Chat | Básico |
-| Identificación básica de información sensible | Básico |
-| Revisión humana | Básico |
+Uso básico de Copilot Chat y criterios básicos de seguridad de la información.
 
 ### Acceso Requerido
 
-- Cuenta corporativa con Microsoft 365 Copilot Chat (Licenciamiento Básico).
-- Navegador e Internet.
+Microsoft 365 Copilot Chat y navegador web.
 
 ## Entorno del Laboratorio
 
 ### Hardware Mínimo
 
-Equipo con navegador e Internet. El temario no establece requisitos adicionales.
+Equipo con navegador e Internet.
 
 ### Software Requerido
 
-| Software / servicio | Requisito |
-|---|---|
-| Microsoft 365 Copilot Chat | Licenciamiento Básico |
-| Navegador web | Acceso corporativo |
+Microsoft 365 Copilot Chat.
 
 ### Configuración Inicial
 
-Prepare tres etiquetas visibles: **Verde**, **Amarillo** y **Rojo**.
+Usarás este semáforo:
 
-Definición didáctica para la actividad:
-
-- **Verde:** información de bajo riesgo o ya preparada para uso interno autorizado.
-- **Amarillo:** la tarea puede realizarse, pero primero deben eliminarse o generalizarse datos innecesarios y verificarse políticas.
-- **Rojo:** contiene datos cuya exposición no está justificada o requiere autorización/política específica antes de utilizarse.
+- **Verde:** bajo riesgo.
+- **Amarillo:** requiere anonimización o revisión.
+- **Rojo:** no debe utilizarse sin autorización o implica una decisión que no debe delegarse.
 
 ---
 
-## Paso 1: Clasificar solicitudes
+## Paso 1: Clasificar tres solicitudes
 
 ### Objetivo
 
-Aplicar el semáforo a solicitudes realistas de distintas áreas de negocio.
+Aplicar el semáforo a situaciones reales.
 
 ### Instrucciones
 
-1. Presente una solicitud por vez.
-2. Pida a los participantes clasificarla antes de explicar la respuesta.
+Clasifica cada caso:
 
 **Caso A**
 
 ```text
-Crea cinco opciones de asunto para un correo interno que invite al personal a una sesión de capacitación sobre servicio al cliente.
+Crea cinco asuntos para un correo interno sobre una capacitación.
 ```
 
 **Caso B**
 
 ```text
-Ayúdame a mejorar la redacción de este seguimiento de cobranza.
+Mejora este correo de cobranza.
 Cliente: Empresa Delta.
-Saldo vencido: 248,700.
+Saldo: 248,700.
 Contacto: Laura Hernández.
 Teléfono: 55-0000-0000.
-Correo: laura@example.com.
 ```
 
 **Caso C**
 
 ```text
-Analiza esta lista de empleados con nombre, domicilio, número de identificación, salario, evaluación de desempeño y observaciones médicas. Indica quién debería ser despedido.
+Analiza esta lista de empleados con salario, evaluación y observaciones médicas e indica quién debería ser despedido.
 ```
-
-3. Clasifique didácticamente:
-   - Caso A: verde.
-   - Caso B: amarillo; la tarea puede reformularse sin datos identificables ni cifras exactas si no son necesarias.
-   - Caso C: rojo para esta práctica; contiene datos personales/sensibles y además delega una decisión laboral de alto impacto.
-
-4. Explique que el semáforo es un recurso didáctico y no sustituye las políticas de la organización.
 
 ### Salida Esperada
 
-Los participantes distinguen que el riesgo depende tanto de la información suministrada como de la decisión que se pretende delegar.
+- Caso A: verde.
+- Caso B: amarillo.
+- Caso C: rojo.
 
 ### Verificación
 
-- Se clasificaron los tres casos.
-- Se justificó la clasificación.
-- Se identificaron datos innecesarios en los casos B y C.
-- Se reconoció que ciertas decisiones no deben delegarse automáticamente.
+- Puedes justificar cada clasificación.
+- Identificaste datos innecesarios en B y C.
 
 ---
 
-## Paso 2: Anonimizar una solicitud condicionada
+## Paso 2: Anonimizar una solicitud
 
 ### Objetivo
 
-Conservar el valor de la tarea reduciendo la cantidad de información expuesta.
+Mantener el objetivo de negocio sin exponer datos reales.
 
 ### Instrucciones
 
-1. Compare la versión original del caso B con esta versión anonimizada:
+Utiliza:
 
 ```text
 Ayúdame a mejorar la redacción de un correo de seguimiento de cobranza.
@@ -134,71 +112,130 @@ Contexto:
 - Es un cliente empresarial.
 - Existe un saldo vencido.
 - Ya se envió un primer recordatorio.
-- Quiero mantener un tono profesional y colaborativo.
 
 Genera:
 - asunto;
 - cuerpo del mensaje;
-- cierre;
-- una versión de máximo 130 palabras.
+- cierre.
 
-No inventes fechas, compromisos, importes ni consecuencias.
-Utiliza los marcadores [CLIENTE], [SALDO] y [FECHA] donde sea necesario.
+No inventes fechas, compromisos ni importes.
+Utiliza los marcadores [CLIENTE], [SALDO] y [FECHA].
 ```
-
-2. Envíe el prompt.
-3. Muestre que el objetivo puede lograrse sin nombre, teléfono, correo ni importe real.
-4. Explique que los marcadores se reemplazan fuera de la conversación, cuando corresponda.
 
 ### Salida Esperada
 
-Un borrador reutilizable que no dependa de datos identificables.
+Un borrador reutilizable sin datos identificables.
 
 ### Verificación
 
-- No aparecen datos reales de personas.
-- El texto conserva la intención del seguimiento.
-- Los valores sensibles se sustituyen por marcadores.
-- La respuesta no inventa amenazas, fechas ni compromisos.
+- No aparecen nombres reales.
+- No aparecen cifras reales.
+- El objetivo del mensaje se conserva.
 
 ---
 
-## Paso 3: Reescribir una solicitud de alto riesgo
+## Paso 3: Reformular una solicitud de alto riesgo
 
 ### Objetivo
 
-Transformar una petición improcedente en una actividad de apoyo que conserve revisión humana.
+Convertir una solicitud riesgosa en una tarea de apoyo.
 
 ### Instrucciones
 
-1. No utilice datos reales.
-2. Sustituya la petición del caso C por una solicitud de apoyo no decisoria:
+Utiliza:
 
 ```text
-Ayúdame a crear una lista de criterios neutrales para que un responsable de Recursos Humanos revise de forma consistente un proceso de desempeño.
+Ayúdame a crear criterios neutrales para revisar un proceso de desempeño.
 
-Los criterios deben centrarse en:
-- cumplimiento de objetivos previamente definidos;
+Incluye:
+- cumplimiento de objetivos;
 - evidencia documentada;
-- consistencia en el periodo evaluado;
+- consistencia;
 - acciones de mejora;
 - información que debe validar una persona responsable.
 
-No evalúes a ningún empleado y no recomiendes decisiones laborales.
+No evalúes empleados ni recomiendes decisiones laborales.
 ```
-
-3. Revise la respuesta.
-4. Identifique qué elementos siguen requiriendo política, contexto organizacional y criterio humano.
 
 ### Salida Esperada
 
-Una lista de criterios de revisión, no una decisión sobre personas.
+Una lista de criterios generales, sin decidir sobre personas.
 
 ### Verificación
 
-- La herramienta no selecciona ni clasifica empleados.
-- La salida se limita a criterios generales.
-- Se conserva una etapa explícita de revisión humana.
-- El participante puede explicar por qué la segunda formulación reduce el riesgo.
+- La herramienta no clasifica empleados.
+- La decisión permanece en manos humanas.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] Puedes diferenciar información proporcionada, inferencias y contenido no sustentado.
+- [ ] No utilizaste datos sensibles reales durante la práctica.
+- [ ] Aplicaste revisión humana antes de considerar válido el resultado.
+- [ ] Puedes explicar qué información debe verificarse antes de reutilizar una respuesta.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: La respuesta es demasiado genérica
+
+**Síntoma:** La respuesta es demasiado genérica.
+
+**Causa probable:** Falta contexto, audiencia, formato o restricciones.
+
+**Solución:** Agrega esos elementos y vuelve a ejecutar el prompt.
+### Problema 2: Copilot agrega información que no proporcionaste
+
+**Síntoma:** Copilot agrega información que no proporcionaste.
+
+**Causa probable:** La fuente no quedó suficientemente delimitada.
+
+**Solución:** Añade: “Utiliza únicamente la información proporcionada. Si falta un dato, indícalo”.
+### Problema 3: No sabes si una solicitud es segura
+
+**Síntoma:** No sabes si una solicitud es segura.
+
+**Causa probable:** Falta contexto sobre sensibilidad o políticas internas.
+
+**Solución:** Minimiza los datos, utiliza marcadores y valida la política de tu organización antes de continuar.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Necesidad | Definiste una tarea concreta. |
+| Interacción | Probaste y refinaste una solicitud. |
+| Riesgo | Evaluaste qué información puede utilizarse. |
+| Verificación | Revisaste la respuesta antes de usarla. |
+
+### Conceptos Clave Reforzados
+
+- Una respuesta convincente no equivale a una respuesta correcta.
+- Minimizar datos reduce exposición sin eliminar necesariamente la utilidad.
+- Las inferencias deben distinguirse de los hechos.
+- La revisión humana forma parte del uso responsable de IA generativa.
+
+### Recursos Adicionales
+
+- [Introducción a Microsoft Copilot Chat](https://support.microsoft.com/es-es/microsoft-365-copilot/get-started-with-microsoft-365-copilot-chat)
+- [Cómo escribir mejores prompts en Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/write-a-great-prompt-in-microsoft-365-copilot)

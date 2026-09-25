@@ -5,36 +5,26 @@
 | Campo | Valor |
 |---|---|
 | Duración | 42 minutos |
-| Modalidad | Demostración guiada |
-| Complejidad | Intermedia |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 2 |
-| Resultado principal | Comprender cuándo los ejemplos ayudan a orientar formato, tono y consistencia |
+| Tipo | Demostración guiada |
+| Nivel | Intermedio |
 
 ## Descripción General
 
-El instructor resuelve la misma tarea tres veces: sin ejemplo, con un ejemplo y con varios ejemplos. El objetivo no es demostrar que una técnica siempre es superior, sino observar cuándo los ejemplos aportan claridad y cuándo resultan innecesarios.
+Resolverás una misma tarea con zero-shot, one-shot y few-shot para observar cuándo los ejemplos ayudan realmente.
 
 ## Objetivos de Aprendizaje
 
-- Diferenciar zero-shot, one-shot y few-shot.
-- Utilizar ejemplos como guía de forma y estilo.
-- Imponer formatos y restricciones explícitas.
-- Comparar resultados sin asumir que más ejemplos siempre producen una mejor respuesta.
+- diferenciar las tres técnicas;
+- usar ejemplos para orientar formato;
+- decidir cuándo un ejemplo aporta valor.
 
 ## Prerrequisitos
 
-### Conocimiento Requerido
-
-| Concepto | Nivel |
-|---|---|
-| Prompt estructurado | Básico |
-| Revisión de formato | Básico |
-| Copilot Chat | Básico |
+Conocimiento básico de prompting.
 
 ### Acceso Requerido
 
-- Microsoft 365 Copilot Chat (Licenciamiento Básico).
+Microsoft 365 Copilot Chat.
 
 ## Entorno del Laboratorio
 
@@ -44,11 +34,18 @@ Equipo con navegador e Internet.
 
 ### Software Requerido
 
-Microsoft 365 Copilot Chat y navegador web.
+Microsoft 365 Copilot Chat.
 
 ### Configuración Inicial
 
-Utilice una conversación nueva o reinicie el contexto entre variantes cuando sea posible.
+Utiliza este escenario:
+
+```text
+Incidencia: retraso en entrega de reporte mensual.
+Impacto: el comité no contará con la versión final.
+Estado: análisis completado; falta validar dos cifras.
+Acción siguiente: revisión con Finanzas.
+```
 
 ---
 
@@ -56,20 +53,11 @@ Utilice una conversación nueva o reinicie el contexto entre variantes cuando se
 
 ### Objetivo
 
-Resolver la tarea sin proporcionar ejemplos.
+Resolver sin ejemplos.
 
 ### Instrucciones
 
-1. Utilice estos datos ficticios:
-
-```text
-Incidencia: retraso en entrega de reporte mensual.
-Impacto: el comité no contará con la versión final antes de su reunión.
-Estado: análisis completado; falta validar dos cifras.
-Acción siguiente: revisión con Finanzas.
-```
-
-2. Envíe:
+Envía:
 
 ```text
 Convierte la información en una actualización ejecutiva.
@@ -84,17 +72,14 @@ Máximo 80 palabras.
 No inventes responsables, fechas ni cifras.
 ```
 
-3. Guarde la respuesta como **Versión A**.
-
 ### Salida Esperada
 
-Una actualización ejecutiva con las cuatro secciones solicitadas.
+Una actualización con las cuatro secciones.
 
 ### Verificación
 
-- Respeta la estructura.
-- No agrega datos inexistentes.
-- Se mantiene dentro de una extensión breve.
+- Respeta el formato.
+- No agrega datos.
 
 ---
 
@@ -102,39 +87,31 @@ Una actualización ejecutiva con las cuatro secciones solicitadas.
 
 ### Objetivo
 
-Mostrar a Copilot un ejemplo del patrón esperado.
+Usar un ejemplo como patrón.
 
 ### Instrucciones
 
-1. Añada un ejemplo ficticio:
+Añade:
 
 ```text
-Ejemplo del formato esperado:
+Ejemplo:
 
 Situación: El proveedor entregó parcialmente la documentación.
 Impacto: La validación no puede cerrarse.
 Estado: Se revisó la información disponible.
-Siguiente acción: Confirmar los documentos faltantes con el proveedor.
+Siguiente acción: Confirmar los documentos faltantes.
+
+Usa este ejemplo únicamente como patrón de estructura.
+No copies sus hechos.
 ```
-
-2. Después del ejemplo, agregue los datos originales y pida:
-
-```text
-Ahora aplica exactamente esta estructura al siguiente caso.
-No copies el contenido del ejemplo; úsalo únicamente como patrón.
-```
-
-3. Guarde la respuesta como **Versión B**.
 
 ### Salida Esperada
 
-Una salida más cercana al patrón mostrado, sin copiar hechos del ejemplo.
+Una salida más consistente en estructura.
 
 ### Verificación
 
-- Mantiene las cuatro etiquetas.
-- No transfiere al nuevo caso el “proveedor” del ejemplo.
-- El texto se ajusta a los datos del nuevo escenario.
+- No copia hechos del ejemplo.
 
 ---
 
@@ -142,69 +119,127 @@ Una salida más cercana al patrón mostrado, sin copiar hechos del ejemplo.
 
 ### Objetivo
 
-Utilizar varios ejemplos para reforzar un patrón de salida.
+Usar varios ejemplos para reforzar consistencia.
 
 ### Instrucciones
 
-1. Proporcione dos ejemplos breves adicionales, cada uno con situaciones diferentes.
-2. Indique:
+Añade dos ejemplos más y pide:
 
 ```text
-Los ejemplos muestran únicamente el patrón de redacción.
-No reutilices hechos, nombres ni circunstancias de los ejemplos.
+Usa los ejemplos solo como patrón.
 
 Genera la actualización del caso original con:
 - una frase por sección;
 - lenguaje ejecutivo;
-- máximo 70 palabras;
-- sin recomendaciones que no estén sustentadas.
+- máximo 70 palabras.
 ```
-
-3. Guarde la respuesta como **Versión C**.
 
 ### Salida Esperada
 
-Una salida consistente con el patrón y con menor variación de estilo.
+Una respuesta consistente.
 
 ### Verificación
 
-- La salida respeta una frase por sección.
-- No copia hechos de los ejemplos.
-- Mantiene la información original.
+- Mantiene el formato.
+- No transfiere hechos de otros ejemplos.
 
 ---
 
-## Paso 4: Comparar y decidir cuándo usar ejemplos
+## Paso 4: Comparar
 
 ### Objetivo
 
-Determinar si los ejemplos agregaron valor real.
+Decidir qué técnica conviene.
 
 ### Instrucciones
 
-1. Compare A, B y C mediante esta tabla:
+Compara A, B y C:
 
 | Criterio | A | B | C |
 |---|---|---|---|
 | Formato correcto | | | |
 | Tono consistente | | | |
 | Información sustentada | | | |
-| Supuestos introducidos | | | |
-| Esfuerzo para construir el prompt | | | |
-
-2. Concluya:
-   - zero-shot es suficiente cuando la instrucción ya define claramente la salida;
-   - one-shot puede ayudar cuando se desea un patrón específico;
-   - few-shot puede ser útil cuando la consistencia entre varias salidas importa.
+| Supuestos | | | |
 
 ### Salida Esperada
 
-Una comparación práctica de las tres técnicas.
+Una conclusión basada en el tipo de tarea.
 
 ### Verificación
 
-- El participante distingue las tres técnicas.
-- Puede justificar cuál usaría según la tarea.
-- No concluye automáticamente que few-shot siempre sea necesario.
+- Puedes explicar cuándo usar zero-shot, one-shot o few-shot.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] Tu prompt define con claridad el objetivo.
+- [ ] Incluiste contexto, formato y restricciones cuando fueron necesarios.
+- [ ] Comparaste resultados usando criterios concretos.
+- [ ] El prompt final puede reutilizarse sin depender excesivamente del historial de la conversación.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: La respuesta no sigue el formato solicitado
+
+**Síntoma:** La respuesta no sigue el formato solicitado.
+
+**Causa probable:** El formato se expresó de manera ambigua.
+
+**Solución:** Enumera explícitamente las secciones, columnas o elementos que debe contener.
+### Problema 2: La respuesta cambia demasiado entre intentos
+
+**Síntoma:** La respuesta cambia demasiado entre intentos.
+
+**Causa probable:** El prompt deja abiertas demasiadas decisiones.
+
+**Solución:** Añade restricciones, prioridades y criterios de salida.
+### Problema 3: Los ejemplos contaminan la respuesta
+
+**Síntoma:** Los ejemplos contaminan la respuesta.
+
+**Causa probable:** No quedó claro que son solo un patrón.
+
+**Solución:** Indica que Copilot debe imitar la estructura o el tono, pero no copiar hechos de los ejemplos.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Solicitud | Partiste de una necesidad de trabajo. |
+| Estructura | Añadiste objetivo, contexto, expectativas y fuente. |
+| Experimentación | Probaste variantes y refinamientos. |
+| Reutilización | Construiste un prompt más consistente. |
+
+### Conceptos Clave Reforzados
+
+- Un prompt útil puede combinar objetivo, contexto, expectativas y fuente.
+- Formato y restricciones ayudan a reducir ambigüedad.
+- Los ejemplos orientan, pero no siempre son necesarios.
+- Un prompt reutilizable debe poder entenderse fuera de la conversación original.
+
+### Recursos Adicionales
+
+- [Introducción a la escritura de prompts en Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot)
+- [Cómo escribir mejores prompts en Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/write-a-great-prompt-in-microsoft-365-copilot)

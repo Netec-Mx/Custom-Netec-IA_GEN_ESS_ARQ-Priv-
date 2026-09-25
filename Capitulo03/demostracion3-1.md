@@ -5,32 +5,28 @@
 | Campo | Valor |
 |---|---|
 | Duración | 35 minutos |
-| Modalidad | Demostración guiada |
-| Complejidad | Intermedia |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 3 |
-| Resultado principal | Transformar una misma fuente en cuatro formatos manteniendo trazabilidad |
+| Tipo | Demostración guiada |
+| Nivel | Intermedio |
 
 ## Descripción General
 
-El instructor utiliza un texto fuente único y lo transforma sucesivamente en resumen ejecutivo, correo, tabla y lista de acciones. La demostración hace visible el riesgo de que una transformación introduzca detalles inexistentes y establece una validación contra la fuente antes de reutilizar cada salida.
+Transformarás una misma fuente en varios formatos sin cambiar los hechos.
 
 ## Objetivos de Aprendizaje
 
-- Transformar contenido sin cambiar los hechos.
-- Adaptar formato y audiencia.
-- Solicitar restricciones explícitas.
-- Validar cada salida contra la fuente.
+- resumir;
+- adaptar a otra audiencia;
+- estructurar en tabla;
+- extraer acciones;
+- validar contra fuente.
 
 ## Prerrequisitos
 
-- Uso de prompts estructurados.
-- Revisión de respuestas.
-- Capítulos 1 y 2.
+Prompting estructurado.
 
 ### Acceso Requerido
 
-Microsoft 365 Copilot Chat (Licenciamiento Básico).
+Microsoft 365 Copilot Chat.
 
 ## Entorno del Laboratorio
 
@@ -44,143 +40,196 @@ Microsoft 365 Copilot Chat.
 
 ### Configuración Inicial
 
-Utilice el siguiente texto ficticio:
+Usa este texto:
 
 ```text
-Durante la revisión mensual del proyecto se confirmó que 18 de 20 actividades previstas fueron completadas. Dos actividades de validación permanecen abiertas porque el área responsable solicitó revisar información adicional. La capacitación de usuarios se realizó con 24 participantes. Se identificaron tres dudas recurrentes relacionadas con el nuevo procedimiento. El equipo acordó preparar una guía breve de preguntas frecuentes. La fecha de cierre de las dos validaciones pendientes todavía no está confirmada.
+Durante la revisión mensual se confirmó que 18 de 20 actividades fueron completadas. Dos validaciones siguen abiertas. La capacitación se realizó con 24 participantes. Se identificaron tres dudas recurrentes. El equipo acordó preparar una guía de preguntas frecuentes. La fecha de cierre no está confirmada.
 ```
 
 ---
 
-## Paso 1: Generar un resumen ejecutivo
+## Paso 1: Crear un resumen ejecutivo
 
 ### Objetivo
 
-Reducir el contenido conservando los hechos principales.
+Reducir la información sin perder hechos.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
 Resume el texto para un gerente.
 
 Incluye:
 - avance;
-- pendiente principal;
-- hecho relevante de adopción;
-- información aún no confirmada.
+- pendiente;
+- hecho relevante;
+- información no confirmada.
 
 Máximo 100 palabras.
-Utiliza únicamente hechos presentes en la fuente.
 ```
 
 ### Salida Esperada
 
-Un resumen que mencione 18 de 20 actividades, dos validaciones abiertas, 24 participantes, tres dudas recurrentes y la ausencia de fecha confirmada, sin agregar responsables o fechas.
+Resumen sustentado.
 
 ### Verificación
 
-- Todos los hechos aparecen en la fuente.
-- No hay fechas inventadas.
-- No se presentan las validaciones como cerradas.
+- No inventa fechas.
 
 ---
 
-## Paso 2: Convertir el resumen en correo
+## Paso 2: Convertir en correo
 
 ### Objetivo
 
-Adaptar el contenido a una comunicación ejecutiva sin introducir nueva información.
+Cambiar formato sin cambiar hechos.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
 Convierte el resumen en un correo interno.
 
 Incluye:
 - asunto;
-- apertura de una frase;
 - avances;
 - pendientes;
 - cierre.
 
-Tono profesional y directo.
-No agregues compromisos, responsables ni fechas.
+No agregues compromisos ni responsables.
 ```
 
 ### Salida Esperada
 
-Un correo breve que conserva la misma información factual.
+Correo breve.
 
 ### Verificación
 
-- El correo no agrega decisiones.
-- El tono cambia, pero los hechos se mantienen.
+- Conserva los mismos hechos.
 
 ---
 
-## Paso 3: Transformar la información en tabla
+## Paso 3: Transformar en tabla
 
 ### Objetivo
 
-Estructurar el mismo contenido para revisión rápida.
+Organizar para revisión rápida.
 
 ### Instrucciones
 
-Envíe:
+Envía:
 
 ```text
-Convierte la información original en una tabla con las columnas:
-Elemento | Estado | Evidencia de la fuente | Requiere seguimiento
-
-No agregues elementos que no aparezcan en el texto.
+Crea una tabla:
+Elemento | Estado | Evidencia | Requiere seguimiento
 ```
 
 ### Salida Esperada
 
-Una tabla con actividades, validaciones, capacitación, dudas y guía de preguntas frecuentes.
+Tabla basada en la fuente.
 
 ### Verificación
 
-- Cada fila puede rastrearse a la fuente.
-- La tabla no introduce nuevos hechos.
+- Cada fila puede rastrearse al texto original.
 
 ---
 
-## Paso 4: Generar lista de acciones y validar
+## Paso 4: Extraer acciones
 
 ### Objetivo
 
-Diferenciar acciones explícitas de sugerencias.
+Distinguir acciones explícitas de sugerencias.
 
 ### Instrucciones
 
-1. Envíe:
+Envía:
 
 ```text
-Extrae únicamente las acciones explícitas que aparecen en la fuente.
+Extrae únicamente las acciones explícitas.
 No propongas acciones nuevas.
 ```
 
-2. Después:
-
-```text
-Revisa todas las salidas anteriores.
-Identifica cualquier hecho que no aparezca literalmente o de forma inequívoca en la fuente.
-Si existe, señálalo para eliminarlo.
-```
-
 ### Salida Esperada
 
-La acción explícita principal debe ser preparar una guía breve de preguntas frecuentes. No debe aparecer una fecha de cierre inventada.
+Lista de acciones reales.
 
 ### Verificación
 
-- Las acciones extraídas son realmente explícitas.
-- No se confunden recomendaciones con acuerdos.
-- La validación final detecta cualquier desviación.
+- No aparecen recomendaciones inventadas.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] La salida se basa únicamente en la fuente o archivo utilizado.
+- [ ] Puedes localizar evidencia para las afirmaciones importantes.
+- [ ] Diferenciaste hechos de inferencias.
+- [ ] Eliminaste o corregiste cualquier afirmación no sustentada.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: No puedes agregar el archivo
+
+**Síntoma:** No puedes agregar el archivo.
+
+**Causa probable:** La opción puede depender de la cuenta, formato o configuración.
+
+**Solución:** Verifica tu cuenta y utiliza el archivo de práctica compatible proporcionado para la actividad.
+### Problema 2: Copilot responde con información externa
+
+**Síntoma:** Copilot responde con información externa.
+
+**Causa probable:** La fuente no se delimitó.
+
+**Solución:** Comienza el prompt con: “Trabaja únicamente con el archivo proporcionado”.
+### Problema 3: La evidencia indicada no coincide con la fuente
+
+**Síntoma:** La evidencia indicada no coincide con la fuente.
+
+**Causa probable:** La autoevaluación de Copilot también puede contener errores.
+
+**Solución:** Comprueba manualmente el fragmento y marca la afirmación como no verificada si no encuentras soporte.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Fuente | Trabajaste con información delimitada. |
+| Transformación | Generaste una salida a partir de esa fuente. |
+| Evidencia | Pediste soporte para las afirmaciones. |
+| Auditoría | Validaste el resultado contra la información original. |
+
+### Conceptos Clave Reforzados
+
+- La fuente original sigue siendo el criterio principal de validación.
+- Transformar un contenido no autoriza a modificar sus hechos.
+- Reconocer que falta información es mejor que completar vacíos sin evidencia.
+- Adjuntar un archivo no elimina la necesidad de revisar las respuestas.
+
+### Recursos Adicionales
+
+- [Agregar contenido a prompts de Microsoft Copilot Chat](https://support.microsoft.com/es-es/microsoft-365-copilot/add-content-to-microsoft-365-copilot-chat-prompts)
+- [Formatos de archivo compatibles con Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/file-formats-supported-by-microsoft-365-copilot)

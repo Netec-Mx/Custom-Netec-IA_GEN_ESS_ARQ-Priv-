@@ -5,114 +5,77 @@
 | Campo | Valor |
 |---|---|
 | Duración | 77 minutos |
-| Modalidad | Laboratorio |
-| Complejidad | Básica |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 1 |
-| Resultado principal | Mapa personal de oportunidades, riesgos y controles de uso |
+| Tipo de actividad | Laboratorio |
+| Tecnología | Microsoft 365 Copilot Chat |
+| Nivel | Básico |
 
 ## Descripción General
 
-El participante construirá un mapa de tareas de su propio entorno laboral que podrían beneficiarse de Copilot Chat. Cada oportunidad se probará con una solicitud básica y luego se revisará desde tres perspectivas: utilidad, verificación y seguridad. El resultado final es una tabla de decisiones que identifica qué tareas son apropiadas, cuáles requieren condiciones y cuáles deben evitarse o escalarse.
+En este laboratorio identificarás tareas reales de tu trabajo donde Copilot Chat puede aportar valor. Después evaluarás qué información puedes usar, qué debe verificarse y qué riesgos debes considerar.
 
 ## Objetivos de Aprendizaje
 
-- Identificar tareas reales donde Copilot Chat puede aportar valor.
-- Formular prompts iniciales para tareas cotidianas.
-- Determinar qué información es necesaria y cuál debe eliminarse.
-- Identificar qué resultados requieren verificación.
-- Crear reglas personales de uso seguro.
+- identificar oportunidades de uso;
+- formular prompts básicos;
+- evaluar riesgos;
+- definir controles de verificación;
+- decidir cuándo usar o no usar Copilot.
 
 ## Prerrequisitos
 
 ### Conocimiento Requerido
 
-| Concepto | Nivel |
-|---|---|
-| Uso básico de navegador | Básico |
-| Conocimiento de las propias tareas de trabajo | Básico |
-| Principios explicados en el capítulo 1 | Básico |
+Conocimiento básico de tus propias tareas de trabajo.
 
 ### Acceso Requerido
 
-- Cuenta corporativa con Microsoft 365 Copilot Chat (Licenciamiento Básico).
-- Navegador web e Internet.
-- Material de práctica del instructor.
-- No utilizar datos personales, confidenciales o sensibles reales durante el laboratorio.
+Microsoft 365 Copilot Chat, navegador e Internet.
 
 ## Entorno del Laboratorio
 
 ### Hardware Mínimo
 
-Equipo con navegador web e Internet. No se requieren herramientas de desarrollo.
+Equipo con navegador e Internet.
 
 ### Software Requerido
 
-| Software / servicio | Requisito |
-|---|---|
-| Microsoft 365 Copilot Chat | Licenciamiento Básico |
-| Navegador web | Requerido |
-| Hoja de notas o documento | Para construir el mapa de oportunidades |
+Microsoft 365 Copilot Chat y una hoja de notas.
 
 ### Configuración Inicial
 
-Cree una tabla con estas columnas:
+Crea esta tabla:
 
 | Tarea | Valor esperado | Información necesaria | Riesgo | Qué verificar | Decisión |
 |---|---|---|---|---|---|
 
 ---
 
-## Paso 1: Inventario de oportunidades
+## Paso 1: Identificar oportunidades
 
 ### Objetivo
 
-Identificar tareas propias que sean repetitivas, intensivas en texto, análisis, síntesis, comparación o ideación.
+Detectar tareas en las que Copilot podría aportar valor.
 
 ### Instrucciones
 
-1. Escriba entre cinco y ocho tareas frecuentes de su puesto.
-2. No incluya todavía nombres de clientes, empleados, proveedores ni datos reales.
-3. Utilice como guía estas categorías:
+1. Escribe entre cinco y ocho tareas frecuentes de tu puesto.
+2. Busca tareas relacionadas con:
    - redactar;
    - resumir;
    - transformar;
-   - analizar;
    - comparar;
+   - analizar;
    - idear.
-4. Ejemplos por perfil:
-
-   **Administración**
-   - convertir notas en minuta;
-   - estructurar un reporte semanal.
-
-   **Comercial**
-   - preparar preguntas para una reunión;
-   - adaptar un mensaje a distintos perfiles de cliente.
-
-   **Finanzas**
-   - explicar un reporte en lenguaje ejecutivo;
-   - convertir observaciones en lista de validaciones.
-
-   **Recursos Humanos**
-   - preparar una guía de preguntas para entrevista;
-   - resumir una política para comunicación interna.
-
-   **Operaciones**
-   - convertir incidencias en una lista de acciones;
-   - comparar dos alternativas operativas.
-
-5. Seleccione tres tareas que considere de mayor valor y márquelas como A, B y C.
+3. Selecciona tres tareas prioritarias.
 
 ### Salida Esperada
 
-Una lista de al menos cinco tareas, con tres oportunidades priorizadas.
+Una lista de tareas reales con tres oportunidades priorizadas.
 
 ### Verificación
 
-- Las tareas corresponden al trabajo real del participante.
-- No contienen información sensible real.
-- Las tres seleccionadas pueden formularse como solicitudes concretas.
+- Las tareas corresponden a tu trabajo.
+- No contienen datos sensibles.
 
 ---
 
@@ -120,35 +83,31 @@ Una lista de al menos cinco tareas, con tres oportunidades priorizadas.
 
 ### Objetivo
 
-Observar qué ocurre cuando la necesidad se expresa con poco contexto.
+Observar qué ocurre con poco contexto.
 
 ### Instrucciones
 
-1. Elija la tarea A.
-2. Escriba una solicitud básica. Ejemplo:
+1. Elige una tarea.
+2. Formula una solicitud simple, por ejemplo:
 
 ```text
-Ayúdame a preparar una minuta de reunión.
+Ayúdame a preparar una minuta.
 ```
 
-3. Revise la respuesta.
-4. Registre:
+3. Ejecuta el prompt.
+4. Registra:
    - qué supuso Copilot;
-   - qué información faltó;
-   - qué partes serían poco útiles;
-   - qué riesgo existe si la respuesta se usa sin revisar.
-
-5. Complete la fila correspondiente en su mapa.
+   - qué faltó;
+   - qué tendrías que verificar.
 
 ### Salida Esperada
 
-Una primera respuesta que permita observar limitaciones por falta de contexto.
+Una primera respuesta con limitaciones visibles.
 
 ### Verificación
 
-- Se registró al menos un supuesto introducido por la herramienta.
-- Se identificó información faltante.
-- Se documentó qué tendría que verificarse.
+- Identificaste al menos un supuesto.
+- Identificaste información faltante.
 
 ---
 
@@ -156,11 +115,11 @@ Una primera respuesta que permita observar limitaciones por falta de contexto.
 
 ### Objetivo
 
-Añadir objetivo, contexto, formato y restricciones para obtener un resultado más controlado.
+Añadir contexto y restricciones.
 
 ### Instrucciones
 
-1. Use este patrón:
+Utiliza esta estructura:
 
 ```text
 Objetivo:
@@ -170,53 +129,23 @@ Contexto:
 [para quién y para qué]
 
 Información disponible:
-[datos que sí puedo proporcionar]
+[datos permitidos]
 
 Genera:
-[formato deseado]
+[formato]
 
 Restricciones:
-[qué no debe inventar, longitud, tono u otras reglas]
+[qué no debe inventar]
 ```
-
-2. Ejemplo para una minuta:
-
-```text
-Objetivo:
-Convertir notas de una reunión en una minuta breve.
-
-Contexto:
-La minuta será enviada a un equipo interno de operaciones.
-
-Información disponible:
-- Se revisó el avance del proyecto Alfa.
-- El proveedor entregará una actualización el viernes.
-- El equipo de operaciones revisará dos incidencias abiertas.
-- La fecha de la siguiente reunión aún no está definida.
-
-Genera:
-- objetivo de la reunión;
-- acuerdos;
-- pendientes;
-- información por confirmar.
-
-Restricciones:
-No inventes responsables, fechas ni decisiones que no aparezcan en las notas.
-Máximo 200 palabras.
-```
-
-3. Compare la nueva respuesta con la obtenida en el paso anterior.
-4. Registre dos mejoras observables.
 
 ### Salida Esperada
 
-Una respuesta más útil, estructurada y limitada por la información disponible.
+Una respuesta más precisa.
 
 ### Verificación
 
-- La salida sigue el formato solicitado.
-- No añade responsables o fechas inexistentes.
-- El participante identifica al menos dos mejoras respecto del prompt inicial.
+- La salida sigue el formato.
+- No agrega información inexistente.
 
 ---
 
@@ -224,75 +153,121 @@ Una respuesta más útil, estructurada y limitada por la información disponible
 
 ### Objetivo
 
-Determinar qué información puede utilizarse, qué debe anonimizarse y qué debería excluirse.
+Evaluar si la información puede usarse.
 
 ### Instrucciones
 
-1. Para las tareas A, B y C, enumere la información que normalmente usaría.
-2. Clasifique cada dato:
-   - verde;
-   - amarillo;
-   - rojo.
-3. Elimine de su prompt cualquier dato que no sea imprescindible.
-4. Cuando sea posible, sustituya valores por marcadores:
-
-```text
-[CLIENTE]
-[ÁREA]
-[IMPORTE]
-[FECHA]
-[PROYECTO]
-```
-
-5. Si una tarea exige información que no debería incluirse sin autorización, márquela como **“Escalar / validar política”**.
+1. Clasifica los datos de cada tarea como verde, amarillo o rojo.
+2. Sustituye datos sensibles por marcadores cuando sea posible.
+3. Marca como “Escalar / validar política” cualquier caso dudoso.
 
 ### Salida Esperada
 
-Tres tareas con una decisión explícita sobre qué información utilizar y qué información excluir o anonimizar.
+Tres tareas evaluadas por riesgo.
 
 ### Verificación
 
-- Cada tarea tiene una clasificación de riesgo.
-- No se utilizan datos reales sensibles.
-- Las tareas condicionadas indican el control requerido.
+- Cada tarea tiene una decisión.
+- No utilizaste datos sensibles reales.
 
 ---
 
-## Paso 5: Definir criterios de verificación
+## Paso 5: Definir controles de verificación
 
 ### Objetivo
 
-Establecer qué debe comprobarse antes de reutilizar una respuesta.
+Crear una rutina antes de usar una respuesta.
 
 ### Instrucciones
 
-1. Para cada tarea seleccionada, defina al menos tres puntos de control.
-2. Utilice esta guía:
+Para cada tarea completa:
 
 ```text
 Antes de utilizar la respuesta debo comprobar:
-1. Que los nombres y cifras provienen de mi fuente.
-2. Que no se agregaron compromisos o fechas.
-3. Que el tono es apropiado para la audiencia.
-4. Que las conclusiones están respaldadas.
-5. Que la información utilizada puede compartirse.
+1. ...
+2. ...
+3. ...
 ```
-
-3. Añada los controles a la columna **Qué verificar**.
-4. Marque la decisión final:
-   - Usar.
-   - Usar con condiciones.
-   - No usar / escalar.
 
 ### Salida Esperada
 
-Un mapa completo de oportunidades con utilidad, datos requeridos, riesgo, controles y decisión.
+Un mapa completo de oportunidades, riesgos y controles.
 
 ### Verificación
 
-- El mapa contiene al menos tres tareas evaluadas completamente.
-- Cada tarea tiene controles de verificación.
-- Ninguna decisión depende únicamente de la respuesta de Copilot.
-- El participante puede explicar por qué una tarea es segura, condicionada o no recomendada.
+- Cada tarea tiene controles.
+- Puedes explicar por qué la usarías, condicionarías o evitarías.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] Puedes diferenciar información proporcionada, inferencias y contenido no sustentado.
+- [ ] No utilizaste datos sensibles reales durante la práctica.
+- [ ] Aplicaste revisión humana antes de considerar válido el resultado.
+- [ ] Puedes explicar qué información debe verificarse antes de reutilizar una respuesta.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: La respuesta es demasiado genérica
+
+**Síntoma:** La respuesta es demasiado genérica.
+
+**Causa probable:** Falta contexto, audiencia, formato o restricciones.
+
+**Solución:** Agrega esos elementos y vuelve a ejecutar el prompt.
+### Problema 2: Copilot agrega información que no proporcionaste
+
+**Síntoma:** Copilot agrega información que no proporcionaste.
+
+**Causa probable:** La fuente no quedó suficientemente delimitada.
+
+**Solución:** Añade: “Utiliza únicamente la información proporcionada. Si falta un dato, indícalo”.
+### Problema 3: No sabes si una solicitud es segura
+
+**Síntoma:** No sabes si una solicitud es segura.
+
+**Causa probable:** Falta contexto sobre sensibilidad o políticas internas.
+
+**Solución:** Minimiza los datos, utiliza marcadores y valida la política de tu organización antes de continuar.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Necesidad | Definiste una tarea concreta. |
+| Interacción | Probaste y refinaste una solicitud. |
+| Riesgo | Evaluaste qué información puede utilizarse. |
+| Verificación | Revisaste la respuesta antes de usarla. |
+
+### Conceptos Clave Reforzados
+
+- Una respuesta convincente no equivale a una respuesta correcta.
+- Minimizar datos reduce exposición sin eliminar necesariamente la utilidad.
+- Las inferencias deben distinguirse de los hechos.
+- La revisión humana forma parte del uso responsable de IA generativa.
+
+### Recursos Adicionales
+
+- [Introducción a Microsoft Copilot Chat](https://support.microsoft.com/es-es/microsoft-365-copilot/get-started-with-microsoft-365-copilot-chat)
+- [Cómo escribir mejores prompts en Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/write-a-great-prompt-in-microsoft-365-copilot)

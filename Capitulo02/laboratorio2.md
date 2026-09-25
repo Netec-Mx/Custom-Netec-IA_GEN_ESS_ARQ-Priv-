@@ -5,37 +5,27 @@
 | Campo | Valor |
 |---|---|
 | Duración | 76 minutos |
-| Modalidad | Laboratorio |
-| Complejidad | Intermedia |
-| Tecnología | Microsoft 365 Copilot Chat (Licenciamiento Básico) |
-| Capítulo | 2 |
-| Resultado principal | Conjunto de prompts reutilizables probados y refinados |
+| Tipo | Laboratorio |
+| Nivel | Intermedio |
 
 ## Descripción General
 
-El participante construirá una pequeña biblioteca de prompts basada en situaciones reales de su función. Cada prompt pasará por tres versiones: solicitud inicial, versión estructurada y versión validada. El laboratorio prioriza utilidad, repetibilidad y capacidad de revisión.
+Construirás y refinarás prompts reutilizables para situaciones reales de trabajo.
 
 ## Objetivos de Aprendizaje
 
-- Construir prompts a partir de tareas reales.
-- Aplicar objetivo, contexto, expectativas y fuente.
-- Añadir formato, restricciones, tono y ejemplos cuando aporten valor.
-- Refinar prompts mediante conversación.
-- Documentar criterios de calidad y verificación.
+- construir prompts estructurados;
+- añadir restricciones;
+- refinar respuestas;
+- crear criterios de calidad.
 
 ## Prerrequisitos
 
-### Conocimiento Requerido
-
-- Capítulos 1 y 2.
-- Uso básico de Copilot Chat.
-- Capacidad de describir una tarea laboral sin incluir datos sensibles.
+Capítulos 1 y 2.
 
 ### Acceso Requerido
 
-- Microsoft 365 Copilot Chat.
-- Navegador e Internet.
-- Documento de notas.
+Microsoft 365 Copilot Chat y documento de notas.
 
 ## Entorno del Laboratorio
 
@@ -45,53 +35,46 @@ Equipo con navegador e Internet.
 
 ### Software Requerido
 
-Microsoft 365 Copilot Chat (Licenciamiento Básico).
+Microsoft 365 Copilot Chat.
 
 ### Configuración Inicial
 
-Cree una plantilla con estas secciones:
+Crea esta plantilla:
 
 ```text
-Nombre del prompt:
+Nombre:
 Tarea:
 Versión inicial:
 Versión estructurada:
 Versión refinada:
 Criterios de calidad:
-Qué debe verificarse:
+Qué debo verificar:
 ```
 
 ---
 
-## Paso 1: Seleccionar tres situaciones de trabajo
+## Paso 1: Seleccionar tres tareas
 
 ### Objetivo
 
-Definir tareas que puedan resolverse mediante prompts reutilizables.
+Elegir tareas repetibles.
 
 ### Instrucciones
 
-1. Elija tres categorías diferentes:
-   - comunicación;
-   - resumen/transformación;
-   - análisis/comparación/ideación.
-2. Ejemplos:
-   - convertir notas en correo;
-   - resumir un reporte;
-   - comparar opciones;
-   - preparar preguntas para una reunión;
-   - transformar un texto técnico en explicación ejecutiva.
-3. Describa cada tarea en una oración.
+Selecciona tres:
+- comunicación;
+- resumen;
+- análisis;
+- comparación;
+- ideación.
 
 ### Salida Esperada
 
-Tres tareas concretas y sin datos sensibles.
+Tres tareas concretas.
 
 ### Verificación
 
 - Cada tarea produce un entregable claro.
-- Las tareas son repetibles.
-- Ninguna requiere delegar una decisión de alto impacto.
 
 ---
 
@@ -99,28 +82,25 @@ Tres tareas concretas y sin datos sensibles.
 
 ### Objetivo
 
-Registrar cómo se formularía espontáneamente cada tarea.
+Registrar tu primera forma de pedir la tarea.
 
 ### Instrucciones
 
-1. Escriba un prompt corto para cada tarea.
-2. Ejemplo:
+Ejemplo:
 
 ```text
 Resume este reporte.
 ```
 
-3. Ejecute cada prompt con contenido ficticio o proporcionado por el instructor.
-4. Registre qué faltó.
+Ejecuta tus tres prompts.
 
 ### Salida Esperada
 
-Tres prompts iniciales y observaciones sobre sus limitaciones.
+Tres respuestas iniciales.
 
 ### Verificación
 
-- Se ejecutaron los tres prompts.
-- Se documentaron omisiones o ambigüedades.
+- Identificaste qué faltó en cada una.
 
 ---
 
@@ -128,85 +108,59 @@ Tres prompts iniciales y observaciones sobre sus limitaciones.
 
 ### Objetivo
 
-Mejorar control y utilidad.
+Mejorar control.
 
 ### Instrucciones
 
-1. Reescriba cada prompt con:
-   - objetivo;
-   - contexto;
-   - fuente;
-   - formato;
-   - restricciones;
-   - tono cuando corresponda.
-2. Ejemplo de transformación:
+Incluye:
+- objetivo;
+- contexto;
+- fuente;
+- formato;
+- restricciones;
+- tono.
 
-**Solicitud inicial**
-
-```text
-Resume este documento.
-```
-
-**Solicitud estructurada**
+Ejemplo:
 
 ```text
 Resume este documento para un gerente de operaciones.
 
-Utiliza únicamente la información del documento.
-
 Incluye:
-- tres hallazgos principales;
+- tres hallazgos;
 - dos riesgos;
-- acciones pendientes;
-- información que requiere validación.
+- acciones pendientes.
 
 Máximo 180 palabras.
-No agregues nombres, fechas, cifras ni conclusiones que no estén sustentadas.
+Usa solo información de la fuente.
 ```
-
-3. Ejecute la nueva versión.
-4. Registre qué mejoró.
 
 ### Salida Esperada
 
-Tres prompts estructurados y resultados más controlados.
+Tres prompts mejorados.
 
 ### Verificación
 
-- Todos los prompts establecen un objetivo.
-- Todos definen formato y restricciones.
-- La fuente queda delimitada cuando la tarea depende de información aportada.
+- Cada uno define formato y límites.
 
 ---
 
-## Paso 4: Añadir ejemplos solo cuando sean útiles
+## Paso 4: Probar ejemplos
 
 ### Objetivo
 
-Decidir de forma consciente cuándo emplear one-shot o few-shot.
+Determinar si one-shot mejora el resultado.
 
 ### Instrucciones
 
-1. Seleccione uno de sus tres prompts.
-2. Cree un ejemplo pequeño del formato esperado.
-3. Añada:
-
-```text
-Usa el siguiente ejemplo únicamente como patrón de estructura y tono.
-No copies datos del ejemplo en la respuesta final.
-```
-
-4. Compare el resultado con la versión sin ejemplo.
-5. Si el ejemplo no mejora el resultado, documente que no es necesario.
+Añade un ejemplo pequeño a uno de tus prompts.
 
 ### Salida Esperada
 
-Una decisión justificada sobre el uso de ejemplos.
+Comparación entre versión con y sin ejemplo.
 
 ### Verificación
 
-- El ejemplo no introduce hechos falsos.
-- El participante puede explicar si aportó valor o no.
+- Puedes justificar si el ejemplo aportó valor.
 
 ---
 
@@ -214,50 +168,41 @@ Una decisión justificada sobre el uso de ejemplos.
 
 ### Objetivo
 
-Mejorar una respuesta sin reconstruir el prompt desde cero.
+Mejorar sin empezar de cero.
 
 ### Instrucciones
 
-1. Elija una salida y envíe una instrucción de refinamiento:
+Prueba:
 
 ```text
-Mantén el contenido sustentado, pero reduce la respuesta a 120 palabras.
-Conserva únicamente los tres puntos más relevantes para un gerente.
+Reduce la respuesta a 120 palabras.
 ```
 
-2. Después envíe:
+Después:
 
 ```text
-Ahora revisa si introdujiste algún dato que no aparezca en la fuente.
-Si existe, elimínalo.
-```
-
-3. Finalmente:
-
-```text
-Devuélveme la instrucción completa que debería reutilizar la próxima vez para obtener este tipo de resultado desde el inicio.
+Revisa si introdujiste información que no aparezca en la fuente.
 ```
 
 ### Salida Esperada
 
-Una versión final del prompt más reusable y una respuesta refinada.
+Una respuesta más controlada.
 
 ### Verificación
 
-- La versión final incorpora los aprendizajes del refinamiento.
-- No depende de recordar el historial de conversación para funcionar.
+- El refinamiento corrige problemas reales.
 
 ---
 
-## Paso 6: Definir criterios de calidad y verificación
+## Paso 6: Crear criterios de calidad
 
 ### Objetivo
 
-Convertir la biblioteca de prompts en un recurso controlado.
+Documentar cuándo una respuesta es aceptable.
 
 ### Instrucciones
 
-1. Para cada prompt, complete:
+Completa:
 
 ```text
 La respuesta es aceptable si:
@@ -269,30 +214,86 @@ Antes de usarla debo verificar:
 - ...
 - ...
 - ...
-```
-
-2. Ejemplo:
-
-```text
-La respuesta es aceptable si:
-- respeta el formato solicitado;
-- utiliza solamente información de la fuente;
-- mantiene el tono ejecutivo.
-
-Antes de usarla debo verificar:
-- cifras y fechas;
-- nombres o responsables;
-- que las acciones realmente estén acordadas.
 ```
 
 ### Salida Esperada
 
-Tres prompts reutilizables con criterios de aceptación y verificación.
+Tres prompts reutilizables y verificados.
 
 ### Verificación
 
-- La biblioteca contiene tres prompts completos.
-- Cada prompt tiene controles explícitos.
-- El participante podría reutilizarlo en una tarea futura.
+- Cada prompt tiene criterios de calidad y revisión.
 
 ---
+
+## Validación y Pruebas
+
+Realiza estas verificaciones finales antes de considerar terminada la actividad:
+
+- [ ] Completaste todos los pasos de la actividad.
+- [ ] Tu prompt define con claridad el objetivo.
+- [ ] Incluiste contexto, formato y restricciones cuando fueron necesarios.
+- [ ] Comparaste resultados usando criterios concretos.
+- [ ] El prompt final puede reutilizarse sin depender excesivamente del historial de la conversación.
+
+Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+
+---
+
+## Solución de Problemas
+
+### Problema 1: La respuesta no sigue el formato solicitado
+
+**Síntoma:** La respuesta no sigue el formato solicitado.
+
+**Causa probable:** El formato se expresó de manera ambigua.
+
+**Solución:** Enumera explícitamente las secciones, columnas o elementos que debe contener.
+### Problema 2: La respuesta cambia demasiado entre intentos
+
+**Síntoma:** La respuesta cambia demasiado entre intentos.
+
+**Causa probable:** El prompt deja abiertas demasiadas decisiones.
+
+**Solución:** Añade restricciones, prioridades y criterios de salida.
+### Problema 3: Los ejemplos contaminan la respuesta
+
+**Síntoma:** Los ejemplos contaminan la respuesta.
+
+**Causa probable:** No quedó claro que son solo un patrón.
+
+**Solución:** Indica que Copilot debe imitar la estructura o el tono, pero no copiar hechos de los ejemplos.
+
+---
+
+## Limpieza
+
+1. Cierra la conversación de práctica si ya no la necesitas.
+2. Elimina o evita conservar datos de práctica que no deban reutilizarse.
+3. Conserva únicamente prompts, tablas o patrones que puedan reutilizarse de forma segura.
+4. Si trabajaste con un archivo proporcionado, sigue las políticas de tu organización para su almacenamiento o eliminación.
+
+> **Nota:** estas actividades no requieren desinstalar software ni eliminar configuraciones del equipo. La limpieza se enfoca en conversaciones, archivos y datos utilizados durante la práctica.
+
+---
+
+## Resumen
+
+| Fase | Logro |
+|---|---|
+| Solicitud | Partiste de una necesidad de trabajo. |
+| Estructura | Añadiste objetivo, contexto, expectativas y fuente. |
+| Experimentación | Probaste variantes y refinamientos. |
+| Reutilización | Construiste un prompt más consistente. |
+
+### Conceptos Clave Reforzados
+
+- Un prompt útil puede combinar objetivo, contexto, expectativas y fuente.
+- Formato y restricciones ayudan a reducir ambigüedad.
+- Los ejemplos orientan, pero no siempre son necesarios.
+- Un prompt reutilizable debe poder entenderse fuera de la conversación original.
+
+### Recursos Adicionales
+
+- [Introducción a la escritura de prompts en Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot)
+- [Cómo escribir mejores prompts en Microsoft Copilot](https://support.microsoft.com/en-us/microsoft-365-copilot/write-a-great-prompt-in-microsoft-365-copilot)
