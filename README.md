@@ -1,10 +1,10 @@
 <img src="images/neteclogo (2).png" alt="logo" width="300"/>
 
-# IA Generativa para Usuarios Finales con Microsoft 365 Copilot Chat
+# Fundamentos de IA Generativa: Prompting y Productividad
 
 ## Plataforma de laboratorios
 
-Te damos la bienvenida a la **plataforma de laboratorios** del curso **IA Generativa para Usuarios Finales con Microsoft 365 Copilot Chat**.
+Te damos la bienvenida a la **plataforma de laboratorios** del curso **Fundamentos de IA Generativa: Prompting y Productividad**.
 
 Aquí encontrarás demostraciones guiadas y laboratorios diseñados para que practiques directamente con **Microsoft 365 Copilot Chat (Licenciamiento Básico)**. Las actividades están organizadas de forma progresiva y te permitirán desarrollar habilidades para formular mejores prompts, trabajar con información y archivos, validar respuestas y aplicar criterios de seguridad y revisión humana.
 
