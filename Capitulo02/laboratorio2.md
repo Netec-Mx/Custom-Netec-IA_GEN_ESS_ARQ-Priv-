@@ -1,13 +1,5 @@
 # Laboratorio 2. Clínica de prompts: construir, probar y refinar un conjunto de prompts reutilizables para situaciones reales del trabajo, incorporando criterios de calidad y verificación
 
-## Metadatos
-
-| Campo | Valor |
-|---|---|
-| Duración | 76 minutos |
-| Tipo | Laboratorio |
-| Nivel | Intermedio |
-
 ## Descripción General
 
 Construirás y refinarás prompts reutilizables para situaciones reales de trabajo.
@@ -21,88 +13,82 @@ Construirás y refinarás prompts reutilizables para situaciones reales de traba
 
 ## Prerrequisitos
 
-Capítulos 1 y 2.
-
 ### Acceso Requerido
 
 Microsoft 365 Copilot Chat y documento de notas.
 
-## Entorno del Laboratorio
-
-### Hardware Mínimo
-
-Equipo con navegador e Internet.
-
-### Software Requerido
-
-Microsoft 365 Copilot Chat.
-
 ### Configuración Inicial
 
-Crea esta plantilla:
+Abre un bloc de notas en tu equipo, copia y pega el siguiente contenido. 
 
-```text
-Nombre:
-Tarea:
-Versión inicial:
-Versión estructurada:
-Versión refinada:
-Criterios de calidad:
-Qué debo verificar:
+```jsonl
+{"prompt": "Clasifica el siguiente documento y da una recomendación de tratamiento.\n\nDocumento: 'Informe preliminar de la auditoría fiscal externa 2026, señalando posibles inconsistencias graves en la contabilidad y riesgo inminente de sanción por parte de la DIAN.'", "completion": "{\n  "clasificacion": "Crítico",\n  "recomendacion": "Restringir el acceso exclusivamente al Comité Directivo y equipo legal. Almacenar en repositorio cifrado de extremo a extremo, prohibir su reenvío por correo externo y aplicar destrucción segura tras el cierre del caso."\n}"}
+{"prompt": "Clasifica el siguiente documento y da una recomendación de tratamiento.\n\nDocumento: 'Propuesta comercial detallada con tarifas preferenciales y condiciones contractuales exclusivas negociadas para el cliente clave Banco de Bogotá.'", "completion": "{\n  "clasificacion": "Confidencial",\n  "recomendacion": "Compartir únicamente con el equipo comercial asignado y los tomadores de decisiones del cliente. Asegurar el uso de acuerdos de confidencialidad (NDA) vigentes y evitar su almacenamiento en dispositivos personales."\n}"}
+{"prompt": "Clasifica el siguiente documento y da una recomendación de tratamiento.\n\nDocumento: 'Cronograma y lineamientos generales para el evento de integración de fin de año de los empleados de la sucursal de Bogotá.'", "completion": "{\n  "clasificacion": "Información interna",\n  "recomendacion": "Distribuir a través de los canales de comunicación interna habituales de la compañía (intranet o correo corporativo). No requiere medidas de cifrado estrictas, pero no debe compartirse con personas ajenas a la organización."\n}"}
+{"prompt": "Clasifica el siguiente documento y da una recomendación de tratamiento.\n\nDocumento: 'Nota de prensa oficial anunciando el lanzamiento de nuestra nueva línea eco-amigable de productos disponible para todo público en la web corporativa.'", "completion": "{\n  "clasificacion": "Público",\n  "recomendacion": "Apto para distribución libre y masiva en canales externos, redes sociales y medios de comunicación. No requiere restricciones de acceso ni medidas especiales de protección."\n}"}
 ```
 
----
+Luego en el Bloc de Notas haz clic en Archivo - Guardar como... - 
 
-## Paso 1: Seleccionar tres tareas
-
-### Objetivo
-
-Elegir tareas repetibles.
-
-### Instrucciones
-
-Selecciona tres:
-- comunicación;
-- resumen;
-- análisis;
-- comparación;
-- ideación.
-
-### Salida Esperada
-
-Tres tareas concretas.
-
-### Verificación
-
-- Cada tarea produce un entregable claro.
+* **Nombre:** ClasificadorDocumentosFewShot.jsonl
+* **Tipo:** Todos los archivos (*.*)
 
 ---
 
-## Paso 2: Crear la versión inicial
+## Paso 1: Usa las mejores prácticas de Ingeniería de prompt
 
-### Objetivo
+Imagina que eres un líder de equipo que quiere usar un asistente de IA para preparar material motivacional y organizativo después de terminar un proyecto importante. Al inicio, tu prompt es muy básico, pero progresivamente lo vamos refinando.
 
-Registrar tu primera forma de pedir la tarea.
+Ingresa a Microsoft 365 Copilot en tu navegador `https://m365.cloud.microsoft`
 
-### Instrucciones
+1. Prompt sin contexto. El usuario pide algo genérico, sin dar detalles.
 
-Ejemplo:
+Prompt: `Escribe un mensaje motivador.`
 
-```text
-Resume este reporte.
-```
+Problema: La IA no sabe para quién, ni en qué situación, ni qué tono usar.
 
-Ejecuta tus tres prompts.
+3. Añadir contexto Se especifica quién eres y en qué situación estás.
 
-### Salida Esperada
+Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para ellos.`
 
-Tres respuestas iniciales.
+Mejora: Ahora la IA entiende el rol y el escenario.
 
-### Verificación
+4. Definir objetivo. Se aclara qué se busca lograr con el mensaje.
 
-- Identificaste qué faltó en cada una.
+Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para agradecerles y reforzar la confianza en futuros proyectos.`
 
+Mejora: La IA sabe que debe incluir agradecimiento y proyección.
+
+4. Ubicación del contenido. Se indica dónde se usará el resultado (correo, presentación, etc.).
+
+Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para agradecerles y reforzar la confianza en futuros proyectos. El mensaje será enviado por correo electrónico.`
+
+Mejora: La IA ajusta tono y extensión al canal.
+
+5. Tipo de salida. Se define el formato esperado (párrafo, lista, tabla, etc.).
+
+Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para agradecerles y reforzar la confianza en futuros proyectos. El mensaje será enviado por correo electrónico y debe estar en un solo párrafo breve.`
+
+Mejora: La IA entrega exactamente el formato deseado.
+
+✨ **Resultado del ejercicio**
+Con este flujo, se ve cómo un prompt pasa de ser ambiguo a ser preciso y útil, gracias a la inclusión progresiva de:
+
+📌 Contexto → quién eres y situación
+
+🎯 Objetivo → qué quieres lograr
+
+🗂️ Ubicación del contenido → dónde se usará
+
+📝 Tipo de salida → formato esperado
+
+
+## Paso 2: Experimenta one-shot, few-shot y CTO en un escenario empresarial
+
+1. Usemos one-shot. 
 ---
+
+
 
 ## Paso 3: Estructurar cada prompt
 
