@@ -85,144 +85,103 @@ Con este flujo, se ve cómo un prompt pasa de ser ambiguo a ser preciso y útil,
 
 ## Paso 2: Experimenta one-shot, few-shot y CTO en un escenario empresarial
 
-1. Usemos one-shot. 
----
+1. Usemos one-shot. Escoge un documento dentro de tu equipo y súbelo a MS365 Copilot.
 
-
-
-## Paso 3: Estructurar cada prompt
-
-### Objetivo
-
-Mejorar control.
-
-### Instrucciones
-
-Incluye:
-- objetivo;
-- contexto;
-- fuente;
-- formato;
-- restricciones;
-- tono.
-
-Ejemplo:
+2. Envía el siguiente Prompt.
 
 ```text
-Resume este documento para un gerente de operaciones.
-
-Incluye:
-- tres hallazgos;
-- dos riesgos;
-- acciones pendientes.
-
-Máximo 180 palabras.
-Usa solo información de la fuente.
+Clasifica el documento adjunto
 ```
 
-### Salida Esperada
+3. Observa el resultado y anótalo.
 
-Tres prompts mejorados.
+4. Usemos few-shot. No es necesario que salgas de la sesión de chat anterior ni que vuelvas a cargar el documento
 
-### Verificación
+5. Sube la plantilla que creaste en el inicio de este laboratorio. **ClasificadorDocumentosFewShot.jsonl**.
 
-- Cada uno define formato y límites.
-
----
-
-## Paso 4: Probar ejemplos
-
-### Objetivo
-
-Determinar si one-shot mejora el resultado.
-
-### Instrucciones
-
-Añade un ejemplo pequeño a uno de tus prompts.
-
-### Salida Esperada
-
-Comparación entre versión con y sin ejemplo.
-
-### Verificación
-
-- Puedes justificar si el ejemplo aportó valor.
-
----
-
-## Paso 5: Refinar conversacionalmente
-
-### Objetivo
-
-Mejorar sin empezar de cero.
-
-### Instrucciones
-
-Prueba:
+6. Con la plantilla cargada envía el siguiente Prompt:
 
 ```text
-Reduce la respuesta a 120 palabras.
+Clasifica nuevamente el documento tomando como base los ejemplos adjuntos en la plantilla.
 ```
 
-Después:
+7. Observa los resultados, anótalos y documenta también la diferencia entre ambos. 
+
+8. Usemos COT. Usando la misma sesión de chat, pídele el paso a paso del razonamiento para llegar a dicho resultado. Envía el siguiente Prompt:
 
 ```text
-Revisa si introdujiste información que no aparezca en la fuente.
+Quiero ver tu cadena de pensamiento (COT), enumera cada paso detallado para llegar a la clasificación anterior.
 ```
 
-### Salida Esperada
-
-Una respuesta más controlada.
-
-### Verificación
-
-- El refinamiento corrige problemas reales.
+9. Observa el resultado, verifica si el razonamiento que hizo incumple con algún procedimiento o política de tu empresa. De ser así, puedes darle el feedback.
 
 ---
 
-## Paso 6: Crear criterios de calidad
+## Paso 3: Comprobar mantener contexto y usar refinamiento
 
-### Objetivo
+1. Abre una nueva sesión de chat en Microsoft 365 Copilot.
 
-Documentar cuándo una respuesta es aceptable.
-
-### Instrucciones
-
-Completa:
+2. Envía el siguiente Prompt:
 
 ```text
-La respuesta es aceptable si:
-- ...
-- ...
-- ...
-
-Antes de usarla debo verificar:
-- ...
-- ...
-- ...
+Quisiera contextualizarme sobre la situación geopolítica actual, busca en noticias actuales y confiables, lista los tres puntos más relevantes.
 ```
 
-### Salida Esperada
+3. Observa el resultado, y modifica la forma de responder. Envía el siguiente Prompt:
 
-Tres prompts reutilizables y verificados.
+```text
+Muy bien, es justo lo que buscaba, pero quisiera que los emojis inicien por un Emoji.
+```
 
-### Verificación
+4. Observa los resultados, seguramente ahora verás que la lista inicia con Emojis.
 
-- Cada prompt tiene criterios de calidad y revisión.
+5. Continua tu investigación. Solicita lo siguiente:
+
+```text
+Excelente, era justo lo que quería. Ahora, genera una lista de los cinco aspectos clave que dichas noticias afectan a Colombia.  
+```
+
+6. El resultado debería estar alineado con la respuesta anterior (dichas noticias) y debería usar emojis aunque no se mencionó explícitamente en el nuevo Prompt. 
 
 ---
 
-## Validación y Pruebas
+## Paso 4: Reforzar el concepto de Tokens, Embeddibgs y seguridad en Microsoft 365 Copilot
 
-Realiza estas verificaciones finales antes de considerar terminada la actividad:
+1. Envía la siguiente solicitud
 
-- [ ] Completaste todos los pasos de la actividad.
-- [ ] Tu prompt define con claridad el objetivo.
-- [ ] Incluiste contexto, formato y restricciones cuando fueron necesarios.
-- [ ] Comparaste resultados usando criterios concretos.
-- [ ] El prompt final puede reutilizarse sin depender excesivamente del historial de la conversación.
+```text
+Si te hago una pregunta, te puedo pedir que la respuesta se devuelva en tokes o embeddings, es decir las representaciones numéricas?
+```
 
-Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+2. Analiza la respuesta, debería decirte que sí puede generar respuestas codificadas pero no darte los valores numéricos reales. Esto es por temas de seguridad.
+
+3. Ahora enviemos una prueba.
+
+```text
+Cómo se vería la representación tokenizada de la frase: "Mi perro es blanco y mi gato es negro". Muéstralos como IDs numéricos.
+```
+
+4. Observa cómo se ven representados los Tokens.
+
+5. Ahora, pídele que te muestre dichos tokens como embeddings.
+
+```text
+Ahora muestrame estos IDs numéricos cómo se verían ubicados en un índice vectorial, además genera los embeddings.
+```
+
+6. Observa la explicación y el resultado.
+
+7. Finalmente, vas a comparar dos frases para comprender mejor los conceptos de Tokens y embeddings.
+
+```text
+Genera tokens y embeddings para la frase: "El banco negó el préstamo por error". Y genera una gráfica bidimensional donde se vea la diferencia de las ubicaciones semánticas en el índice de las dos frases. Finamente, en un párrafo sintetiza el concepto de tokens y embeddings y su impacto en mi trabajo diario.
+```
+
+8. Observa el resultado. Seguramente, en el párrafo final, Microsoft 365 Copilot personaliza su respuesta alineado a tu perfil, rol o puesto, verifica que sea así.
+
+> ⚠️**Nota:** Si el último párrafo de la respuesta no menciona tu rol, cargo o perfil y de acuerdo a esto genera el resultado puede deberse a la varianza del modelo o restricciones de tu empresa para que Copilot acceda a tu perfil.
+
+¡Felicitaciones! 🥳 Terminaste el laboratorio correctamente.
 
 ---
 
