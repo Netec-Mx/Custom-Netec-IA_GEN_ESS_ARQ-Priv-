@@ -1,6 +1,6 @@
 # Demostración guiada 3.2. Interactuar por medio de páginas y cuadernos
 
-El propósito de este documento es sugerir la demostración que el instructor puede realizar durante la entrega del segundo capitulo del curso Fundamentos IA Gen Priv. Los siguientes pasos son generales, se entiende que el instructor tiene las habilidades para comprenderlo. Están organizados en orden de los slides de Power Point adjuntos.
+El propósito de este documento es sugerir la demostración que el instructor puede realizar durante la entrega del tercer capitulo del curso Fundamentos IA Gen Priv. Los siguientes pasos son generales, se entiende que el instructor tiene las habilidades para comprenderlo. Están organizados en orden de los slides de Power Point adjuntos.
 
 ## Instrucciones
 * Solicita una investigación para la generación de un documento.
