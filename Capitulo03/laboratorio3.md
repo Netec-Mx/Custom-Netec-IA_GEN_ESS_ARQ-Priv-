@@ -1,211 +1,131 @@
-# Laboratorio 3. Caso de productividad con información: resolver una necesidad de negocio usando un archivo, transformar la salida para distintas audiencias y validar el resultado contra la fuente
-
-## Metadatos
-
-| Campo | Valor |
-|---|---|
-| Duración | 73 minutos |
-| Tipo | Laboratorio |
-| Nivel | Intermedio |
+# Laboratorio 3. Usa Microsoft 365 Copilot evaluando y probando cada una de sus capacidades
 
 ## Descripción General
 
-Resolverás una necesidad de negocio usando un archivo, adaptarás la salida a distintas audiencias y validarás todo contra la fuente.
-
-## Objetivos de Aprendizaje
-
-- trabajar con un archivo;
-- extraer hechos;
-- adaptar salidas;
-- validar resultados.
-
-## Prerrequisitos
-
-Capítulos 1 a 3.
-
-### Acceso Requerido
-
-Archivo de práctica y Copilot Chat.
-
-## Entorno del Laboratorio
-
-### Hardware Mínimo
-
-Equipo con navegador e Internet.
-
-### Software Requerido
-
-Microsoft 365 Copilot Chat.
-
-### Configuración Inicial
-
-Crea esta tabla:
-
-| Afirmación | Evidencia | Tipo | Mantener / corregir |
-|---|---|---|---|
-
+Usa Microsoft 365 Copilot evaluando y probando cada una de sus capacidades
 ---
 
-## Paso 1: Definir la necesidad
+## Paso 1: Generar la investigación base
 
-### Objetivo
+1. Ingresa a `https://m365.cloud.microsoft`
 
-Establecer qué resultado necesitas.
+2. Envía el siguiente prompt:
 
-### Instrucciones
+```
+Realiza una investigación completa sobre los fundamentos de la Inteligencia Artificial Generativa (IA Gen). El objetivo es explicar de manera clara y técnica sus principios básicos, incluyendo conceptos clave, procesos de entrenamiento y aplicaciones prácticas. El contexto es un curso de formación para profesionales de TI que necesitan comprender cómo la IA Gen se diferencia del aprendizaje automático tradicional y de los sistemas basados en reglas. Utiliza fuentes confiables como documentación académica, artículos técnicos, papers recientes, blogs especializados en IA y publicaciones oficiales de proveedores de nube (Microsoft, AWS, Google). El formato de salida debe incluir:
 
-Completa:
+Un resumen ejecutivo en 4–5 párrafos claros y estructurados.
 
-```text
-Necesidad:
-Audiencia:
-Resultado:
-Formato:
-Información que no debe inventarse:
+Una lista con los 10 conceptos fundamentales (ejemplo: LLM, prompting, RLHF, alucinaciones, RAG, etc.).
+
+Una tabla comparativa entre IA Generativa, ML tradicional y sistemas basados en reglas.
+
+Un ejemplo práctico breve (máx. 5 líneas) de un caso de uso empresarial.
 ```
 
-### Salida Esperada
+3. Observa el resultado.
 
-Definición clara del entregable.
+4. Guarda el prompt para reutilizarlo después con otros temas. Hazlo pasando el curso sobre el prompt enviado y haciendo clic en la opción identificada con el ícono de la etiqueta 🔖 (Guardar Indicación).
 
-### Verificación
-
-- Existe audiencia y formato.
+5. Al final de la respuesta haz clic en los tres puntos horizontales (...), luego en **Editar en Pages** y finalmente en **Agregar a la nueva página**.
 
 ---
 
-## Paso 2: Analizar la fuente
+## Paso 2: Trabaja con Copilot Pages y Notebooks
 
-### Objetivo
+1. En Pages, solicita a Copilot del lado izquierdo que reestructure el documento.
 
-Comprender antes de redactar.
+```
+Reestructura la investigación sobre los fundamentos de la Inteligencia Artificial Generativa (IA Gen) en formato de ensayo académico. El objetivo es transformar el contenido previamente generado (resumen ejecutivo, lista de conceptos, tabla comparativa y ejemplo práctico) en un texto cohesivo y narrativo. El contexto es un curso de formación para profesionales de TI, por lo que el ensayo debe mantener un tono técnico, claro y didáctico. Utiliza fuentes confiables como documentación académica, artículos técnicos, papers recientes y publicaciones oficiales de proveedores de nube (Microsoft, AWS, Google). El formato de salida debe ser un ensayo estructurado con:
 
-### Instrucciones
+Introducción que presente la relevancia de la IA Gen.
 
-Envía:
+Desarrollo que explique los fundamentos, conceptos clave y comparaciones con otros paradigmas.
 
-```text
-Analiza únicamente el archivo.
+Inclusión fluida de los 10 conceptos fundamentales dentro del cuerpo del texto.
 
-Identifica:
-- cinco hechos;
-- información faltante;
-- datos que debo validar manualmente.
+Integración narrativa de la tabla comparativa en forma de explicación textual.
 
-Indica dónde aparece cada hecho.
+Ejemplo práctico empresarial como ilustración dentro del desarrollo.
+
+Conclusión que sintetice los aportes y perspectivas futuras de la IA Gen.
 ```
 
-### Salida Esperada
+2. Observa el cambio y el resultado. Haz clic en los tres puntos horizontales del costado superior derecho (...) y luego en **Versión anterior**.
 
-Lista de hechos y faltantes.
+3. Deberías ver la estructura inmediatamente anterior. Decides que estaba mejor antes, por lo cual haces clic en el botón **Restaurar**.
 
-### Verificación
+4. Elimina manualmente todo lo que no corresponde al documento, como los comentarios de Copilot.
 
-- Comprobaste manualmente al menos tres evidencias.
+5. Cuando esté listo, haz clic nuevamente en los tres puntos horizontales del costado superior derecho (...) y luego en **Ingresar al bloc de notas**
 
----
+6. Recuerda que los Notebooks en Copilot se usan para agregar contenido de diferentes fuentes en un mismo lugar.
 
-## Paso 3: Crear la primera salida
+7. En la ventana emergente haz clic en **Nuevo bloc de notas**.
 
-### Objetivo
+8. Se abrirá una nueva pestaña donde te pedirá la creación del Notebook. Sólo agrega el título **Investigación IA Gen** y haz clic en **Crear**.
 
-Generar un producto de negocio.
+9. Regresa a la pestaña anterior y nuevamente selecciona a **Ingresar al bloc de notas** como lo hiciste en el punto 5 de este ejercicio.
 
-### Instrucciones
+10. Agrega la página al Notebook **Investigación IA Gen** que acabas de crear.
 
-Ejemplo:
+11. Dirígete a tus cuadernos desde el menú izquierdo.
 
-```text
-Genera un resumen ejecutivo.
+12. Abre el Notebook que creaste previamente.
 
-Incluye:
-- situación actual;
-- tres hallazgos;
-- dos pendientes;
-- información por confirmar.
+13. Del costado derecho verás la página que acabaste de crear.
 
-Máximo 180 palabras.
+14. En la parte central aparece el espacio para consultar a Copilot, úsala para enviar el siguiente prompt:
+
+``` 
+¿Para mi cargo/rol en la empresa, cuáles son los principales beneficios de usar IA Gen?
 ```
 
-### Salida Esperada
+15. Copilot contestará, y la respuesta quedará almacenada en el historial del chat.
 
-Un entregable sustentado.
+16. (Opcional) Si tu empresa te ha compartido algún documento acerca del buen uso de la IA Gen y/o Copilot, agrégalo al cuaderno haciendo clic en **📎 Agregar referencias** ubicado en el costado derecho de ty Notebook.
 
-### Verificación
+17. Finalmente, haz clic en el botón **Infografía** del costado derecho.
 
-- Cada dato puede rastrearse.
+18. Observa el resultado de la infografía.
 
----
+## Paso 3: Trabajar con Agentes en Copilot
 
-## Paso 4: Adaptar a otra audiencia
+1. Selecciona **Agentes** del costado izquierdo y luego en **Nuevo agente**.
 
-### Objetivo
+2. En la nueva página selecciona la plantilla **Asesor de aprendizaje de IA** en el costado inferior.
 
-Cambiar forma sin alterar hechos.
+3. Observa que todos los campos se completan.
 
-### Instrucciones
+4. Lee la sección **Instrucciones**. Posiblemente requiera algunos cambios de acuerdo a tu criterio, puedes hacerlos libremente. Para hacerlo debes hacer clic en el ícono del lápiz en esta sección.
 
-Envía:
+5. En la sección **Conocimiento**, sólo estará disponible fuente de web (esto depende de la licencia que estemos usando).
 
-```text
-Transforma el resultado para un equipo operativo.
+6. Haz clic en **+ Agregar conocimiento** y agrega ```https://support.microsoft.com/es-es/microsoft-365-copilot/learning/changes-microsoft-copilot-app``` y luego en **+** del frente.
 
-Conserva los mismos hechos.
+7. Del costado superior haz clic en **Configuración** y cambia a **Vista previa**
 
-Formato:
-- Qué sabemos.
-- Qué falta.
-- Qué debemos revisar.
+8. Haz la siguiente consulta: ```¿Qué es SAP?```.
+
+9. Observa que el agente devuelve la respuesta, esto no debería ser así. Regresa a la configuración haciendo clic en **Vista previa** del costado superior y cambiando a **Configuración**.
+
+10. Dirígete a la sección **Instrucciones**, haz clic en el ícono del lápiz para editarlo. Busca en las instrucciones las restricciones, de no existir puedes agregar la sección tú:
+
+```
+## Restricciones
+- **Fuera del ámbito:** Si alguien pregunta algo diferente al propósito principal que es aprendizaje en IA, responderás: "Lo siento, no puedo ayudarte"*
 ```
 
-### Salida Esperada
+11. Regresa a la **Vista previa** como lo hiciste en el punto 7 de este ejercicio.
 
-Segunda versión para otra audiencia.
+12. Vuelve a preguntar algo fuera del contexto, por ejemplo: `¿Existen los extraterrestres?`
 
-### Verificación
+13. Observa la respuesta.
 
-- Cambia el estilo, no los hechos.
+14. Haz clic en **+ Nuevo chat** y selecciona uno de los prompts sugeridos que aparecen al inicio. Recuerda que estos los puedes agregar, quitar o editar desde la vista de configuración.
 
----
 
-## Paso 5: Auditar
-
-### Objetivo
-
-Validar antes de usar.
-
-### Instrucciones
-
-Envía:
-
-```text
-Audita las dos versiones.
-
-Tabla:
-Afirmación | Evidencia | Sustentada / Inferida / No sustentada | Acción
-```
-
-### Salida Esperada
-
-Tabla de auditoría y versiones corregidas.
-
-### Verificación
-
-- Eliminaste afirmaciones no sustentadas.
-
----
-
-## Validación y Pruebas
-
-Realiza estas verificaciones finales antes de considerar terminada la actividad:
-
-- [ ] Completaste todos los pasos de la actividad.
-- [ ] La salida se basa únicamente en la fuente o archivo utilizado.
-- [ ] Puedes localizar evidencia para las afirmaciones importantes.
-- [ ] Diferenciaste hechos de inferencias.
-- [ ] Eliminaste o corregiste cualquier afirmación no sustentada.
-
-Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+**¡Felicitaciones!** 🥳 Has terminado tu laboratorio correctamente. 
 
 ---
 
