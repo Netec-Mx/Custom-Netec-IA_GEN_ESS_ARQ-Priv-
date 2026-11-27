@@ -1,13 +1,5 @@
 # Laboratorio 2. Clínica de prompts: construir, probar y refinar un conjunto de prompts reutilizables para situaciones reales del trabajo, incorporando criterios de calidad y verificación
 
-## Metadatos
-
-| Campo | Valor |
-|---|---|
-| Duración | 76 minutos |
-| Tipo | Laboratorio |
-| Nivel | Intermedio |
-
 ## Descripción General
 
 Construirás y refinarás prompts reutilizables para situaciones reales de trabajo.
@@ -21,222 +13,175 @@ Construirás y refinarás prompts reutilizables para situaciones reales de traba
 
 ## Prerrequisitos
 
-Capítulos 1 y 2.
-
 ### Acceso Requerido
 
 Microsoft 365 Copilot Chat y documento de notas.
 
-## Entorno del Laboratorio
-
-### Hardware Mínimo
-
-Equipo con navegador e Internet.
-
-### Software Requerido
-
-Microsoft 365 Copilot Chat.
-
 ### Configuración Inicial
 
-Crea esta plantilla:
+Abre un bloc de notas en tu equipo, copia y pega el siguiente contenido. 
 
-```text
-Nombre:
-Tarea:
-Versión inicial:
-Versión estructurada:
-Versión refinada:
-Criterios de calidad:
-Qué debo verificar:
+```jsonl
+{"prompt": "Clasifica el siguiente documento y da una recomendación de tratamiento.\n\nDocumento: 'Informe preliminar de la auditoría fiscal externa 2026, señalando posibles inconsistencias graves en la contabilidad y riesgo inminente de sanción por parte de la DIAN.'", "completion": "{\n  "clasificacion": "Crítico",\n  "recomendacion": "Restringir el acceso exclusivamente al Comité Directivo y equipo legal. Almacenar en repositorio cifrado de extremo a extremo, prohibir su reenvío por correo externo y aplicar destrucción segura tras el cierre del caso."\n}"}
+{"prompt": "Clasifica el siguiente documento y da una recomendación de tratamiento.\n\nDocumento: 'Propuesta comercial detallada con tarifas preferenciales y condiciones contractuales exclusivas negociadas para el cliente clave Banco de Bogotá.'", "completion": "{\n  "clasificacion": "Confidencial",\n  "recomendacion": "Compartir únicamente con el equipo comercial asignado y los tomadores de decisiones del cliente. Asegurar el uso de acuerdos de confidencialidad (NDA) vigentes y evitar su almacenamiento en dispositivos personales."\n}"}
+{"prompt": "Clasifica el siguiente documento y da una recomendación de tratamiento.\n\nDocumento: 'Cronograma y lineamientos generales para el evento de integración de fin de año de los empleados de la sucursal de Bogotá.'", "completion": "{\n  "clasificacion": "Información interna",\n  "recomendacion": "Distribuir a través de los canales de comunicación interna habituales de la compañía (intranet o correo corporativo). No requiere medidas de cifrado estrictas, pero no debe compartirse con personas ajenas a la organización."\n}"}
+{"prompt": "Clasifica el siguiente documento y da una recomendación de tratamiento.\n\nDocumento: 'Nota de prensa oficial anunciando el lanzamiento de nuestra nueva línea eco-amigable de productos disponible para todo público en la web corporativa.'", "completion": "{\n  "clasificacion": "Público",\n  "recomendacion": "Apto para distribución libre y masiva en canales externos, redes sociales y medios de comunicación. No requiere restricciones de acceso ni medidas especiales de protección."\n}"}
 ```
 
----
+Luego en el Bloc de Notas haz clic en Archivo - Guardar como... - 
 
-## Paso 1: Seleccionar tres tareas
-
-### Objetivo
-
-Elegir tareas repetibles.
-
-### Instrucciones
-
-Selecciona tres:
-- comunicación;
-- resumen;
-- análisis;
-- comparación;
-- ideación.
-
-### Salida Esperada
-
-Tres tareas concretas.
-
-### Verificación
-
-- Cada tarea produce un entregable claro.
+* **Nombre:** ClasificadorDocumentosFewShot.jsonl
+* **Tipo:** Todos los archivos (*.*)
 
 ---
 
-## Paso 2: Crear la versión inicial
+## Paso 1: Usa las mejores prácticas de Ingeniería de prompt
 
-### Objetivo
+Imagina que eres un líder de equipo que quiere usar un asistente de IA para preparar material motivacional y organizativo después de terminar un proyecto importante. Al inicio, tu prompt es muy básico, pero progresivamente lo vamos refinando.
 
-Registrar tu primera forma de pedir la tarea.
+Ingresa a Microsoft 365 Copilot en tu navegador `https://m365.cloud.microsoft`
 
-### Instrucciones
+1. Prompt sin contexto. El usuario pide algo genérico, sin dar detalles.
 
-Ejemplo:
+   Prompt: `Escribe un mensaje motivador.`
 
-```text
-Resume este reporte.
-```
+   Problema: La IA no sabe para quién, ni en qué situación, ni qué tono usar.
 
-Ejecuta tus tres prompts.
+2. Añadir contexto Se especifica quién eres y en qué situación estás.
 
-### Salida Esperada
+   Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para ellos.`
 
-Tres respuestas iniciales.
+   Mejora: Ahora la IA entiende el rol y el escenario.
 
-### Verificación
+3. Definir objetivo. Se aclara qué se busca lograr con el mensaje.
 
-- Identificaste qué faltó en cada una.
+   Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para agradecerles y reforzar la confianza en futuros proyectos.`
 
----
+   Mejora: La IA sabe que debe incluir agradecimiento y proyección.
 
-## Paso 3: Estructurar cada prompt
+4. Ubicación del contenido. Se indica dónde se usará el resultado (correo, presentación, etc.).
 
-### Objetivo
+   Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para agradecerles y reforzar la confianza en futuros proyectos. El mensaje será enviado por correo electrónico.`
 
-Mejorar control.
+   Mejora: La IA ajusta tono y extensión al canal.
 
-### Instrucciones
+5. Tipo de salida. Se define el formato esperado (párrafo, lista, tabla, etc.).
 
-Incluye:
-- objetivo;
-- contexto;
-- fuente;
-- formato;
-- restricciones;
-- tono.
+Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para agradecerles y reforzar la confianza en futuros proyectos. El mensaje será enviado por correo electrónico y debe estar en un solo párrafo breve.`
 
-Ejemplo:
+Mejora: La IA entrega exactamente el formato deseado.
 
-```text
-Resume este documento para un gerente de operaciones.
+✨ **Resultado del ejercicio**
+Con este flujo, se ve cómo un prompt pasa de ser ambiguo a ser preciso y útil, gracias a la inclusión progresiva de:
 
-Incluye:
-- tres hallazgos;
-- dos riesgos;
-- acciones pendientes.
+📌 Contexto → quién eres y situación
 
-Máximo 180 palabras.
-Usa solo información de la fuente.
-```
+🎯 Objetivo → qué quieres lograr
 
-### Salida Esperada
+🗂️ Ubicación del contenido → dónde se usará
 
-Tres prompts mejorados.
+📝 Tipo de salida → formato esperado
 
-### Verificación
 
-- Cada uno define formato y límites.
+## Paso 2: Experimenta one-shot, few-shot y CTO en un escenario empresarial
 
----
+1. Usemos one-shot. Escoge un documento dentro de tu equipo y súbelo a MS365 Copilot.
 
-## Paso 4: Probar ejemplos
+2. Envía el siguiente Prompt.
 
-### Objetivo
+   ```text
+   Clasifica el documento adjunto
+   ```
 
-Determinar si one-shot mejora el resultado.
+3. Observa el resultado y anótalo.
 
-### Instrucciones
+4. Usemos few-shot. No es necesario que salgas de la sesión de chat anterior ni que vuelvas a cargar el documento
 
-Añade un ejemplo pequeño a uno de tus prompts.
+5. Sube la plantilla que creaste en el inicio de este laboratorio. **ClasificadorDocumentosFewShot.jsonl**.
 
-### Salida Esperada
+6. Con la plantilla cargada envía el siguiente Prompt:
 
-Comparación entre versión con y sin ejemplo.
+   ```text
+   Clasifica nuevamente el documento tomando como base los ejemplos adjuntos en la plantilla.
+   ```
 
-### Verificación
+7. Observa los resultados, anótalos y documenta también la diferencia entre ambos. 
 
-- Puedes justificar si el ejemplo aportó valor.
+8. Usemos COT. Usando la misma sesión de chat, pídele el paso a paso del razonamiento para llegar a dicho resultado. Envía el siguiente Prompt:
+
+   ```text
+   Quiero ver tu cadena de pensamiento (COT), enumera cada paso detallado para llegar a la clasificación anterior.
+   ```
+
+9. Observa el resultado, verifica si el razonamiento que hizo incumple con algún procedimiento o política de tu empresa. De ser así, puedes darle el feedback.
 
 ---
 
-## Paso 5: Refinar conversacionalmente
+## Paso 3: Comprobar mantener contexto y usar refinamiento
 
-### Objetivo
+1. Abre una nueva sesión de chat en Microsoft 365 Copilot.
 
-Mejorar sin empezar de cero.
+2. Envía el siguiente Prompt:
 
-### Instrucciones
+   ```text
+   Quisiera contextualizarme sobre la situación geopolítica actual, busca en noticias actuales y confiables, lista los tres puntos más relevantes.
+   ```
 
-Prueba:
+3. Observa el resultado, y modifica la forma de responder. Envía el siguiente Prompt:
 
-```text
-Reduce la respuesta a 120 palabras.
-```
+   ```text
+   Muy bien, es justo lo que buscaba, pero quisiera que los emojis inicien por un Emoji.
+   ```
 
-Después:
+4. Observa los resultados, seguramente ahora verás que la lista inicia con Emojis.
 
-```text
-Revisa si introdujiste información que no aparezca en la fuente.
-```
+5. Continua tu investigación. Solicita lo siguiente:
 
-### Salida Esperada
+   ```text
+   Excelente, era justo lo que quería. Ahora, genera una lista de los cinco aspectos clave que dichas noticias afectan a Colombia.  
+   ```
 
-Una respuesta más controlada.
-
-### Verificación
-
-- El refinamiento corrige problemas reales.
+6. El resultado debería estar alineado con la respuesta anterior (dichas noticias) y debería usar emojis aunque no se mencionó explícitamente en el nuevo Prompt. 
 
 ---
 
-## Paso 6: Crear criterios de calidad
+## Paso 4: Reforzar el concepto de Tokens, Embeddibgs y seguridad en Microsoft 365 Copilot
 
-### Objetivo
+1. Envía la siguiente solicitud
 
-Documentar cuándo una respuesta es aceptable.
+   ```text
+   Si te hago una pregunta, te puedo pedir que la respuesta se devuelva en tokes o embeddings, es decir las representaciones numéricas?
+   ```
 
-### Instrucciones
+2. Analiza la respuesta, debería decirte que sí puede generar respuestas codificadas pero no darte los valores numéricos reales. Esto es por temas de seguridad.
 
-Completa:
+3. Ahora enviemos una prueba.
 
-```text
-La respuesta es aceptable si:
-- ...
-- ...
-- ...
+   ```text
+   Cómo se vería la representación tokenizada de la frase: "Mi perro es blanco y mi gato es negro". Muéstralos como IDs numéricos.
+   ```
 
-Antes de usarla debo verificar:
-- ...
-- ...
-- ...
-```
+4. Observa cómo se ven representados los Tokens.
 
-### Salida Esperada
+5. Ahora, pídele que te muestre dichos tokens como embeddings.
 
-Tres prompts reutilizables y verificados.
+   ```text
+   Ahora muestrame estos IDs numéricos cómo se verían ubicados en un índice vectorial, además genera los embeddings.
+   ```
 
-### Verificación
+6. Observa la explicación y el resultado.
 
-- Cada prompt tiene criterios de calidad y revisión.
+7. Finalmente, vas a comparar dos frases para comprender mejor los conceptos de Tokens y embeddings.
 
----
+   ```text
+   Genera tokens y embeddings para la frase: "El banco negó el préstamo por error". Y genera una gráfica bidimensional donde se vea la diferencia de las ubicaciones semánticas en el índice de las dos frases. Finamente, en un párrafo sintetiza el concepto de tokens y embeddings y su impacto en mi trabajo diario.
+   ```
 
-## Validación y Pruebas
+8. Observa el resultado. Seguramente, en el párrafo final, Microsoft 365 Copilot personaliza su respuesta alineado a tu perfil, rol o puesto, verifica que sea así.
 
-Realiza estas verificaciones finales antes de considerar terminada la actividad:
+> ⚠️**Nota:** Si el último párrafo de la respuesta no menciona tu rol, cargo o perfil y de acuerdo a esto genera el resultado puede deberse a la varianza del modelo o restricciones de tu empresa para que Copilot acceda a tu perfil.
 
-- [ ] Completaste todos los pasos de la actividad.
-- [ ] Tu prompt define con claridad el objetivo.
-- [ ] Incluiste contexto, formato y restricciones cuando fueron necesarios.
-- [ ] Comparaste resultados usando criterios concretos.
-- [ ] El prompt final puede reutilizarse sin depender excesivamente del historial de la conversación.
-
-Si alguna comprobación no se cumple, vuelve al paso correspondiente y corrige el resultado antes de continuar.
+¡Felicitaciones! 🥳 Terminaste el laboratorio correctamente.
 
 ---
 
