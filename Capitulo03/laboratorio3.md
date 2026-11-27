@@ -3,6 +3,7 @@
 ## Descripción General
 
 Usa Microsoft 365 Copilot evaluando y probando cada una de sus capacidades
+
 ---
 
 ## Paso 1: Generar la investigación base
@@ -11,17 +12,17 @@ Usa Microsoft 365 Copilot evaluando y probando cada una de sus capacidades
 
 2. Envía el siguiente prompt:
 
-```
-Realiza una investigación completa sobre los fundamentos de la Inteligencia Artificial Generativa (IA Gen). El objetivo es explicar de manera clara y técnica sus principios básicos, incluyendo conceptos clave, procesos de entrenamiento y aplicaciones prácticas. El contexto es un curso de formación para profesionales de TI que necesitan comprender cómo la IA Gen se diferencia del aprendizaje automático tradicional y de los sistemas basados en reglas. Utiliza fuentes confiables como documentación académica, artículos técnicos, papers recientes, blogs especializados en IA y publicaciones oficiales de proveedores de nube (Microsoft, AWS, Google). El formato de salida debe incluir:
+   ```
+   Realiza una investigación completa sobre los fundamentos de la Inteligencia Artificial Generativa (IA Gen). El objetivo es explicar de manera clara y técnica sus principios básicos, incluyendo conceptos clave, procesos de entrenamiento y aplicaciones prácticas. El contexto es un curso de formación para profesionales de TI que necesitan comprender cómo la IA Gen se diferencia del aprendizaje automático tradicional y de los sistemas basados en reglas. Utiliza fuentes confiables como documentación académica, artículos técnicos, papers recientes, blogs especializados en IA y publicaciones oficiales de proveedores de nube (Microsoft, AWS, Google). El formato de salida debe incluir:
 
-Un resumen ejecutivo en 4–5 párrafos claros y estructurados.
+   Un resumen ejecutivo en 4–5 párrafos claros y estructurados.
 
-Una lista con los 10 conceptos fundamentales (ejemplo: LLM, prompting, RLHF, alucinaciones, RAG, etc.).
+   Una lista con los 10 conceptos fundamentales (ejemplo: LLM, prompting, RLHF, alucinaciones, RAG, etc.).
 
-Una tabla comparativa entre IA Generativa, ML tradicional y sistemas basados en reglas.
+   Una tabla comparativa entre IA Generativa, ML tradicional y sistemas basados en reglas.
 
-Un ejemplo práctico breve (máx. 5 líneas) de un caso de uso empresarial.
-```
+   Un ejemplo práctico breve (máx. 5 líneas) de un caso de uso empresarial.
+   ```
 
 3. Observa el resultado.
 
@@ -35,21 +36,21 @@ Un ejemplo práctico breve (máx. 5 líneas) de un caso de uso empresarial.
 
 1. En Pages, solicita a Copilot del lado izquierdo que reestructure el documento.
 
-```
-Reestructura la investigación sobre los fundamentos de la Inteligencia Artificial Generativa (IA Gen) en formato de ensayo académico. El objetivo es transformar el contenido previamente generado (resumen ejecutivo, lista de conceptos, tabla comparativa y ejemplo práctico) en un texto cohesivo y narrativo. El contexto es un curso de formación para profesionales de TI, por lo que el ensayo debe mantener un tono técnico, claro y didáctico. Utiliza fuentes confiables como documentación académica, artículos técnicos, papers recientes y publicaciones oficiales de proveedores de nube (Microsoft, AWS, Google). El formato de salida debe ser un ensayo estructurado con:
+   ```
+   Reestructura la investigación sobre los fundamentos de la Inteligencia Artificial Generativa (IA Gen) en formato de ensayo académico. El objetivo es transformar el contenido previamente generado (resumen ejecutivo, lista de conceptos, tabla comparativa y ejemplo práctico) en un texto cohesivo y narrativo. El contexto es un curso de formación para profesionales de TI, por lo que el ensayo debe mantener un tono técnico, claro y didáctico. Utiliza fuentes confiables como documentación académica, artículos técnicos, papers recientes y publicaciones oficiales de proveedores de nube (Microsoft, AWS, Google). El formato de salida debe ser un ensayo estructurado con:
 
-Introducción que presente la relevancia de la IA Gen.
+   Introducción que presente la relevancia de la IA Gen.
 
-Desarrollo que explique los fundamentos, conceptos clave y comparaciones con otros paradigmas.
+   Desarrollo que explique los fundamentos, conceptos clave y comparaciones con otros paradigmas.
 
-Inclusión fluida de los 10 conceptos fundamentales dentro del cuerpo del texto.
+   Inclusión fluida de los 10 conceptos fundamentales dentro del cuerpo del texto.
 
-Integración narrativa de la tabla comparativa en forma de explicación textual.
+   Integración narrativa de la tabla comparativa en forma de explicación textual.
 
-Ejemplo práctico empresarial como ilustración dentro del desarrollo.
+   Ejemplo práctico empresarial como ilustración dentro del desarrollo.
 
-Conclusión que sintetice los aportes y perspectivas futuras de la IA Gen.
-```
+   Conclusión que sintetice los aportes y perspectivas futuras de la IA Gen.
+   ```
 
 2. Observa el cambio y el resultado. Haz clic en los tres puntos horizontales del costado superior derecho (...) y luego en **Versión anterior**.
 
@@ -77,9 +78,9 @@ Conclusión que sintetice los aportes y perspectivas futuras de la IA Gen.
 
 14. En la parte central aparece el espacio para consultar a Copilot, úsala para enviar el siguiente prompt:
 
-``` 
-¿Para mi cargo/rol en la empresa, cuáles son los principales beneficios de usar IA Gen?
-```
+    ``` 
+    ¿Para mi cargo/rol en la empresa, cuáles son los principales beneficios de usar IA Gen?
+    ```
 
 15. Copilot contestará, y la respuesta quedará almacenada en el historial del chat.
 
@@ -111,10 +112,10 @@ Conclusión que sintetice los aportes y perspectivas futuras de la IA Gen.
 
 10. Dirígete a la sección **Instrucciones**, haz clic en el ícono del lápiz para editarlo. Busca en las instrucciones las restricciones, de no existir puedes agregar la sección tú:
 
-```
-## Restricciones
-- **Fuera del ámbito:** Si alguien pregunta algo diferente al propósito principal que es aprendizaje en IA, responderás: "Lo siento, no puedo ayudarte"*
-```
+    ```
+    ## Restricciones
+    - **Fuera del ámbito:** Si alguien pregunta algo diferente al propósito principal que es aprendizaje en IA, responderás: "Lo siento, no puedo ayudarte"*
+    ```
 
 11. Regresa a la **Vista previa** como lo hiciste en el punto 7 de este ejercicio.
 

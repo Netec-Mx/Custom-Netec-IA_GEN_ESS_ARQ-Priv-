@@ -43,27 +43,27 @@ Ingresa a Microsoft 365 Copilot en tu navegador `https://m365.cloud.microsoft`
 
 1. Prompt sin contexto. El usuario pide algo genérico, sin dar detalles.
 
-Prompt: `Escribe un mensaje motivador.`
+   Prompt: `Escribe un mensaje motivador.`
 
-Problema: La IA no sabe para quién, ni en qué situación, ni qué tono usar.
+   Problema: La IA no sabe para quién, ni en qué situación, ni qué tono usar.
 
-3. Añadir contexto Se especifica quién eres y en qué situación estás.
+2. Añadir contexto Se especifica quién eres y en qué situación estás.
 
-Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para ellos.`
+   Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para ellos.`
 
-Mejora: Ahora la IA entiende el rol y el escenario.
+   Mejora: Ahora la IA entiende el rol y el escenario.
 
-4. Definir objetivo. Se aclara qué se busca lograr con el mensaje.
+3. Definir objetivo. Se aclara qué se busca lograr con el mensaje.
 
-Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para agradecerles y reforzar la confianza en futuros proyectos.`
+   Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para agradecerles y reforzar la confianza en futuros proyectos.`
 
-Mejora: La IA sabe que debe incluir agradecimiento y proyección.
+   Mejora: La IA sabe que debe incluir agradecimiento y proyección.
 
 4. Ubicación del contenido. Se indica dónde se usará el resultado (correo, presentación, etc.).
 
-Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para agradecerles y reforzar la confianza en futuros proyectos. El mensaje será enviado por correo electrónico.`
+   Prompt: `Soy líder de un equipo que acaba de terminar un proyecto importante. Escribe un mensaje motivador para agradecerles y reforzar la confianza en futuros proyectos. El mensaje será enviado por correo electrónico.`
 
-Mejora: La IA ajusta tono y extensión al canal.
+   Mejora: La IA ajusta tono y extensión al canal.
 
 5. Tipo de salida. Se define el formato esperado (párrafo, lista, tabla, etc.).
 
@@ -89,9 +89,9 @@ Con este flujo, se ve cómo un prompt pasa de ser ambiguo a ser preciso y útil,
 
 2. Envía el siguiente Prompt.
 
-```text
-Clasifica el documento adjunto
-```
+   ```text
+   Clasifica el documento adjunto
+   ```
 
 3. Observa el resultado y anótalo.
 
@@ -101,17 +101,17 @@ Clasifica el documento adjunto
 
 6. Con la plantilla cargada envía el siguiente Prompt:
 
-```text
-Clasifica nuevamente el documento tomando como base los ejemplos adjuntos en la plantilla.
-```
+   ```text
+   Clasifica nuevamente el documento tomando como base los ejemplos adjuntos en la plantilla.
+   ```
 
 7. Observa los resultados, anótalos y documenta también la diferencia entre ambos. 
 
 8. Usemos COT. Usando la misma sesión de chat, pídele el paso a paso del razonamiento para llegar a dicho resultado. Envía el siguiente Prompt:
 
-```text
-Quiero ver tu cadena de pensamiento (COT), enumera cada paso detallado para llegar a la clasificación anterior.
-```
+   ```text
+   Quiero ver tu cadena de pensamiento (COT), enumera cada paso detallado para llegar a la clasificación anterior.
+   ```
 
 9. Observa el resultado, verifica si el razonamiento que hizo incumple con algún procedimiento o política de tu empresa. De ser así, puedes darle el feedback.
 
@@ -123,23 +123,23 @@ Quiero ver tu cadena de pensamiento (COT), enumera cada paso detallado para lleg
 
 2. Envía el siguiente Prompt:
 
-```text
-Quisiera contextualizarme sobre la situación geopolítica actual, busca en noticias actuales y confiables, lista los tres puntos más relevantes.
-```
+   ```text
+   Quisiera contextualizarme sobre la situación geopolítica actual, busca en noticias actuales y confiables, lista los tres puntos más relevantes.
+   ```
 
 3. Observa el resultado, y modifica la forma de responder. Envía el siguiente Prompt:
 
-```text
-Muy bien, es justo lo que buscaba, pero quisiera que los emojis inicien por un Emoji.
-```
+   ```text
+   Muy bien, es justo lo que buscaba, pero quisiera que los emojis inicien por un Emoji.
+   ```
 
 4. Observa los resultados, seguramente ahora verás que la lista inicia con Emojis.
 
 5. Continua tu investigación. Solicita lo siguiente:
 
-```text
-Excelente, era justo lo que quería. Ahora, genera una lista de los cinco aspectos clave que dichas noticias afectan a Colombia.  
-```
+   ```text
+   Excelente, era justo lo que quería. Ahora, genera una lista de los cinco aspectos clave que dichas noticias afectan a Colombia.  
+   ```
 
 6. El resultado debería estar alineado con la respuesta anterior (dichas noticias) y debería usar emojis aunque no se mencionó explícitamente en el nuevo Prompt. 
 
@@ -149,33 +149,33 @@ Excelente, era justo lo que quería. Ahora, genera una lista de los cinco aspect
 
 1. Envía la siguiente solicitud
 
-```text
-Si te hago una pregunta, te puedo pedir que la respuesta se devuelva en tokes o embeddings, es decir las representaciones numéricas?
-```
+   ```text
+   Si te hago una pregunta, te puedo pedir que la respuesta se devuelva en tokes o embeddings, es decir las representaciones numéricas?
+   ```
 
 2. Analiza la respuesta, debería decirte que sí puede generar respuestas codificadas pero no darte los valores numéricos reales. Esto es por temas de seguridad.
 
 3. Ahora enviemos una prueba.
 
-```text
-Cómo se vería la representación tokenizada de la frase: "Mi perro es blanco y mi gato es negro". Muéstralos como IDs numéricos.
-```
+   ```text
+   Cómo se vería la representación tokenizada de la frase: "Mi perro es blanco y mi gato es negro". Muéstralos como IDs numéricos.
+   ```
 
 4. Observa cómo se ven representados los Tokens.
 
 5. Ahora, pídele que te muestre dichos tokens como embeddings.
 
-```text
-Ahora muestrame estos IDs numéricos cómo se verían ubicados en un índice vectorial, además genera los embeddings.
-```
+   ```text
+   Ahora muestrame estos IDs numéricos cómo se verían ubicados en un índice vectorial, además genera los embeddings.
+   ```
 
 6. Observa la explicación y el resultado.
 
 7. Finalmente, vas a comparar dos frases para comprender mejor los conceptos de Tokens y embeddings.
 
-```text
-Genera tokens y embeddings para la frase: "El banco negó el préstamo por error". Y genera una gráfica bidimensional donde se vea la diferencia de las ubicaciones semánticas en el índice de las dos frases. Finamente, en un párrafo sintetiza el concepto de tokens y embeddings y su impacto en mi trabajo diario.
-```
+   ```text
+   Genera tokens y embeddings para la frase: "El banco negó el préstamo por error". Y genera una gráfica bidimensional donde se vea la diferencia de las ubicaciones semánticas en el índice de las dos frases. Finamente, en un párrafo sintetiza el concepto de tokens y embeddings y su impacto en mi trabajo diario.
+   ```
 
 8. Observa el resultado. Seguramente, en el párrafo final, Microsoft 365 Copilot personaliza su respuesta alineado a tu perfil, rol o puesto, verifica que sea así.
 

@@ -6,74 +6,76 @@
 
 Te damos la bienvenida a la **plataforma de laboratorios** del curso **Fundamentos de IA Generativa: Prompting y Productividad**.
 
-Aquí encontrarás demostraciones guiadas y laboratorios diseñados para que practiques directamente con **Microsoft 365 Copilot Chat (Licenciamiento Básico)**. Las actividades están organizadas de forma progresiva y te permitirán desarrollar habilidades para formular mejores prompts, trabajar con información y archivos, validar respuestas y aplicar criterios de seguridad y revisión humana.
+Aquí encontrarás demostraciones guiadas y laboratorios diseñados para que practiques directamente con **Microsoft 365 Copilot**. Las actividades están organizadas de forma progresiva y te permitirán desarrollar habilidades para formular mejores prompts, trabajar con información y archivos, validar respuestas y aplicar criterios de seguridad y revisión humana.
 
-Cada actividad incluye pasos guiados, resultados esperados y verificación, además de secciones finales de **Validación y Pruebas**, **Solución de Problemas**, **Limpieza**, **Resumen**, **Conceptos Clave Reforzados** y **Recursos Adicionales**.
+Las **demostraciones guiadas** son breves y las conduce el instructor. Los **laboratorios** incluyen pasos guiados y, al final, secciones de **Solución de Problemas**, **Limpieza** y **Resumen**.
 
 ## Lista de laboratorios
 
 Cada una de estas actividades está diseñada para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
 
-### [Demostración guiada 1.1. Primera conversación controlada: recorrer Microsoft 365 Copilot Chat (Licenciamiento Básico), formular una necesidad de negocio, probar una respuesta y marcar qué partes requieren verificación.](Capitulo01/demostracion1-1.md)
+### Capítulo 1
 
-- **Descripción**: Primera interacción controlada con Copilot Chat para formular una necesidad, revisar la respuesta e identificar qué debe verificarse.
+### [Demostración guiada 1.1. Probar alucinaciones y sesgos](Capitulo01/demostracion1-1.md)
+
+- **Descripción**: el instructor provoca respuestas alucinadas y sesgadas en Microsoft 365 Copilot para mostrar por qué toda respuesta debe verificarse.
 - ⏱️ **Duración estimada**: 32 min.
 
-### [Demostración guiada 1.2. Semáforo de riesgos: clasificar solicitudes seguras, condicionadas y no recomendadas; anonimizar datos y reescribir prompts para reducir exposición.](Capitulo01/demostracion1-2.md)
+### [Demostración guiada 1.2. Uso de Microsoft 365 Copilot en la app de Outlook](Capitulo01/demostracion1-2.md)
 
-- **Descripción**: Clasificación de solicitudes por riesgo, anonimización de información y reformulación de prompts.
+- **Descripción**: resumen de un correo, borrador de respuesta y resumen ejecutivo con las opciones de Copilot en Outlook.
 - ⏱️ **Duración estimada**: 38 min.
 
-### [Laboratorio 1. Mi mapa de oportunidades y uso seguro de Microsoft 365 Copilot Chat (Licenciamiento Básico): Identificar tareas reales del entorno laboral en las que Copilot puede aportar valor, experimentar con instrucciones básicas y determinar qué información puede utilizarse, qué resultados deben verificarse y qué riesgos deben considerarse antes de utilizar una respuesta](Capitulo01/laboratorio1.md)
+### [Laboratorio 1. Primeros pasos con IA Gen y uso seguro de Microsoft 365 Copilot Chat](Capitulo01/laboratorio1.md)
 
-- **Descripción**: Identificación de oportunidades reales de uso y evaluación de información, verificación y riesgos.
+- **Descripción**: exploración de Microsoft 365 Copilot, prueba de prompts básicos, generación de una matriz FODA y simulación de seguridad ante prompt injection.
 - ⏱️ **Duración estimada**: 77 min.
 
-### [Demostración guiada 2.1. Anatomía del prompt: convertir solicitudes vagas en prompts estructurados y comparar cómo cambia la calidad, precisión y formato de la respuesta](Capitulo02/demostracion2-1.md)
+### Capítulo 2
 
-- **Descripción**: Transformación de solicitudes vagas en prompts estructurados y comparación de resultados.
+### [Demostración guiada 2.1. Implementar COT](Capitulo02/demostracion2-1.md)
+
+- **Descripción**: resolución de un problema de varios pasos con cadena de pensamiento (chain of thought) y discusión de sus límites.
 - ⏱️ **Duración estimada**: 35 min.
 
-### [Demostración guiada 2.2. Experimento controlado: resolver una misma tarea con zero-shot, one-shot y few-shot; imponer formatos y restricciones y comparar los resultados](Capitulo02/demostracion2-2.md)
+### [Demostración guiada 2.2. Construir un prompt template para reutilizar y para prompting few-shot](Capitulo02/demostracion2-2.md)
 
-- **Descripción**: Comparación controlada de zero-shot, one-shot y few-shot con formatos y restricciones.
+- **Descripción**: creación de una plantilla de prompt reutilizable y de un archivo de ejemplos para prompting zero-shot, one-shot y few-shot.
 - ⏱️ **Duración estimada**: 42 min.
 
 ### [Laboratorio 2. Clínica de prompts: construir, probar y refinar un conjunto de prompts reutilizables para situaciones reales del trabajo, incorporando criterios de calidad y verificación](Capitulo02/laboratorio2.md)
 
-- **Descripción**: Construcción, prueba y refinamiento de prompts reutilizables con criterios de calidad y verificación.
+- **Descripción**: mejores prácticas de ingeniería de prompts, one-shot, few-shot y COT en un escenario empresarial, manejo de contexto y conceptos de tokens y embeddings.
 - ⏱️ **Duración estimada**: 76 min.
 
-### [Demostración guiada 3.1. Cadena de transformación: partir de un texto fuente y producir resumen ejecutivo, correo, tabla y lista de acciones, verificando que no se agreguen hechos no sustentados](Capitulo03/demostracion3-1.md)
+### Capítulo 3
 
-- **Descripción**: Transformación de una fuente en distintos formatos conservando trazabilidad y evidencia.
+### [Demostración guiada 3.1. Uso de las tareas en Microsoft 365 Copilot](Capitulo03/demostracion3-1.md)
+
+- **Descripción**: creación de tareas programadas en Copilot, sus límites y sus notificaciones por correo.
 - ⏱️ **Duración estimada**: 35 min.
 
-### [Demostración guiada 3.2. Reto de evidencia con archivos: cargar un archivo proporcionado, extraer datos, hacer preguntas, solicitar soporte en la fuente y detectar respuestas no sustentadas](Capitulo03/demostracion3-2.md)
+### [Demostración guiada 3.2. Interactuar por medio de páginas y cuadernos](Capitulo03/demostracion3-2.md)
 
-- **Descripción**: Trabajo con archivos para extraer información, pedir evidencia y detectar respuestas no sustentadas.
+- **Descripción**: edición colaborativa de una investigación en Copilot Pages, historial de versiones, cuadernos (notebooks) e infografías.
 - ⏱️ **Duración estimada**: 45 min.
 
-### [Laboratorio 3. Caso de productividad con información: resolver una necesidad de negocio usando un archivo, transformar la salida para distintas audiencias y validar el resultado contra la fuente](Capitulo03/laboratorio3.md)
+### [Laboratorio 3. Usa Microsoft 365 Copilot evaluando y probando cada una de sus capacidades](Capitulo03/laboratorio3.md)
 
-- **Descripción**: Resolución de una necesidad de negocio con un archivo y validación del resultado contra la fuente.
+- **Descripción**: investigación base, trabajo con Copilot Pages y Notebooks y configuración de un agente con conocimiento y restricciones.
 - ⏱️ **Duración estimada**: 73 min.
 
-### [Demostración guiada 4.1. Simulación de conversaciones profesionales: utilizar Copilot como interlocutor para ensayar una conversación con un cliente, gerente, colaborador o proveedor; responder preguntas y objeciones, solicitar retroalimentación y mejorar la preparación antes de la interacción real.](Capitulo04/demostracion4-1.md)
+### Capítulo 4
 
-- **Descripción**: Simulación de conversaciones profesionales para practicar preguntas, objeciones y retroalimentación.
+### [Demostración guiada 4.1. Verificación de fuentes y evaluación de pertinencia](Capitulo04/demostracion4-1.md)
+
+- **Descripción**: revisión y sustitución de fuentes de una investigación y evaluación de la pertinencia de un sitio con Copilot en Microsoft Edge.
 - ⏱️ **Duración estimada**: 40 min.
 
-### [Demostración guiada 4.2. Challenge my thinking: someter una propuesta a revisión crítica. Descubrir supuestos, puntos ciegos, contraargumentos y oportunidades de mejora](Capitulo04/demostracion4-2.md)
+### [Laboratorio 4. Identifica patrones maliciosos, usa técnicas de protección de datos y evalúa los resultados](Capitulo04/laboratorio4.md)
 
-- **Descripción**: Revisión crítica de una propuesta para descubrir supuestos, puntos ciegos y contraargumentos.
-- ⏱️ **Duración estimada**: 40 min.
-
-### [Laboratorio 4. Reto integrador por rol: resolver una tarea real de principio a fin, refinar el prompt, validar fuentes y contenido, aplicar controles de privacidad y guardar el patrón final en una biblioteca personal](Capitulo04/laboratorio4.md)
-
-- **Descripción**: Reto integrador de principio a fin con prompting, validación, privacidad y biblioteca personal.
+- **Descripción**: anonimización de respuestas con etiquetas, evaluación de resultados con LLM-as-a-judge y pruebas de prompt injection.
 - ⏱️ **Duración estimada**: 71 min.
-
 
 ---
 

@@ -11,27 +11,32 @@ Anonimizarás resultados de Copilot para evitar el uso de datos confidenciales. 
 Imagina que eres un consultor que utiliza Copilot para redactar comunicaciones profesionales. Sin embargo, necesitas asegurarte de que ningún dato personal sensible aparezca en las respuestas, por lo que aplicarás etiquetas de anonimización.
 
 1. Supongamos que Copilot debe redactar un correo de seguimiento a un cliente. En lugar de usar nombres reales, se reemplazarán por etiquetas.
-**Prompt:**
-```text
-Redacta un correo de seguimiento para <PERSON>, agradeciendo la reunión de ayer y confirmando que la próxima cita será el lunes a las 10 AM en <LOCATION>.
-```
+   **Prompt:**
+
+   ```text
+   Redacta un correo de seguimiento para <PERSON>, agradeciendo la reunión de ayer y confirmando que la próxima cita será el lunes a las 10 AM en <LOCATION>.
+   ```
 
 2. Ahora pedimos que se incluya un número de contacto, pero sin mostrar el real.
-**Prompt:**
-```text
-Incluye en el correo un número de contacto representado como <TEL> en lugar de un número real.
-```
+   **Prompt:**
+
+   ```text
+   Incluye en el correo un número de contacto representado como <TEL> en lugar de un número real.
+   ```
 
 3. El correo debe tener un destinatario, pero sin mostrar la dirección real.
-**Prompt:**
+   **Prompt:**
 
-```Redacta el correo dirigido a <EMAIL>, manteniendo el tono profesional y cordial.```
+   ```text
+   Redacta el correo dirigido a <EMAIL>, manteniendo el tono profesional y cordial.
+   ```
 
 4. Supongamos que se menciona una ciudad o una oficina.
-**Prompt:**
-```text
-En el cuerpo del correo, indica que la reunión será en <LOCATION>, sin mencionar la ciudad real.
-```
+   **Prompt:**
+
+   ```text
+   En el cuerpo del correo, indica que la reunión será en <LOCATION>, sin mencionar la ciudad real.
+   ```
 
 5. Finalmente, pedimos que Copilot genere la respuesta completa asegurando que todos los datos sensibles estén anonimizados.
 **Prompt:**
@@ -46,18 +51,21 @@ Genera la versión final del correo con todos los datos anonimizados usando etiq
 
 El siguiente ejercicio te permite evaluar el resultado de Copilot. En un escenario real, sería ideal evaluarlo con otro asistente que use otro FM, pero para propósito de nuestro laboratorio usaremos el mismo Copilot.
 
-1. Abre Microsoft 365 Copilot `https://m365.cloud.com`.
+1. Abre Microsoft 365 Copilot `https://m365.cloud.microsoft`.
 2. Cambia el tipo de procesamiento de **Automático** a **Respuesta rápida** en el costado superior. Ahora, ingresa el siguiente prompt de investigación.
-**Prompt:**
-```
-Realiza una investigación exhaustiva sobre las tendencias actuales de transformación digital en el sector bancario, enfocándote en cómo los bancos están adoptando inteligencia artificial, automatización y servicios en la nube para mejorar la eficiencia operativa y la experiencia del cliente, amplía el análisis considerando tanto bancos tradicionales como neobancos incluyendo aspectos regulatorios, riesgos de ciberseguridad, impacto en la fuerza laboral y cambios en la relación con los clientes, utiliza fuentes confiables y verificadas como organismos oficiales (BIS, IMF, World Bank), consultoras reconocidas (McKinsey, Deloitte, PwC), publicaciones académicas y medios financieros especializados (Financial Times, The Banker) evitando fuentes no verificadas o blogs sin respaldo institucional, organiza la información en un informe ejecutivo en español con secciones claras que incluyan introducción y contexto global, principales tendencias tecnológicas en banca, retos regulatorios y de seguridad, impacto en clientes y empleados y conclusiones estratégicas, presenta el resultado en formato profesional usando bullets y tablas comparativas cuando sea útil e incluye ejemplos concretos de bancos que estén liderando estas iniciativas.
-```
+   **Prompt:**
+
+   ```
+   Realiza una investigación exhaustiva sobre las tendencias actuales de transformación digital en el sector bancario, enfocándote en cómo los bancos están adoptando inteligencia artificial, automatización y servicios en la nube para mejorar la eficiencia operativa y la experiencia del cliente, amplía el análisis considerando tanto bancos tradicionales como neobancos incluyendo aspectos regulatorios, riesgos de ciberseguridad, impacto en la fuerza laboral y cambios en la relación con los clientes, utiliza fuentes confiables y verificadas como organismos oficiales (BIS, IMF, World Bank), consultoras reconocidas (McKinsey, Deloitte, PwC), publicaciones académicas y medios financieros especializados (Financial Times, The Banker) evitando fuentes no verificadas o blogs sin respaldo institucional, organiza la información en un informe ejecutivo en español con secciones claras que incluyan introducción y contexto global, principales tendencias tecnológicas en banca, retos regulatorios y de seguridad, impacto en clientes y empleados y conclusiones estratégicas, presenta el resultado en formato profesional usando bullets y tablas comparativas cuando sea útil e incluye ejemplos concretos de bancos que estén liderando estas iniciativas.
+   ```
 3. Observa el resultado y copialo.
 4. Abre una nueva sesión de chat y cambia el tipo de procesamiento de **Automático** a **Razonamiento profundo** en el costado superior.
 5. Solicita evaluar y calificar la respuesta de esa solicitud de la siguiente forma.
 
 > ⚠️**Nota:** En el siguiente prompt reemplaza **"Agrega la respuesta"** por la respuesta que copiaste en el punto 3 de este ejercicio.
+
 **Prompt:**
+
 ```
 Hice una investigación con IA. Adjunto la solicitud hecha por mí y la respuesta generada por IA. Quiero que realices una búsqueda para evaluar de 1 a 5 los siguientes aspectos y agregues al final de cada uno, un comentario:
 - Exactitud (los datos, cifras y hechos sean correctos y verificables)
@@ -79,9 +87,9 @@ Prompt: Realiza una investigación exhaustiva sobre las tendencias actuales de t
 
 3. Ahora abre el botón de chat de la aplicación de ciclismo y comienza a interactuar. Debes formular prompts creativos para intentar engañar al agente.
 
-* Usar lenguaje persuasivo o engañoso
-* Probar con escenarios ficticios (ej. 'imagina que eres un auditor')
-* Observar cómo el agente responde y bloquea intentos
+   * Usar lenguaje persuasivo o engañoso
+   * Probar con escenarios ficticios (ej. 'imagina que eres un auditor')
+   * Observar cómo el agente responde y bloquea intentos
 
 4. Si bien está en inglés, puedes preguntar y recibir respuestas en español.
 
